@@ -14,61 +14,84 @@ public class PokemonPagesFetcher {
                                           "&list=allpages&apnamespace=0&aplimit=500&format=json";
 
     public static List<String> listPokemonPagesWithKeyword(String keyword) throws Exception {
-    List<String> filteredPages = new ArrayList<>();
-    String apContinue = null;
+        List<String> filteredPages = new ArrayList<>();
+        String apContinue = null;
 
-    do {
-        // Construire l'URL pour la requête avec pagination
-        String url = API_URL + (apContinue != null ? "&apcontinue=" + apContinue : "");
-        HttpURLConnection connection = (HttpURLConnection) new URL(url).openConnection();
-        connection.setRequestMethod("GET");
-        connection.setRequestProperty("User-Agent", "SemanticWebProjectBot/1.0");
+        do {
+            String url = API_URL + (apContinue != null ? "&apcontinue=" + apContinue : "");
+            HttpURLConnection connection = (HttpURLConnection) new URL(url).openConnection();
+            connection.setRequestMethod("GET");
+            connection.setRequestProperty("User-Agent", "SemanticWebProjectBot/1.0");
 
-        BufferedReader in = new BufferedReader(new InputStreamReader(connection.getInputStream()));
-        StringBuilder response = new StringBuilder();
-        String inputLine;
+            BufferedReader in = new BufferedReader(new InputStreamReader(connection.getInputStream()));
+            StringBuilder response = new StringBuilder();
+            String inputLine;
 
-        while ((inputLine = in.readLine()) != null) {
-            response.append(inputLine);
-        }
-        in.close();
-
-        // Parse la réponse JSON
-        JSONObject jsonResponse = new JSONObject(response.toString());
-        JSONObject query = jsonResponse.getJSONObject("query");
-        JSONArray allpages = query.getJSONArray("allpages");
-
-        // Filtrer les titres des pages contenant le mot-clé
-        for (int i = 0; i < allpages.length(); i++) {
-            String title = allpages.getJSONObject(i).getString("title");
-            if (title.contains(keyword)) {
-                filteredPages.add(title);
+            while ((inputLine = in.readLine()) != null) {
+                response.append(inputLine);
             }
-        }
+            in.close();
 
-        // Mettre à jour `apcontinue` pour la prochaine page
-        if (jsonResponse.has("continue")) {
-            apContinue = jsonResponse.getJSONObject("continue").getString("apcontinue");
-        } else {
-            apContinue = null; // Fin de la pagination
-        }
+            JSONObject jsonResponse = new JSONObject(response.toString());
+            JSONObject query = jsonResponse.getJSONObject("query");
+            JSONArray allpages = query.getJSONArray("allpages");
 
-    } while (apContinue != null);
-
-    return filteredPages;
-}
-                                        
-                                        
-
-    public static void main(String[] args) {
-        try {
-            List<String> pokemonPages = PokemonPagesFetcher.listPokemonPagesWithKeyword("(Pokémon)");            
-            System.out.println("Nombre total de pages récupérées : " + pokemonPages.size());
-            for (String page : pokemonPages) {
-                System.out.println(page);
+            for (int i = 0; i < allpages.length(); i++) {
+                String title = allpages.getJSONObject(i).getString("title");
+                if (title.contains(keyword)) {
+                    filteredPages.add(title);
+                }
             }
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
+
+            if (jsonResponse.has("continue")) {
+                apContinue = jsonResponse.getJSONObject("continue").getString("apcontinue");
+            } else {
+                apContinue = null;
+            }
+
+        } while (apContinue != null);
+
+        return filteredPages;
     }
+
+
+    public static List<String> listAllPages() throws Exception {
+        List<String> allPages = new ArrayList<>();
+        String apContinue = null;
+    
+        do {
+            String url = API_URL + (apContinue != null ? "&apcontinue=" + apContinue : "");
+            HttpURLConnection connection = (HttpURLConnection) new URL(url).openConnection();
+            connection.setRequestMethod("GET");
+            connection.setRequestProperty("User-Agent", "SemanticWebProjectBot/1.0");
+    
+            BufferedReader in = new BufferedReader(new InputStreamReader(connection.getInputStream()));
+            StringBuilder response = new StringBuilder();
+            String inputLine;
+    
+            while ((inputLine = in.readLine()) != null) {
+                response.append(inputLine);
+            }
+            in.close();
+    
+            JSONObject jsonResponse = new JSONObject(response.toString());
+            JSONObject query = jsonResponse.getJSONObject("query");
+            JSONArray allpages = query.getJSONArray("allpages");
+    
+            for (int i = 0; i < allpages.length(); i++) {
+                String title = allpages.getJSONObject(i).getString("title");
+                allPages.add(title);
+            }
+    
+            if (jsonResponse.has("continue")) {
+                apContinue = jsonResponse.getJSONObject("continue").getString("apcontinue");
+            } else {
+                apContinue = null;
+            }
+    
+        } while (apContinue != null);
+    
+        return allPages;
+    }
+    
 }

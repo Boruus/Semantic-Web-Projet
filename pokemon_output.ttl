@@ -1,0 +1,285 @@
+<http://www.bulbapedia.org/page/"T"_Promotional_cards_(TCG)>
+        <http://schema.org/about>  <http://www.bulbapedia.org/resource/"T"_Promotional_cards_(TCG)> .
+
+<http://www.bulbapedia.org/page/"PCG-P"_Promotional_Cards>
+        <http://schema.org/about>  <http://www.bulbapedia.org/resource/"PCG-P"_Promotional_Cards> .
+
+<http://www.bulbapedia.org/page/"ADV-P"_Promotional_cards_(TCG)>
+        <http://schema.org/about>  <http://www.bulbapedia.org/resource/"ADV-P"_Promotional_cards_(TCG)> .
+
+<http://www.bulbapedia.org/page/"J"_Promotional_Cards>
+        <http://schema.org/about>  <http://www.bulbapedia.org/resource/"J"_Promotional_Cards> .
+
+<http://www.bulbapedia.org/resource/"J"_Promotional_Cards>
+        <http://schema.org/isPartOf>  <http://www.bulbapedia.org/page/"J"_Promotional_Cards> ;
+        <http://www.bulbapedia.org/resource/cardsInSet>
+                "2" ;
+        <http://www.bulbapedia.org/resource/image>
+                "SetSymbolPromo.png" ;
+        <http://www.bulbapedia.org/resource/releasePeriod>
+                "August 2001 - July 2002\n}}" ;
+        <http://www.bulbapedia.org/resource/setName>
+                "J Promotional cards" ;
+        <http://www.bulbapedia.org/resource/symbol>
+                "yes" .
+
+<http://www.bulbapedia.org/page/"P"_Promotional_Card_(TCG)>
+        <http://schema.org/about>  <http://www.bulbapedia.org/resource/"P"_Promotional_Card_(TCG)> .
+
+<http://www.bulbapedia.org/resource/"DPt-P"_Promotional_cards_(TCG)>
+        <http://schema.org/isPartOf>  <http://www.bulbapedia.org/page/"DPt-P"_Promotional_cards_(TCG)> ;
+        <http://www.bulbapedia.org/resource/cardsInSet>
+                "51" ;
+        <http://www.bulbapedia.org/resource/image>
+                "SetSymbolPromo.png" ;
+        <http://www.bulbapedia.org/resource/releasePeriod>
+                "October 2008 - August 2009\n}}" ;
+        <http://www.bulbapedia.org/resource/setName>
+                "DPt-P Promotional cards" ;
+        <http://www.bulbapedia.org/resource/symbol>
+                "yes" .
+
+<http://www.bulbapedia.org/page/"W"_Promotional_cards_(TCG)>
+        <http://schema.org/about>  <http://www.bulbapedia.org/resource/"W"_Promotional_cards_(TCG)> .
+
+<http://www.bulbapedia.org/page/"ADV-P"_Promotional_Cards>
+        <http://schema.org/about>  <http://www.bulbapedia.org/resource/"ADV-P"_Promotional_Cards> .
+
+<http://www.bulbapedia.org/resource/"W"_Promotional_cards_(TCG)>
+        <http://schema.org/isPartOf>  <http://www.bulbapedia.org/page/"W"_Promotional_cards_(TCG)> ;
+        <http://www.bulbapedia.org/resource/cardsInSet>
+                "7" ;
+        <http://www.bulbapedia.org/resource/releasePeriod>
+                "September 1999 - March 2001" ;
+        <http://www.bulbapedia.org/resource/setName>
+                "W Promotional cards" ;
+        <http://www.bulbapedia.org/resource/symbol>
+                "no" .
+
+<http://www.bulbapedia.org/resource/"ADV-P"_Promotional_Cards>
+        <http://schema.org/isPartOf>  <http://www.bulbapedia.org/page/"ADV-P"_Promotional_Cards> ;
+        <http://www.bulbapedia.org/resource/cardsInSet>
+                "63" ;
+        <http://www.bulbapedia.org/resource/image>
+                "SetSymbolPromo.png" ;
+        <http://www.bulbapedia.org/resource/releasePeriod>
+                "January 2003 - February 2004" ;
+        <http://www.bulbapedia.org/resource/setName>
+                "ADV-P Promotional cards" ;
+        <http://www.bulbapedia.org/resource/symbol>
+                "yes" .
+
+<http://www.bulbapedia.org/resource/"PCG-P"_Promotional_Cards>
+        <http://schema.org/isPartOf>  <http://www.bulbapedia.org/page/"PCG-P"_Promotional_Cards> ;
+        <http://www.bulbapedia.org/resource/cardsInSet>
+                "154" ;
+        <http://www.bulbapedia.org/resource/image>
+                "SetSymbolPromo.png" ;
+        <http://www.bulbapedia.org/resource/releasePeriod>
+                "February 2004 - July 2006\n}}" ;
+        <http://www.bulbapedia.org/resource/setName>
+                "PCG-P Promotional cards" ;
+        <http://www.bulbapedia.org/resource/symbol>
+                "yes" .
+
+<http://www.bulbapedia.org/page/"P"_Promotional_Cards_(TCG)>
+        <http://schema.org/about>  <http://www.bulbapedia.org/resource/"P"_Promotional_Cards_(TCG)> .
+
+<http://www.bulbapedia.org/resource/"PCG-P"_Promotional_cards_(TCG)>
+        <http://schema.org/isPartOf>  <http://www.bulbapedia.org/page/"PCG-P"_Promotional_cards_(TCG)> ;
+        <http://www.bulbapedia.org/resource/cardsInSet>
+                "154" ;
+        <http://www.bulbapedia.org/resource/image>
+                "SetSymbolPromo.png" ;
+        <http://www.bulbapedia.org/resource/releasePeriod>
+                "February 2004 - July 2006\n}}" ;
+        <http://www.bulbapedia.org/resource/setName>
+                "PCG-P Promotional cards" ;
+        <http://www.bulbapedia.org/resource/symbol>
+                "yes" .
+
+<http://www.bulbapedia.org/page/"DPt-P"_Promotional_cards_(TCG)>
+        <http://schema.org/about>  <http://www.bulbapedia.org/resource/"DPt-P"_Promotional_cards_(TCG)> .
+
+<http://www.bulbapedia.org/resource/"T"_Promotional_Cards_(TCG)>
+        <http://schema.org/isPartOf>  <http://www.bulbapedia.org/page/"T"_Promotional_Cards_(TCG)> ;
+        <http://www.bulbapedia.org/resource/cardsInSet>
+                "24" ;
+        <http://www.bulbapedia.org/resource/image>
+                "SetSymbolTrainer Magazine.png" ;
+        <http://www.bulbapedia.org/resource/releasePeriod>
+                "January 2002 - March 2003\n}}" ;
+        <http://www.bulbapedia.org/resource/setName>
+                "T Promotional cards" ;
+        <http://www.bulbapedia.org/resource/symbol>
+                "yes" .
+
+<http://www.bulbapedia.org/page/"PCG-P"_Promotional_Cards_(TCG)>
+        <http://schema.org/about>  <http://www.bulbapedia.org/resource/"PCG-P"_Promotional_Cards_(TCG)> .
+
+<http://www.bulbapedia.org/resource/"P"_Promotional_Cards_(TCG)>
+        <http://schema.org/isPartOf>  <http://www.bulbapedia.org/page/"P"_Promotional_Cards_(TCG)> ;
+        <http://www.bulbapedia.org/resource/cardsInSet>
+                "47" ;
+        <http://www.bulbapedia.org/resource/image>
+                "SetSymbolPromo.png" ;
+        <http://www.bulbapedia.org/resource/releasePeriod>
+                "July 2001 - July 2002" ;
+        <http://www.bulbapedia.org/resource/setName>
+                "P Promotional cards" ;
+        <http://www.bulbapedia.org/resource/symbol>
+                "yes" .
+
+<http://www.bulbapedia.org/resource/"T"_Promotional_Cards>
+        <http://schema.org/isPartOf>  <http://www.bulbapedia.org/page/"T"_Promotional_Cards> ;
+        <http://www.bulbapedia.org/resource/cardsInSet>
+                "24" ;
+        <http://www.bulbapedia.org/resource/image>
+                "SetSymbolTrainer Magazine.png" ;
+        <http://www.bulbapedia.org/resource/releasePeriod>
+                "January 2002 - March 2003\n}}" ;
+        <http://www.bulbapedia.org/resource/setName>
+                "T Promotional cards" ;
+        <http://www.bulbapedia.org/resource/symbol>
+                "yes" .
+
+<http://www.bulbapedia.org/page/"T"_Promotional_Cards>
+        <http://schema.org/about>  <http://www.bulbapedia.org/resource/"T"_Promotional_Cards> .
+
+<http://www.bulbapedia.org/resource/"ADV-P"_Promotional_Cards_(TCG)>
+        <http://schema.org/isPartOf>  <http://www.bulbapedia.org/page/"ADV-P"_Promotional_Cards_(TCG)> ;
+        <http://www.bulbapedia.org/resource/cardsInSet>
+                "63" ;
+        <http://www.bulbapedia.org/resource/image>
+                "SetSymbolPromo.png" ;
+        <http://www.bulbapedia.org/resource/releasePeriod>
+                "January 2003 - February 2004" ;
+        <http://www.bulbapedia.org/resource/setName>
+                "ADV-P Promotional cards" ;
+        <http://www.bulbapedia.org/resource/symbol>
+                "yes" .
+
+<http://www.bulbapedia.org/resource/"PCG-P"_Promotional_Cards_(TCG)>
+        <http://schema.org/isPartOf>  <http://www.bulbapedia.org/page/"PCG-P"_Promotional_Cards_(TCG)> ;
+        <http://www.bulbapedia.org/resource/cardsInSet>
+                "154" ;
+        <http://www.bulbapedia.org/resource/image>
+                "SetSymbolPromo.png" ;
+        <http://www.bulbapedia.org/resource/releasePeriod>
+                "February 2004 - July 2006\n}}" ;
+        <http://www.bulbapedia.org/resource/setName>
+                "PCG-P Promotional cards" ;
+        <http://www.bulbapedia.org/resource/symbol>
+                "yes" .
+
+<http://www.bulbapedia.org/page/"P"_Promotional_cards_(TCG)>
+        <http://schema.org/about>  <http://www.bulbapedia.org/resource/"P"_Promotional_cards_(TCG)> .
+
+<http://www.bulbapedia.org/resource/"P"_Promotional_Card_(TCG)>
+        <http://schema.org/isPartOf>  <http://www.bulbapedia.org/page/"P"_Promotional_Card_(TCG)> ;
+        <http://www.bulbapedia.org/resource/cardsInSet>
+                "47" ;
+        <http://www.bulbapedia.org/resource/image>
+                "SetSymbolPromo.png" ;
+        <http://www.bulbapedia.org/resource/releasePeriod>
+                "July 2001 - July 2002" ;
+        <http://www.bulbapedia.org/resource/setName>
+                "P Promotional cards" ;
+        <http://www.bulbapedia.org/resource/symbol>
+                "yes" .
+
+<http://www.bulbapedia.org/page/"DP-P"_Promotional_Cards_(TCG)>
+        <http://schema.org/about>  <http://www.bulbapedia.org/resource/"DP-P"_Promotional_Cards_(TCG)> .
+
+<http://www.bulbapedia.org/resource/"DP-P"_Promotional_Cards_(TCG)>
+        <http://schema.org/isPartOf>  <http://www.bulbapedia.org/page/"DP-P"_Promotional_Cards_(TCG)> ;
+        <http://www.bulbapedia.org/resource/cardsInSet>
+                "127" ;
+        <http://www.bulbapedia.org/resource/image>
+                "SetSymbolPromo.png" ;
+        <http://www.bulbapedia.org/resource/releasePeriod>
+                "December 2006 - January 2009\n}}" ;
+        <http://www.bulbapedia.org/resource/setName>
+                "DP-P Promotional cards" ;
+        <http://www.bulbapedia.org/resource/symbol>
+                "yes" .
+
+<http://www.bulbapedia.org/resource/"J"_Promotional_Cards_(TCG)>
+        <http://schema.org/isPartOf>  <http://www.bulbapedia.org/page/"J"_Promotional_Cards_(TCG)> ;
+        <http://www.bulbapedia.org/resource/cardsInSet>
+                "2" ;
+        <http://www.bulbapedia.org/resource/image>
+                "SetSymbolPromo.png" ;
+        <http://www.bulbapedia.org/resource/releasePeriod>
+                "August 2001 - July 2002\n}}" ;
+        <http://www.bulbapedia.org/resource/setName>
+                "J Promotional cards" ;
+        <http://www.bulbapedia.org/resource/symbol>
+                "yes" .
+
+<http://www.bulbapedia.org/page/"PCG-P"_Promotional_cards_(TCG)>
+        <http://schema.org/about>  <http://www.bulbapedia.org/resource/"PCG-P"_Promotional_cards_(TCG)> .
+
+<http://www.bulbapedia.org/resource/"P"_Promotional_cards_(TCG)>
+        <http://schema.org/isPartOf>  <http://www.bulbapedia.org/page/"P"_Promotional_cards_(TCG)> ;
+        <http://www.bulbapedia.org/resource/cardsInSet>
+                "47" ;
+        <http://www.bulbapedia.org/resource/image>
+                "SetSymbolPromo.png" ;
+        <http://www.bulbapedia.org/resource/releasePeriod>
+                "July 2001 - July 2002" ;
+        <http://www.bulbapedia.org/resource/setName>
+                "P Promotional cards" ;
+        <http://www.bulbapedia.org/resource/symbol>
+                "yes" .
+
+<http://www.bulbapedia.org/page/"J"_Promotional_cards_(TCG)>
+        <http://schema.org/about>  <http://www.bulbapedia.org/resource/"J"_Promotional_cards_(TCG)> .
+
+<http://www.bulbapedia.org/resource/"T"_Promotional_cards_(TCG)>
+        <http://schema.org/isPartOf>  <http://www.bulbapedia.org/page/"T"_Promotional_cards_(TCG)> ;
+        <http://www.bulbapedia.org/resource/cardsInSet>
+                "24" ;
+        <http://www.bulbapedia.org/resource/image>
+                "SetSymbolTrainer Magazine.png" ;
+        <http://www.bulbapedia.org/resource/releasePeriod>
+                "January 2002 - March 2003\n}}" ;
+        <http://www.bulbapedia.org/resource/setName>
+                "T Promotional cards" ;
+        <http://www.bulbapedia.org/resource/symbol>
+                "yes" .
+
+<http://www.bulbapedia.org/resource/"ADV-P"_Promotional_cards_(TCG)>
+        <http://schema.org/isPartOf>  <http://www.bulbapedia.org/page/"ADV-P"_Promotional_cards_(TCG)> ;
+        <http://www.bulbapedia.org/resource/cardsInSet>
+                "63" ;
+        <http://www.bulbapedia.org/resource/image>
+                "SetSymbolPromo.png" ;
+        <http://www.bulbapedia.org/resource/releasePeriod>
+                "January 2003 - February 2004" ;
+        <http://www.bulbapedia.org/resource/setName>
+                "ADV-P Promotional cards" ;
+        <http://www.bulbapedia.org/resource/symbol>
+                "yes" .
+
+<http://www.bulbapedia.org/page/"T"_Promotional_Cards_(TCG)>
+        <http://schema.org/about>  <http://www.bulbapedia.org/resource/"T"_Promotional_Cards_(TCG)> .
+
+<http://www.bulbapedia.org/page/"ADV-P"_Promotional_Cards_(TCG)>
+        <http://schema.org/about>  <http://www.bulbapedia.org/resource/"ADV-P"_Promotional_Cards_(TCG)> .
+
+<http://www.bulbapedia.org/resource/"J"_Promotional_cards_(TCG)>
+        <http://schema.org/isPartOf>  <http://www.bulbapedia.org/page/"J"_Promotional_cards_(TCG)> ;
+        <http://www.bulbapedia.org/resource/cardsInSet>
+                "2" ;
+        <http://www.bulbapedia.org/resource/image>
+                "SetSymbolPromo.png" ;
+        <http://www.bulbapedia.org/resource/releasePeriod>
+                "August 2001 - July 2002\n}}" ;
+        <http://www.bulbapedia.org/resource/setName>
+                "J Promotional cards" ;
+        <http://www.bulbapedia.org/resource/symbol>
+                "yes" .
+
+<http://www.bulbapedia.org/page/"J"_Promotional_Cards_(TCG)>
+        <http://schema.org/about>  <http://www.bulbapedia.org/resource/"J"_Promotional_Cards_(TCG)> .
