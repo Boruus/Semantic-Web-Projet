@@ -1,13 +1,16 @@
 <template>
   <div class="pokestyle">
-    <h1>Attacks Page</h1>
-    <p>List of Pokémon attacks will be displayed here.</p>
+    <h1>Developpeur</h1>
+    <ul>
+      <li>Boris Trombert</li>
+      <li>Mathias CHANE-WAYE</li>
+    </ul>
   </div>
 </template>
 
 <script>
 export default {
-  name: 'AttacksPage'
+  name: 'CreditPage'
 }
 </script>
 
@@ -20,4 +23,5 @@ export default {
   padding: 20px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
+
 </style>

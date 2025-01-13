@@ -1,5 +1,5 @@
 <template>
-  <div class="regions">
+  <div class="pokestyle">
     <h1>Regions Page</h1>
     <p>List of Pokémon regions will be displayed here.</p>
   </div>
@@ -12,8 +12,12 @@ export default {
 </script>
 
 <style scoped>
-.regions {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
+.pokestyle {
+  font-family: 'Press Start 2P', cursive;
   margin: 20px;
+  background-color: #f2f2f2;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 </style>

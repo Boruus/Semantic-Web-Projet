@@ -5,27 +5,35 @@
       <ul>
         <li><a href="#" @click.prevent="currentPage = 'home'">Home</a></li>
         <li><a href="#" @click.prevent="currentPage = 'pokemon'">Pokémon</a></li>
+        <li><a href="#" @click.prevent="currentPage = 'pokeListTuples'">Tuples</a></li>
         <li><a href="#" @click.prevent="currentPage = 'attacks'">Attacks</a></li>
         <li><a href="#" @click.prevent="currentPage = 'regions'">Regions</a></li>
+        <li><a href="#" @click.prevent="currentPage = 'credit'">Credit</a></li>
       </ul>
     </nav>
+    <button class="pokemon-button" @click="runPokemonRDFGenerator">Run Pokemon RDF Generator</button>
     <component :is="currentPageComponent"></component>
   </div>
 </template>
 
 <script>
+import axios from 'axios'
 import HomePage from './components/HomePage.vue'
 import PokeListPage from './components/PokeListPage.vue'
+import PokeListTuplesPage from './components/PokeListTuplesPage.vue'
 import AttacksPage from './components/AttacksPage.vue'
 import RegionsPage from './components/RegionsPage.vue'
+import Credit from './components/Credit.vue'
 
 export default {
   name: 'App',
   components: {
     HomePage,
+    PokeListTuplesPage,
     PokeListPage,
     AttacksPage,
-    RegionsPage
+    RegionsPage,
+    Credit
   },
   data() {
     return {
@@ -37,14 +45,30 @@ export default {
       switch (this.currentPage) {
         case 'home':
           return 'HomePage'
+        case 'pokeListTuples':
+          return 'PokeListTuplesPage'
         case 'pokemon':
           return 'PokeListPage'
         case 'attacks':
           return 'AttacksPage'
         case 'regions':
           return 'RegionsPage'
+        case 'credit':
+          return 'Credit'
         default:
           return 'HomePage'
+      }
+    }
+  },
+  methods: {
+    async runPokemonRDFGenerator() {
+      try {
+        const response = await axios.get('http://localhost:3000/run-pokemonRDFGenerator');
+        console.log(response.data);
+        alert('Pokemon RDF Generator executed successfully');
+      } catch (error) {
+        console.error('Error executing Pokemon RDF Generator:', error);
+        alert('Error executing Pokemon RDF Generator');
       }
     }
   }
@@ -89,5 +113,22 @@ nav ul li a {
 
 nav ul li a:hover {
   color: #ff0000;
+}
+
+.pokemon-button {
+  background-color: #c6c4bc;
+  border: 2px solid #2c3e50;
+  border-radius: 10px;
+  color: #000000;
+  font-family: 'Press Start 2P', cursive;
+  font-size: 16px;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.pokemon-button:hover {
+  background-color: #000000;
+  color: #ffffff;
 }
 </style>

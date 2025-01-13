@@ -37,7 +37,6 @@ public class PokemonInfoboxRDFGenerator {
         while (startIndex != -1) {
             int endIndex = wikiContent.indexOf("}}", startIndex) + 2;
             if (endIndex == -1) {
-
                 System.err.println("Infobox mal formatée");
                 return null; // Infobox mal formatée
             }
@@ -48,7 +47,6 @@ public class PokemonInfoboxRDFGenerator {
             for (String infoboxType : selectedInfoboxTypes) {
                 if (candidate.contains("{{" + infoboxType)) {
                     System.err.println("Infobox trouvé");
-
                     return candidate; // Retourne l'infobox correspondante
                 }
             }
@@ -57,11 +55,10 @@ public class PokemonInfoboxRDFGenerator {
             startIndex = wikiContent.indexOf("{{", startIndex + 2);
         }
         System.err.println("");
-
         return null; // Aucune infobox correspondante trouvée
     }
 
-    public static Model generateRDFForTCGPromoInfobox(String infoboxContent, String pageTitle) {
+    public static Model generateRDFForPokemonInfobox(String infoboxContent, String pageTitle) {
         Model model = ModelFactory.createDefaultModel();
         String namespaceResource = "http://www.bulbapedia.org/resource/";
         String namespacePage = "http://www.bulbapedia.org/page/";
@@ -84,25 +81,34 @@ public class PokemonInfoboxRDFGenerator {
     
                 System.out.println("Property: " + property);
     
-                // Mapper les propriétés spécifiques à l'infobox TCGPromoInfobox
+                // Mapper les propriétés spécifiques à l'infobox PokémonInfobox
                 switch (property.toLowerCase()) {
-                    case "setname":
-                        resource.addProperty(model.createProperty(namespaceResource, "setName"), value);
+                    case "name":
+                        resource.addProperty(model.createProperty(namespaceResource, "name"), value);
                         break;
-                    case "cards":
-                        resource.addProperty(model.createProperty(namespaceResource, "cardsInSet"), value);
+                    case "jname":
+                        resource.addProperty(model.createProperty(namespaceResource, "japaneseName"), value);
                         break;
-                    case "date":
-                        resource.addProperty(model.createProperty(namespaceResource, "releaseDate"), value);
+                    case "ndex":
+                        resource.addProperty(model.createProperty(namespaceResource, "nationalDex"), value);
                         break;
-                    case "period":
-                        resource.addProperty(model.createProperty(namespaceResource, "releasePeriod"), value);
+                    case "type1":
+                    case "type2":
+                        resource.addProperty(model.createProperty(namespaceResource, "type"), value);
                         break;
-                    case "logo":
-                        resource.addProperty(model.createProperty(namespaceResource, "logo"), value);
+                    case "height-m":
+                        resource.addProperty(model.createProperty(namespaceResource, "height"), value);
                         break;
-                    case "caption":
-                        resource.addProperty(model.createProperty(namespaceResource, "caption"), value);
+                    case "weight-kg":
+                        resource.addProperty(model.createProperty(namespaceResource, "weight"), value);
+                        break;
+                    case "ability1":
+                    case "ability2":
+                    case "abilitym":
+                        resource.addProperty(model.createProperty(namespaceResource, "ability"), value);
+                        break;
+                    case "generation":
+                        resource.addProperty(model.createProperty(namespaceResource, "generation"), value);
                         break;
                     default:
                         // Ajouter dynamiquement les autres propriétés
@@ -114,65 +120,4 @@ public class PokemonInfoboxRDFGenerator {
     
         return model;
     }
-    
-    
-    
-    
-    public static Model generateRDFModelFromInfobox(String infoboxContent, String pageTitle) {
-        Model model = ModelFactory.createDefaultModel();
-        model.setNsPrefix("ex", NAMESPACE);
-    
-        String pokemonId = pageTitle.replace(" ", "_");
-    
-        Resource pokemon = model.createResource(NAMESPACE + pokemonId)
-                .addProperty(RDFS.label, pageTitle);
-    
-        // Extraire les propriétés de l'infobox
-        String[] lines = infoboxContent.split("\\|");
-        for (String line : lines) {
-            String[] keyValue = line.split("=", 2);
-            if (keyValue.length == 2) {
-                String property = keyValue[0].trim();
-                String value = keyValue[1].trim();
-    
-                // Gestion des propriétés courantes
-                switch (property.toLowerCase()) {
-                    case "name":
-                        pokemon.addProperty(model.createProperty(NAMESPACE, "name"), value);
-                        break;
-                    case "jname":
-                        pokemon.addProperty(model.createProperty(NAMESPACE, "japaneseName"), value);
-                        break;
-                    case "ndex":
-                        pokemon.addLiteral(model.createProperty(NAMESPACE, "nationalDex"), value);
-                        break;
-                    case "type1":
-                    case "type2":
-                        pokemon.addProperty(model.createProperty(NAMESPACE, "type"), value);
-                        break;
-                    case "height-m":
-                        pokemon.addLiteral(model.createProperty(NAMESPACE, "height"), value);
-                        break;
-                    case "weight-kg":
-                        pokemon.addLiteral(model.createProperty(NAMESPACE, "weight"), value);
-                        break;
-                    case "ability1":
-                    case "ability2":
-                    case "abilitym":
-                        pokemon.addProperty(model.createProperty(NAMESPACE, "ability"), value);
-                        break;
-                    case "generation":
-                        pokemon.addLiteral(model.createProperty(NAMESPACE, "generation"), value);
-                        break;
-                    default:
-                        // Ajouter dynamiquement les autres propriétés
-                        pokemon.addProperty(model.createProperty(NAMESPACE, property), value);
-                        break;
-                }
-            }
-        }
-    
-        return model;
-    }
-    
 }

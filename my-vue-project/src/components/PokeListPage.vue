@@ -4,16 +4,26 @@
     <table>
       <thead>
         <tr>
-          <th>Subject</th>
-          <th>Predicate</th>
-          <th>Object</th>
+          <th>Name</th>
+          <th>Japanese Name</th>
+          <th>National Dex</th>
+          <th>Type</th>
+          <th>Height</th>
+          <th>Weight</th>
+          <th>Ability</th>
+          <th>Generation</th>
         </tr>
       </thead>
       <tbody>
-        <tr v-for="result in results" :key="result.sub.value + result.pred.value + result.obj.value">
-          <td>{{ result.sub.value }}</td>
-          <td>{{ result.pred.value }}</td>
-          <td>{{ result.obj.value }}</td>
+        <tr v-for="pokemon in results" :key="pokemon.nationalDex + pokemon.type">
+          <td>{{ pokemon.name }}</td>
+          <td>{{ pokemon.japaneseName }}</td>
+          <td>{{ pokemon.nationalDex }}</td>
+          <td>{{ pokemon.type }}</td>
+          <td>{{ pokemon.height }}</td>
+          <td>{{ pokemon.weight }}</td>
+          <td>{{ pokemon.ability }}</td>
+          <td>{{ pokemon.generation }}</td>
         </tr>
       </tbody>
     </table>
@@ -40,8 +50,15 @@ export default {
         PREFIX owl: <http://www.w3.org/2002/07/owl#>
         PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
         PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
-        SELECT * WHERE {
-          ?sub ?pred ?obj .
+        SELECT ?name ?japaneseName ?nationalDex ?type ?height ?weight ?ability ?generation WHERE {
+          ?pokemon <http://www.bulbapedia.org/resource/name> ?name .
+          ?pokemon <http://www.bulbapedia.org/resource/japaneseName> ?japaneseName .
+          ?pokemon <http://www.bulbapedia.org/resource/nationalDex> ?nationalDex .
+          ?pokemon <http://www.bulbapedia.org/resource/type> ?type .
+          ?pokemon <http://www.bulbapedia.org/resource/height> ?height .
+          ?pokemon <http://www.bulbapedia.org/resource/weight> ?weight .
+          OPTIONAL { ?pokemon <http://www.bulbapedia.org/resource/ability> ?ability . }
+          OPTIONAL { ?pokemon <http://www.bulbapedia.org/resource/generation> ?generation . }
         }
       `
       const endpoint = 'http://localhost:3030/pokeDB/sparql'
@@ -50,11 +67,27 @@ export default {
       try {
         const response = await axios.get(url)
         const results = response.data.results.bindings
-        this.results = results.map(result => ({
-          sub: result.sub,
-          pred: result.pred,
-          obj: result.obj
-        }))
+
+        // Utiliser un objet pour éliminer les doublons
+        const uniqueResults = {}
+        results.forEach(result => {
+          const key = `${result.nationalDex.value}-${result.type.value}`
+          if (!uniqueResults[key]) {
+            uniqueResults[key] = {
+              name: result.name.value,
+              japaneseName: result.japaneseName.value,
+              nationalDex: result.nationalDex.value,
+              type: result.type.value,
+              height: result.height.value,
+              weight: result.weight.value,
+              ability: result.ability ? result.ability.value : '',
+              generation: result.generation ? result.generation.value : ''
+            }
+          }
+        })
+
+        // Convertir l'objet en tableau
+        this.results = Object.values(uniqueResults)
       } catch (error) {
         console.error('Error fetching data from Fuseki:', error)
       }
