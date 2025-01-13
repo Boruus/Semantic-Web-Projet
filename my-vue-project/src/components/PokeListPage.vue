@@ -1,12 +1,22 @@
 <template>
   <div class="pokestyle">
     <h1>Pokémon List</h1>
-    <ul>
-      <li v-for="pokemon in pokemons" :key="pokemon.id">
-        <img :src="pokemon.image" :alt="pokemon.name" class="pokemon-image">
-        <span>{{ pokemon.name }}</span>
-      </li>
-    </ul>
+    <table>
+      <thead>
+        <tr>
+          <th>Subject</th>
+          <th>Predicate</th>
+          <th>Object</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr v-for="result in results" :key="result.sub.value + result.pred.value + result.obj.value">
+          <td>{{ result.sub.value }}</td>
+          <td>{{ result.pred.value }}</td>
+          <td>{{ result.obj.value }}</td>
+        </tr>
+      </tbody>
+    </table>
   </div>
 </template>
 
@@ -17,35 +27,33 @@ export default {
   name: 'PokeListPage',
   data() {
     return {
-      pokemons: []
+      results: []
     }
   },
   created() {
-    this.fetchPokemons()
+    this.fetchData()
   },
   methods: {
-    async fetchPokemons() {
+    async fetchData() {
       const query = `
-        PREFIX dbo: <http://dbpedia.org/ontology/>
-        PREFIX dbr: <http://dbpedia.org/resource/>
-        SELECT ?pokemon ?name ?image
-        WHERE {
-          ?pokemon a dbo:Pokemon ;
-                   dbo:name ?name ;
-                   dbo:image ?image .
+        PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+        PREFIX owl: <http://www.w3.org/2002/07/owl#>
+        PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+        PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+        SELECT * WHERE {
+          ?sub ?pred ?obj .
         }
-        LIMIT 10
       `
-      const endpoint = 'http://localhost:3030/your-dataset/sparql'
+      const endpoint = 'http://localhost:3030/pokeDB/sparql'
       const url = `${endpoint}?query=${encodeURIComponent(query)}&format=json`
 
       try {
         const response = await axios.get(url)
         const results = response.data.results.bindings
-        this.pokemons = results.map(result => ({
-          id: result.pokemon.value,
-          name: result.name.value,
-          image: result.image.value
+        this.results = results.map(result => ({
+          sub: result.sub,
+          pred: result.pred,
+          obj: result.obj
         }))
       } catch (error) {
         console.error('Error fetching data from Fuseki:', error)
@@ -65,20 +73,22 @@ export default {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-ul {
-  list-style-type: none;
-  padding: 0;
+table {
+  width: 100%;
+  border-collapse: collapse;
 }
 
-li {
-  display: flex;
-  align-items: center;
-  margin-bottom: 10px;
+th, td {
+  border: 1px solid #ddd;
+  padding: 8px;
 }
 
-.pokemon-image {
-  width: 50px;
-  height: 50px;
-  margin-right: 10px;
+th {
+  background-color: #f2f2f2;
+  text-align: left;
+}
+
+tbody tr:nth-child(even) {
+  background-color: #f9f9f9;
 }
 </style>
