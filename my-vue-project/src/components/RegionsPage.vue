@@ -1,7 +1,7 @@
 <template>
   <div class="pokestyle">
     <h1>Regions Page</h1>
-    <p>List of Pokémon regions will be displayed here.</p>
+    <p>List of Pokémon regions will be displayed here. (Working on...)</p>
   </div>
 </template>
 

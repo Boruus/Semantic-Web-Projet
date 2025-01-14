@@ -1,7 +1,11 @@
 const express = require('express');
+const cors = require('cors');
 const { exec } = require('child_process');
 const app = express();
 const port = 3000;
+
+// Utiliser le middleware CORS
+app.use(cors());
 
 app.get('/run-pokemonRDFGenerator', (req, res) => {
   exec('java -cp /path/to/your/classes emweb.pokemonRDFGenerator', (error, stdout, stderr) => {

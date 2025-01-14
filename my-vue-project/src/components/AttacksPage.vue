@@ -1,7 +1,7 @@
 <template>
   <div class="pokestyle">
     <h1>Attacks Page</h1>
-    <p>List of Pokémon attacks will be displayed here.</p>
+    <p>List of Pokémon attacks will be displayed here. (Working on...)</p>
   </div>
 </template>
 

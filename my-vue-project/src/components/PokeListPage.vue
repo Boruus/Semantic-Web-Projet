@@ -4,26 +4,12 @@
     <table>
       <thead>
         <tr>
-          <th>Name</th>
-          <th>Japanese Name</th>
-          <th>National Dex</th>
-          <th>Type</th>
-          <th>Height</th>
-          <th>Weight</th>
-          <th>Ability</th>
-          <th>Generation</th>
+          <th>Page</th>
         </tr>
       </thead>
       <tbody>
-        <tr v-for="pokemon in results" :key="pokemon.nationalDex + pokemon.type">
-          <td>{{ pokemon.name }}</td>
-          <td>{{ pokemon.japaneseName }}</td>
-          <td>{{ pokemon.nationalDex }}</td>
-          <td>{{ pokemon.type }}</td>
-          <td>{{ pokemon.height }}</td>
-          <td>{{ pokemon.weight }}</td>
-          <td>{{ pokemon.ability }}</td>
-          <td>{{ pokemon.generation }}</td>
+        <tr v-for="pokemon in filteredResults" :key="pokemon.page" @click="selectPokemon(pokemon.page)">
+          <td><a href="#" @click.prevent="selectPokemon(pokemon.page)">{{ pokemon.page }}</a></td>
         </tr>
       </tbody>
     </table>
@@ -35,9 +21,20 @@ import axios from 'axios'
 
 export default {
   name: 'PokeListPage',
+  props: {
+    onSelectPokemon: {
+      type: Function,
+      required: true
+    }
+  },
   data() {
     return {
       results: []
+    }
+  },
+  computed: {
+    filteredResults() {
+      return this.results.filter(pokemon => !pokemon.page.includes('/resource/'))
     }
   },
   created() {
@@ -50,15 +47,8 @@ export default {
         PREFIX owl: <http://www.w3.org/2002/07/owl#>
         PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
         PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
-        SELECT ?name ?japaneseName ?nationalDex ?type ?height ?weight ?ability ?generation WHERE {
-          ?pokemon <http://www.bulbapedia.org/resource/name> ?name .
-          ?pokemon <http://www.bulbapedia.org/resource/japaneseName> ?japaneseName .
-          ?pokemon <http://www.bulbapedia.org/resource/nationalDex> ?nationalDex .
-          ?pokemon <http://www.bulbapedia.org/resource/type> ?type .
-          ?pokemon <http://www.bulbapedia.org/resource/height> ?height .
-          ?pokemon <http://www.bulbapedia.org/resource/weight> ?weight .
-          OPTIONAL { ?pokemon <http://www.bulbapedia.org/resource/ability> ?ability . }
-          OPTIONAL { ?pokemon <http://www.bulbapedia.org/resource/generation> ?generation . }
+        SELECT ?page ?property ?value WHERE {
+          ?page ?property ?value .
         }
       `
       const endpoint = 'http://localhost:3030/pokeDB/sparql'
@@ -67,30 +57,27 @@ export default {
       try {
         const response = await axios.get(url)
         const results = response.data.results.bindings
-
-        // Utiliser un objet pour éliminer les doublons
-        const uniqueResults = {}
-        results.forEach(result => {
-          const key = `${result.nationalDex.value}-${result.type.value}`
-          if (!uniqueResults[key]) {
-            uniqueResults[key] = {
-              name: result.name.value,
-              japaneseName: result.japaneseName.value,
-              nationalDex: result.nationalDex.value,
-              type: result.type.value,
-              height: result.height.value,
-              weight: result.weight.value,
-              ability: result.ability ? result.ability.value : '',
-              generation: result.generation ? result.generation.value : ''
-            }
+        const groupedResults = results.reduce((acc, result) => {
+          const page = result.page.value
+          if (!acc[page]) {
+            acc[page] = { page, properties: {} }
           }
-        })
-
-        // Convertir l'objet en tableau
-        this.results = Object.values(uniqueResults)
+          const property = result.property.value
+          const value = result.value.value
+          if (!acc[page].properties[property]) {
+            acc[page].properties[property] = []
+          }
+          acc[page].properties[property].push(value)
+          return acc
+        }, {})
+        this.results = Object.values(groupedResults)
       } catch (error) {
         console.error('Error fetching data from Fuseki:', error)
       }
+    },
+    selectPokemon(page) {
+      const resourcePage = page.replace('/page/', '/resource/')
+      this.onSelectPokemon(resourcePage)
     }
   }
 }
@@ -123,5 +110,10 @@ th {
 
 tbody tr:nth-child(even) {
   background-color: #f9f9f9;
+}
+
+tbody tr:hover {
+  background-color: #e0e0e0;
+  cursor: pointer;
 }
 </style>

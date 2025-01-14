@@ -12,7 +12,7 @@
       </ul>
     </nav>
     <button class="pokemon-button" @click="runPokemonRDFGenerator">Run Pokemon RDF Generator</button>
-    <component :is="currentPageComponent"></component>
+    <component ref="pokeList" :is="currentPageComponent" :page="selectedPage" :details="selectedDetails" @back="selectedPage = null" @selectPokemon="selectPokemon"></component>
   </div>
 </template>
 
@@ -24,6 +24,7 @@ import PokeListTuplesPage from './components/PokeListTuplesPage.vue'
 import AttacksPage from './components/AttacksPage.vue'
 import RegionsPage from './components/RegionsPage.vue'
 import Credit from './components/Credit.vue'
+import PokemonDetailPage from './components/PokemonDetailPage.vue'
 
 export default {
   name: 'App',
@@ -33,15 +34,21 @@ export default {
     PokeListPage,
     AttacksPage,
     RegionsPage,
-    Credit
+    Credit,
+    PokemonDetailPage
   },
   data() {
     return {
-      currentPage: 'home'
+      currentPage: 'home',
+      selectedPage: null,
+      selectedDetails: null
     }
   },
   computed: {
     currentPageComponent() {
+      if (this.selectedPage) {
+        return 'PokemonDetailPage'
+      }
       switch (this.currentPage) {
         case 'home':
           return 'HomePage'
@@ -69,6 +76,15 @@ export default {
       } catch (error) {
         console.error('Error executing Pokemon RDF Generator:', error);
         alert('Error executing Pokemon RDF Generator');
+      }
+    },
+    selectPokemon(page) {
+      if (this.$refs.pokeList && this.$refs.pokeList.results) {
+        const selectedPokemon = this.$refs.pokeList.results.find(pokemon => pokemon.page === page)
+        this.selectedPage = page
+        this.selectedDetails = selectedPokemon ? selectedPokemon.properties : null
+      } else {
+        console.error('PokeList results are not available')
       }
     }
   }

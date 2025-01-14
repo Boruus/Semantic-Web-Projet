@@ -27,11 +27,9 @@ public class pokemonRDFGenerator {
             // On query tous les types d'infoboxes
             List<String> AllInfoboxesTypes = fetchAllInfoboxTypes();
 
-            // On sélectionne les types d'infoboxes
-            List<String> selectedInfoboxTypes = new ArrayList<>(AllInfoboxesTypes);
-            selectedInfoboxTypes.add("PokémonInfobox"); // Ajouter le type spécifique
-            selectedInfoboxTypes.add("PokémonInfoboxNoncat"); // Ajouter le type spécifique
-            selectedInfoboxTypes.add("Pokémon_Infobox"); // Ajouter le type spécifique
+            // On sélectionne les 2 premiers types d'infoboxes
+            List<String> selectedInfoboxTypes = new ArrayList<>(AllInfoboxesTypes.subList(0, Math.min(2, AllInfoboxesTypes.size())));
+            selectedInfoboxTypes.add("TCGPromoInfobox"); // Ajouter le type spécifique
 
             System.out.println("Nombre de Pokémon avec infoboxes sélectionnées : " + pokemonPages.size());
             // On crée un modèle RDF pour chaque page de Pokémon
@@ -50,7 +48,7 @@ public class pokemonRDFGenerator {
                     System.out.println("Extraction de l'infobox pour : " + selectedInfoboxTypes);
                     String infoboxContent = PokemonInfoboxRDFGenerator.extractInfobox(wikiContent, selectedInfoboxTypes);
                     if (infoboxContent != null) {
-                        Model model = PokemonInfoboxRDFGenerator.generateRDFForPokemonInfobox(infoboxContent, pageTitle);
+                        Model model = PokemonInfoboxRDFGenerator.generateRDFForTCGPromoInfobox(infoboxContent, pageTitle);
                         combinedModel.add(model); 
                     } else {
                         System.out.println("1 " + pageTitle);

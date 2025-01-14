@@ -1,1965 +1,285 @@
-<http://www.bulbapedia.org/page/'Ng_ゥ$>
-        <http://schema.org/about>  <http://www.bulbapedia.org/resource/'Ng_ゥ$> .
+<http://www.bulbapedia.org/page/"T"_Promotional_cards_(TCG)>
+        <http://schema.org/about>  <http://www.bulbapedia.org/resource/"T"_Promotional_cards_(TCG)> .
 
-<http://www.bulbapedia.org/resource/'Ng'Mp>
-        <http://schema.org/isPartOf>  <http://www.bulbapedia.org/page/'Ng'Mp> ;
-        <http://www.bulbapedia.org/resource/caption>
-                "[[File:RBGlitchNameF7.png" ;
-        <http://www.bulbapedia.org/resource/games>
-                "{{game" ;
-        <http://www.bulbapedia.org/resource/image>
-                "RBGlitch018.png" ;
-        <http://www.bulbapedia.org/resource/japaneseName>
-                "パたダィ゙た" ;
-        <http://www.bulbapedia.org/resource/link>
-                "]]'s sprite" ;
-        <http://www.bulbapedia.org/resource/name>
-                "'Ng'Mp" ;
-        <http://www.bulbapedia.org/resource/nationalDex>
-                "018" ;
-        <http://www.bulbapedia.org/resource/size>
-                "50px" ;
-        <http://www.bulbapedia.org/resource/tmname>
-                "Patadaita" ;
-        <http://www.bulbapedia.org/resource/type>
-                "Normal" , "Flying" ;
-        <http://www.bulbapedia.org/resource/typen>
-                "2" .
+<http://www.bulbapedia.org/page/"PCG-P"_Promotional_Cards>
+        <http://schema.org/about>  <http://www.bulbapedia.org/resource/"PCG-P"_Promotional_Cards> .
+
+<http://www.bulbapedia.org/page/"ADV-P"_Promotional_cards_(TCG)>
+        <http://schema.org/about>  <http://www.bulbapedia.org/resource/"ADV-P"_Promotional_cards_(TCG)> .
+
+<http://www.bulbapedia.org/page/"J"_Promotional_Cards>
+        <http://schema.org/about>  <http://www.bulbapedia.org/resource/"J"_Promotional_Cards> .
 
 <http://www.bulbapedia.org/resource/"J"_Promotional_Cards>
         <http://schema.org/isPartOf>  <http://www.bulbapedia.org/page/"J"_Promotional_Cards> ;
-        <http://www.bulbapedia.org/resource/cards>
+        <http://www.bulbapedia.org/resource/cardsInSet>
                 "2" ;
         <http://www.bulbapedia.org/resource/image>
                 "SetSymbolPromo.png" ;
-        <http://www.bulbapedia.org/resource/period>
+        <http://www.bulbapedia.org/resource/releasePeriod>
                 "August 2001 - July 2002\n}}" ;
-        <http://www.bulbapedia.org/resource/setname>
+        <http://www.bulbapedia.org/resource/setName>
                 "J Promotional cards" ;
         <http://www.bulbapedia.org/resource/symbol>
                 "yes" .
 
-<http://www.bulbapedia.org/page/'B'>
-        <http://schema.org/about>  <http://www.bulbapedia.org/resource/'B'> .
+<http://www.bulbapedia.org/page/"P"_Promotional_Card_(TCG)>
+        <http://schema.org/about>  <http://www.bulbapedia.org/resource/"P"_Promotional_Card_(TCG)> .
 
-<http://www.bulbapedia.org/page/'M_(FE)>
-        <http://schema.org/about>  <http://www.bulbapedia.org/resource/'M_(FE)> .
+<http://www.bulbapedia.org/resource/"DPt-P"_Promotional_cards_(TCG)>
+        <http://schema.org/isPartOf>  <http://www.bulbapedia.org/page/"DPt-P"_Promotional_cards_(TCG)> ;
+        <http://www.bulbapedia.org/resource/cardsInSet>
+                "51" ;
+        <http://www.bulbapedia.org/resource/image>
+                "SetSymbolPromo.png" ;
+        <http://www.bulbapedia.org/resource/releasePeriod>
+                "October 2008 - August 2009\n}}" ;
+        <http://www.bulbapedia.org/resource/setName>
+                "DPt-P Promotional cards" ;
+        <http://www.bulbapedia.org/resource/symbol>
+                "yes" .
 
-<http://www.bulbapedia.org/page/'r>
-        <http://schema.org/about>  <http://www.bulbapedia.org/resource/'r> .
+<http://www.bulbapedia.org/page/"W"_Promotional_cards_(TCG)>
+        <http://schema.org/about>  <http://www.bulbapedia.org/resource/"W"_Promotional_cards_(TCG)> .
+
+<http://www.bulbapedia.org/page/"ADV-P"_Promotional_Cards>
+        <http://schema.org/about>  <http://www.bulbapedia.org/resource/"ADV-P"_Promotional_Cards> .
+
+<http://www.bulbapedia.org/resource/"W"_Promotional_cards_(TCG)>
+        <http://schema.org/isPartOf>  <http://www.bulbapedia.org/page/"W"_Promotional_cards_(TCG)> ;
+        <http://www.bulbapedia.org/resource/cardsInSet>
+                "7" ;
+        <http://www.bulbapedia.org/resource/releasePeriod>
+                "September 1999 - March 2001" ;
+        <http://www.bulbapedia.org/resource/setName>
+                "W Promotional cards" ;
+        <http://www.bulbapedia.org/resource/symbol>
+                "no" .
 
 <http://www.bulbapedia.org/resource/"ADV-P"_Promotional_Cards>
         <http://schema.org/isPartOf>  <http://www.bulbapedia.org/page/"ADV-P"_Promotional_Cards> ;
-        <http://www.bulbapedia.org/resource/cards>
+        <http://www.bulbapedia.org/resource/cardsInSet>
                 "63" ;
         <http://www.bulbapedia.org/resource/image>
                 "SetSymbolPromo.png" ;
-        <http://www.bulbapedia.org/resource/period>
+        <http://www.bulbapedia.org/resource/releasePeriod>
                 "January 2003 - February 2004" ;
-        <http://www.bulbapedia.org/resource/setname>
+        <http://www.bulbapedia.org/resource/setName>
                 "ADV-P Promotional cards" ;
         <http://www.bulbapedia.org/resource/symbol>
                 "yes" .
 
-<http://www.bulbapedia.org/resource/'s_Celebi_(PLAY_Promo_12)>
-        <http://schema.org/isPartOf>  <http://www.bulbapedia.org/page/'s_Celebi_(PLAY_Promo_12)> ;
-        <http://www.bulbapedia.org/resource/caption>
-                "Illus. [[Kouki Saitou]]" ;
-        <http://www.bulbapedia.org/resource/cardname>
-                "_____'s Celebi" ;
-        <http://www.bulbapedia.org/resource/evostage>
-                "Basic" ;
-        <http://www.bulbapedia.org/resource/hp>
-                "50" ;
-        <http://www.bulbapedia.org/resource/image>
-                "BlankCelebiPLAYPromo12.jpg" ;
-        <http://www.bulbapedia.org/resource/japaneseName>
-                "_____のセレビィ" ;
-        <http://www.bulbapedia.org/resource/jtrans>
-                "Celebi" ;
-        <http://www.bulbapedia.org/resource/retreatcost>
-                "1" ;
-        <http://www.bulbapedia.org/resource/species>
-                "Celebi" ;
-        <http://www.bulbapedia.org/resource/trainer>
-                "Blank Owner\n}}" ;
-        <http://www.bulbapedia.org/resource/type>
-                "Grass" ;
-        <http://www.bulbapedia.org/resource/weakness>
-                "Fire" .
-
-<http://www.bulbapedia.org/resource/'s_Mew_(PLAY_Promo_13)>
-        <http://schema.org/isPartOf>  <http://www.bulbapedia.org/page/'s_Mew_(PLAY_Promo_13)> ;
-        <http://www.bulbapedia.org/resource/caption>
-                "Illus. [[Atsuko Nishida]]" ;
-        <http://www.bulbapedia.org/resource/cardname>
-                "_____'s Mew" ;
-        <http://www.bulbapedia.org/resource/evostage>
-                "Basic" ;
-        <http://www.bulbapedia.org/resource/hp>
-                "50" ;
-        <http://www.bulbapedia.org/resource/image>
-                "500 B013 306MEW.jpg" ;
-        <http://www.bulbapedia.org/resource/japaneseName>
-                "_____のミュウ" ;
-        <http://www.bulbapedia.org/resource/jtrans>
-                "_____'s Mew" ;
-        <http://www.bulbapedia.org/resource/retreatcost>
-                "1" ;
-        <http://www.bulbapedia.org/resource/species>
-                "Mew" ;
-        <http://www.bulbapedia.org/resource/trainer>
-                "Blank Owner\n}}" ;
-        <http://www.bulbapedia.org/resource/type>
-                "Psychic" ;
-        <http://www.bulbapedia.org/resource/weakness>
-                "Psychic" .
-
-<http://www.bulbapedia.org/resource/(block)>
-        <http://schema.org/isPartOf>  <http://www.bulbapedia.org/page/(block)> ;
-        <http://www.bulbapedia.org/resource/caption>
-                "Glitch (CA)'s sprite" ;
-        <http://www.bulbapedia.org/resource/image>
-                "YGlitch229.png" ;
-        <http://www.bulbapedia.org/resource/name>
-                "Glitch (CA)" ;
-        <http://www.bulbapedia.org/resource/size>
-                "100px" ;
-        <http://www.bulbapedia.org/resource/species>
-                "<nowiki>" .
-
-<http://www.bulbapedia.org/resource/'s_Oshawott_(Outstanding_Oshawott_Promo)>
-        <http://schema.org/isPartOf>  <http://www.bulbapedia.org/page/'s_Oshawott_(Outstanding_Oshawott_Promo)> ;
-        <http://www.bulbapedia.org/resource/caption>
-                "Illus. [[5ban Graphics]]" ;
-        <http://www.bulbapedia.org/resource/cardname>
-                "_____'s Oshawott" ;
-        <http://www.bulbapedia.org/resource/evostage>
-                "Basic" ;
-        <http://www.bulbapedia.org/resource/hp>
-                "200" ;
-        <http://www.bulbapedia.org/resource/image>
-                "BlankOshawottOutstandingOshawottPromo.jpg" ;
-        <http://www.bulbapedia.org/resource/japaneseName>
-                "_____のミジュマル" ;
-        <http://www.bulbapedia.org/resource/jtrans>
-                "_____'s Mijumaru" ;
-        <http://www.bulbapedia.org/resource/retreatcost>
-                "1" ;
-        <http://www.bulbapedia.org/resource/species>
-                "Oshawott" ;
-        <http://www.bulbapedia.org/resource/trainer>
-                "Blank Owner\n}}" ;
-        <http://www.bulbapedia.org/resource/type>
-                "Water" ;
-        <http://www.bulbapedia.org/resource/weakness>
-                "Grass" .
-
-<http://www.bulbapedia.org/resource/'B'>
-        <http://schema.org/isPartOf>  <http://www.bulbapedia.org/page/'B'> ;
-        <http://www.bulbapedia.org/resource/caption>
-                "' B' ゥ 's sprite" ;
-        <http://www.bulbapedia.org/resource/games>
-                "{{game" ;
-        <http://www.bulbapedia.org/resource/height>
-                "27.07" ;
-        <http://www.bulbapedia.org/resource/height-ftin>
-                "82'82\"" ;
-        <http://www.bulbapedia.org/resource/image>
-                "Spr 1y 033.png" ;
-        <http://www.bulbapedia.org/resource/name>
-                "' B' ゥ" ;
-        <http://www.bulbapedia.org/resource/nationalDex>
-                "033" ;
-        <http://www.bulbapedia.org/resource/size>
-                "50px" ;
-        <http://www.bulbapedia.org/resource/species>
-                "No No" ;
-        <http://www.bulbapedia.org/resource/type>
-                "Poison" ;
-        <http://www.bulbapedia.org/resource/typen>
-                "1" ;
-        <http://www.bulbapedia.org/resource/weight>
-                "131.36" ;
-        <http://www.bulbapedia.org/resource/weight-lbs>
-                "289.6" .
-
 <http://www.bulbapedia.org/resource/"PCG-P"_Promotional_Cards>
         <http://schema.org/isPartOf>  <http://www.bulbapedia.org/page/"PCG-P"_Promotional_Cards> ;
-        <http://www.bulbapedia.org/resource/cards>
+        <http://www.bulbapedia.org/resource/cardsInSet>
                 "154" ;
         <http://www.bulbapedia.org/resource/image>
                 "SetSymbolPromo.png" ;
-        <http://www.bulbapedia.org/resource/period>
+        <http://www.bulbapedia.org/resource/releasePeriod>
                 "February 2004 - July 2006\n}}" ;
-        <http://www.bulbapedia.org/resource/setname>
+        <http://www.bulbapedia.org/resource/setName>
                 "PCG-P Promotional cards" ;
+        <http://www.bulbapedia.org/resource/symbol>
+                "yes" .
+
+<http://www.bulbapedia.org/page/"P"_Promotional_Cards_(TCG)>
+        <http://schema.org/about>  <http://www.bulbapedia.org/resource/"P"_Promotional_Cards_(TCG)> .
+
+<http://www.bulbapedia.org/resource/"PCG-P"_Promotional_cards_(TCG)>
+        <http://schema.org/isPartOf>  <http://www.bulbapedia.org/page/"PCG-P"_Promotional_cards_(TCG)> ;
+        <http://www.bulbapedia.org/resource/cardsInSet>
+                "154" ;
+        <http://www.bulbapedia.org/resource/image>
+                "SetSymbolPromo.png" ;
+        <http://www.bulbapedia.org/resource/releasePeriod>
+                "February 2004 - July 2006\n}}" ;
+        <http://www.bulbapedia.org/resource/setName>
+                "PCG-P Promotional cards" ;
+        <http://www.bulbapedia.org/resource/symbol>
+                "yes" .
+
+<http://www.bulbapedia.org/page/"DPt-P"_Promotional_cards_(TCG)>
+        <http://schema.org/about>  <http://www.bulbapedia.org/resource/"DPt-P"_Promotional_cards_(TCG)> .
+
+<http://www.bulbapedia.org/resource/"T"_Promotional_Cards_(TCG)>
+        <http://schema.org/isPartOf>  <http://www.bulbapedia.org/page/"T"_Promotional_Cards_(TCG)> ;
+        <http://www.bulbapedia.org/resource/cardsInSet>
+                "24" ;
+        <http://www.bulbapedia.org/resource/image>
+                "SetSymbolTrainer Magazine.png" ;
+        <http://www.bulbapedia.org/resource/releasePeriod>
+                "January 2002 - March 2003\n}}" ;
+        <http://www.bulbapedia.org/resource/setName>
+                "T Promotional cards" ;
+        <http://www.bulbapedia.org/resource/symbol>
+                "yes" .
+
+<http://www.bulbapedia.org/page/"PCG-P"_Promotional_Cards_(TCG)>
+        <http://schema.org/about>  <http://www.bulbapedia.org/resource/"PCG-P"_Promotional_Cards_(TCG)> .
+
+<http://www.bulbapedia.org/resource/"P"_Promotional_Cards_(TCG)>
+        <http://schema.org/isPartOf>  <http://www.bulbapedia.org/page/"P"_Promotional_Cards_(TCG)> ;
+        <http://www.bulbapedia.org/resource/cardsInSet>
+                "47" ;
+        <http://www.bulbapedia.org/resource/image>
+                "SetSymbolPromo.png" ;
+        <http://www.bulbapedia.org/resource/releasePeriod>
+                "July 2001 - July 2002" ;
+        <http://www.bulbapedia.org/resource/setName>
+                "P Promotional cards" ;
+        <http://www.bulbapedia.org/resource/symbol>
+                "yes" .
+
+<http://www.bulbapedia.org/resource/"T"_Promotional_Cards>
+        <http://schema.org/isPartOf>  <http://www.bulbapedia.org/page/"T"_Promotional_Cards> ;
+        <http://www.bulbapedia.org/resource/cardsInSet>
+                "24" ;
+        <http://www.bulbapedia.org/resource/image>
+                "SetSymbolTrainer Magazine.png" ;
+        <http://www.bulbapedia.org/resource/releasePeriod>
+                "January 2002 - March 2003\n}}" ;
+        <http://www.bulbapedia.org/resource/setName>
+                "T Promotional cards" ;
+        <http://www.bulbapedia.org/resource/symbol>
+                "yes" .
+
+<http://www.bulbapedia.org/page/"T"_Promotional_Cards>
+        <http://schema.org/about>  <http://www.bulbapedia.org/resource/"T"_Promotional_Cards> .
+
+<http://www.bulbapedia.org/resource/"ADV-P"_Promotional_Cards_(TCG)>
+        <http://schema.org/isPartOf>  <http://www.bulbapedia.org/page/"ADV-P"_Promotional_Cards_(TCG)> ;
+        <http://www.bulbapedia.org/resource/cardsInSet>
+                "63" ;
+        <http://www.bulbapedia.org/resource/image>
+                "SetSymbolPromo.png" ;
+        <http://www.bulbapedia.org/resource/releasePeriod>
+                "January 2003 - February 2004" ;
+        <http://www.bulbapedia.org/resource/setName>
+                "ADV-P Promotional cards" ;
+        <http://www.bulbapedia.org/resource/symbol>
+                "yes" .
+
+<http://www.bulbapedia.org/resource/"PCG-P"_Promotional_Cards_(TCG)>
+        <http://schema.org/isPartOf>  <http://www.bulbapedia.org/page/"PCG-P"_Promotional_Cards_(TCG)> ;
+        <http://www.bulbapedia.org/resource/cardsInSet>
+                "154" ;
+        <http://www.bulbapedia.org/resource/image>
+                "SetSymbolPromo.png" ;
+        <http://www.bulbapedia.org/resource/releasePeriod>
+                "February 2004 - July 2006\n}}" ;
+        <http://www.bulbapedia.org/resource/setName>
+                "PCG-P Promotional cards" ;
+        <http://www.bulbapedia.org/resource/symbol>
+                "yes" .
+
+<http://www.bulbapedia.org/page/"P"_Promotional_cards_(TCG)>
+        <http://schema.org/about>  <http://www.bulbapedia.org/resource/"P"_Promotional_cards_(TCG)> .
+
+<http://www.bulbapedia.org/resource/"P"_Promotional_Card_(TCG)>
+        <http://schema.org/isPartOf>  <http://www.bulbapedia.org/page/"P"_Promotional_Card_(TCG)> ;
+        <http://www.bulbapedia.org/resource/cardsInSet>
+                "47" ;
+        <http://www.bulbapedia.org/resource/image>
+                "SetSymbolPromo.png" ;
+        <http://www.bulbapedia.org/resource/releasePeriod>
+                "July 2001 - July 2002" ;
+        <http://www.bulbapedia.org/resource/setName>
+                "P Promotional cards" ;
+        <http://www.bulbapedia.org/resource/symbol>
+                "yes" .
+
+<http://www.bulbapedia.org/page/"DP-P"_Promotional_Cards_(TCG)>
+        <http://schema.org/about>  <http://www.bulbapedia.org/resource/"DP-P"_Promotional_Cards_(TCG)> .
+
+<http://www.bulbapedia.org/resource/"DP-P"_Promotional_Cards_(TCG)>
+        <http://schema.org/isPartOf>  <http://www.bulbapedia.org/page/"DP-P"_Promotional_Cards_(TCG)> ;
+        <http://www.bulbapedia.org/resource/cardsInSet>
+                "127" ;
+        <http://www.bulbapedia.org/resource/image>
+                "SetSymbolPromo.png" ;
+        <http://www.bulbapedia.org/resource/releasePeriod>
+                "December 2006 - January 2009\n}}" ;
+        <http://www.bulbapedia.org/resource/setName>
+                "DP-P Promotional cards" ;
+        <http://www.bulbapedia.org/resource/symbol>
+                "yes" .
+
+<http://www.bulbapedia.org/resource/"J"_Promotional_Cards_(TCG)>
+        <http://schema.org/isPartOf>  <http://www.bulbapedia.org/page/"J"_Promotional_Cards_(TCG)> ;
+        <http://www.bulbapedia.org/resource/cardsInSet>
+                "2" ;
+        <http://www.bulbapedia.org/resource/image>
+                "SetSymbolPromo.png" ;
+        <http://www.bulbapedia.org/resource/releasePeriod>
+                "August 2001 - July 2002\n}}" ;
+        <http://www.bulbapedia.org/resource/setName>
+                "J Promotional cards" ;
+        <http://www.bulbapedia.org/resource/symbol>
+                "yes" .
+
+<http://www.bulbapedia.org/page/"PCG-P"_Promotional_cards_(TCG)>
+        <http://schema.org/about>  <http://www.bulbapedia.org/resource/"PCG-P"_Promotional_cards_(TCG)> .
+
+<http://www.bulbapedia.org/resource/"P"_Promotional_cards_(TCG)>
+        <http://schema.org/isPartOf>  <http://www.bulbapedia.org/page/"P"_Promotional_cards_(TCG)> ;
+        <http://www.bulbapedia.org/resource/cardsInSet>
+                "47" ;
+        <http://www.bulbapedia.org/resource/image>
+                "SetSymbolPromo.png" ;
+        <http://www.bulbapedia.org/resource/releasePeriod>
+                "July 2001 - July 2002" ;
+        <http://www.bulbapedia.org/resource/setName>
+                "P Promotional cards" ;
         <http://www.bulbapedia.org/resource/symbol>
                 "yes" .
 
 <http://www.bulbapedia.org/page/"J"_Promotional_cards_(TCG)>
         <http://schema.org/about>  <http://www.bulbapedia.org/resource/"J"_Promotional_cards_(TCG)> .
 
-<http://www.bulbapedia.org/page/(h4to89_(Pokémon)>
-        <http://schema.org/about>  <http://www.bulbapedia.org/resource/(h4to89_(Pokémon)> .
-
-<http://www.bulbapedia.org/page/'s_Pikachu_(All_Card_Calendar_promo)>
-        <http://schema.org/about>  <http://www.bulbapedia.org/resource/'s_Pikachu_(All_Card_Calendar_promo)> .
-
-<http://www.bulbapedia.org/resource/'s_Pikachu_(How_I_Became_a_Pokémon_Card_promo)>
-        <http://schema.org/isPartOf>  <http://www.bulbapedia.org/page/'s_Pikachu_(How_I_Became_a_Pokémon_Card_promo)> ;
-        <http://www.bulbapedia.org/resource/cardname>
-                "_____'s Pikachu" ;
-        <http://www.bulbapedia.org/resource/japaneseName>
-                "{{tt" ;
-        <http://www.bulbapedia.org/resource/level>
-                "17" .
-
-<http://www.bulbapedia.org/page/'M_'N_g>
-        <http://schema.org/about>  <http://www.bulbapedia.org/resource/'M_'N_g> .
-
-<http://www.bulbapedia.org/resource/'ゥ.>
-        <http://schema.org/isPartOf>  <http://www.bulbapedia.org/page/'ゥ.> ;
-        <http://www.bulbapedia.org/resource/caption>
-                "[[File:YGlitchNameD5.png" ;
-        <http://www.bulbapedia.org/resource/games>
-                "[[Pokémon Yellow Version]]" ;
-        <http://www.bulbapedia.org/resource/hex>
-                "D5" ;
+<http://www.bulbapedia.org/resource/"T"_Promotional_cards_(TCG)>
+        <http://schema.org/isPartOf>  <http://www.bulbapedia.org/page/"T"_Promotional_cards_(TCG)> ;
+        <http://www.bulbapedia.org/resource/cardsInSet>
+                "24" ;
         <http://www.bulbapedia.org/resource/image>
-                "Spr 1y 001.png" ;
-        <http://www.bulbapedia.org/resource/johtoguard>
-                "{{p" ;
-        <http://www.bulbapedia.org/resource/link>
-                "]]'s sprite" ;
-        <http://www.bulbapedia.org/resource/lv100exp>
-                "1059860" ;
-        <http://www.bulbapedia.org/resource/name>
-                "'ゥ." ;
-        <http://www.bulbapedia.org/resource/nationalDex>
-                "001" ;
-        <http://www.bulbapedia.org/resource/size>
-                "56px" ;
-        <http://www.bulbapedia.org/resource/species>
-                "9" ;
-        <http://www.bulbapedia.org/resource/type>
-                "Poison" , "Grass" ;
-        <http://www.bulbapedia.org/resource/typen>
-                "2" .
-
-<http://www.bulbapedia.org/resource/'B_'>
-        <http://schema.org/isPartOf>  <http://www.bulbapedia.org/page/'B_'> ;
-        <http://www.bulbapedia.org/resource/caption>
-                "' B' ゥ 's sprite" ;
-        <http://www.bulbapedia.org/resource/games>
-                "{{game" ;
-        <http://www.bulbapedia.org/resource/height>
-                "27.07" ;
-        <http://www.bulbapedia.org/resource/height-ftin>
-                "82'82\"" ;
-        <http://www.bulbapedia.org/resource/image>
-                "Spr 1y 033.png" ;
-        <http://www.bulbapedia.org/resource/name>
-                "' B' ゥ" ;
-        <http://www.bulbapedia.org/resource/nationalDex>
-                "033" ;
-        <http://www.bulbapedia.org/resource/size>
-                "50px" ;
-        <http://www.bulbapedia.org/resource/species>
-                "No No" ;
-        <http://www.bulbapedia.org/resource/type>
-                "Poison" ;
-        <http://www.bulbapedia.org/resource/typen>
-                "1" ;
-        <http://www.bulbapedia.org/resource/weight>
-                "131.36" ;
-        <http://www.bulbapedia.org/resource/weight-lbs>
-                "289.6" .
-
-<http://www.bulbapedia.org/resource/(_I'_(Pokémon)>
-        <http://schema.org/isPartOf>  <http://www.bulbapedia.org/page/(_I'_(Pokémon)> ;
-        <http://www.bulbapedia.org/resource/caption>
-                ".  ゥ ( .I' .'s sprite" ;
-        <http://www.bulbapedia.org/resource/games>
-                "{{game" ;
-        <http://www.bulbapedia.org/resource/height>
-                "24.46" ;
-        <http://www.bulbapedia.org/resource/height-ftin>
-                "80'3\"" ;
-        <http://www.bulbapedia.org/resource/image>
-                "Spr_1y_006.png" ;
-        <http://www.bulbapedia.org/resource/name>
-                ".  ゥ ( .I' ." ;
-        <http://www.bulbapedia.org/resource/nationalDex>
-                "006" ;
-        <http://www.bulbapedia.org/resource/size>
-                "56px" ;
-        <http://www.bulbapedia.org/resource/type>
-                "Fire" , "Flying" ;
-        <http://www.bulbapedia.org/resource/typen>
-                "2" ;
-        <http://www.bulbapedia.org/resource/weight>
-                "2766.45" ;
-        <http://www.bulbapedia.org/resource/weight-lbs>
-                "6099.0" .
-
-<http://www.bulbapedia.org/resource/'s_Rayquaza_(PLAY_Promo_21)>
-        <http://schema.org/isPartOf>  <http://www.bulbapedia.org/page/'s_Rayquaza_(PLAY_Promo_21)> ;
-        <http://www.bulbapedia.org/resource/caption>
-                "Illus. [[Mitsuhiro Arita]]" ;
-        <http://www.bulbapedia.org/resource/cardname>
-                "_____'s Rayquaza" ;
-        <http://www.bulbapedia.org/resource/evostage>
-                "Basic" ;
-        <http://www.bulbapedia.org/resource/hp>
-                "80" ;
-        <http://www.bulbapedia.org/resource/image>
-                "600 B021 384RAYQUAZA.jpg" ;
-        <http://www.bulbapedia.org/resource/japaneseName>
-                "_____のレックウザ" ;
-        <http://www.bulbapedia.org/resource/jtrans>
-                "_____'s Rayquaza" ;
-        <http://www.bulbapedia.org/resource/retreatcost>
-                "2" ;
-        <http://www.bulbapedia.org/resource/species>
-                "Rayquaza" ;
-        <http://www.bulbapedia.org/resource/trainer>
-                "Blank Owner\n}}" ;
-        <http://www.bulbapedia.org/resource/type>
-                "Colorless" ;
-        <http://www.bulbapedia.org/resource/weakness>
-                "Colorless" .
-
-<http://www.bulbapedia.org/resource/(block)_(Pokémon)>
-        <http://schema.org/isPartOf>  <http://www.bulbapedia.org/page/(block)_(Pokémon)> ;
-        <http://www.bulbapedia.org/resource/caption>
-                "Glitch (CA)'s sprite" ;
-        <http://www.bulbapedia.org/resource/image>
-                "YGlitch229.png" ;
-        <http://www.bulbapedia.org/resource/name>
-                "Glitch (CA)" ;
-        <http://www.bulbapedia.org/resource/size>
-                "100px" ;
-        <http://www.bulbapedia.org/resource/species>
-                "<nowiki>" .
-
-<http://www.bulbapedia.org/resource/"P"_Promotional_Card_(TCG)>
-        <http://schema.org/isPartOf>  <http://www.bulbapedia.org/page/"P"_Promotional_Card_(TCG)> ;
-        <http://www.bulbapedia.org/resource/cards>
-                "47" ;
-        <http://www.bulbapedia.org/resource/image>
-                "SetSymbolPromo.png" ;
-        <http://www.bulbapedia.org/resource/period>
-                "July 2001 - July 2002" ;
-        <http://www.bulbapedia.org/resource/setname>
-                "P Promotional cards" ;
+                "SetSymbolTrainer Magazine.png" ;
+        <http://www.bulbapedia.org/resource/releasePeriod>
+                "January 2002 - March 2003\n}}" ;
+        <http://www.bulbapedia.org/resource/setName>
+                "T Promotional cards" ;
         <http://www.bulbapedia.org/resource/symbol>
                 "yes" .
 
-<http://www.bulbapedia.org/page/$_Pゥ._4(>
-        <http://schema.org/about>  <http://www.bulbapedia.org/resource/$_Pゥ._4(> .
-
-<http://www.bulbapedia.org/resource/'M_(00)>
-        <http://schema.org/isPartOf>  <http://www.bulbapedia.org/page/'M_(00)> ;
-        <http://www.bulbapedia.org/resource/caption>
-                "[[File:RBGlitchName00.png" ;
-        <http://www.bulbapedia.org/resource/disptype1>
-                "unknown" ;
-        <http://www.bulbapedia.org/resource/games>
-                "{{game" ;
-        <http://www.bulbapedia.org/resource/height>
-                "7.0" ;
-        <http://www.bulbapedia.org/resource/height-ftin>
-                "23'0\"" ;
-        <http://www.bulbapedia.org/resource/image>
-                "Missingno RB.png" ;
-        <http://www.bulbapedia.org/resource/japaneseName>
-                "ィ゙ゃゾ┛" ;
-        <http://www.bulbapedia.org/resource/link>
-                "]]'s sprite" ;
-        <http://www.bulbapedia.org/resource/name>
-                "'M" ;
-        <http://www.bulbapedia.org/resource/nationalDex>
-                "000" ;
-        <http://www.bulbapedia.org/resource/size>
-                "56px" ;
-        <http://www.bulbapedia.org/resource/species>
-                "ゥ R p ゥ R h" ;
-        <http://www.bulbapedia.org/resource/tmname>
-                "Iyazo" ;
-        <http://www.bulbapedia.org/resource/type>
-                "Normal" , "Bird" ;
-        <http://www.bulbapedia.org/resource/typen>
-                "2" ;
-        <http://www.bulbapedia.org/resource/weight>
-                "399.4" ;
-        <http://www.bulbapedia.org/resource/weight-lbs>
-                "880.6" .
-
-<http://www.bulbapedia.org/page/'s_Rayquaza_(PLAY_Promo_21)>
-        <http://schema.org/about>  <http://www.bulbapedia.org/resource/'s_Rayquaza_(PLAY_Promo_21)> .
-
-<http://www.bulbapedia.org/page/'s_Jirachi_(PLAY_Promo_14)>
-        <http://schema.org/about>  <http://www.bulbapedia.org/resource/'s_Jirachi_(PLAY_Promo_14)> .
-
-<http://www.bulbapedia.org/page/(_I'>
-        <http://schema.org/about>  <http://www.bulbapedia.org/resource/(_I'> .
-
-<http://www.bulbapedia.org/resource/'s_Chansey_(Challenge_from_the_Darkness)>
-        <http://schema.org/isPartOf>  <http://www.bulbapedia.org/page/'s_Chansey_(Challenge_from_the_Darkness)> ;
-        <http://www.bulbapedia.org/resource/cardname>
-                "_____'s Chansey" ;
-        <http://www.bulbapedia.org/resource/japaneseName>
-                "{{tt" .
-
-<http://www.bulbapedia.org/page/'s_Snivy_(BW-P_Promo)>
-        <http://schema.org/about>  <http://www.bulbapedia.org/resource/'s_Snivy_(BW-P_Promo)> .
-
-<http://www.bulbapedia.org/resource/'s_Tepig_(BW-P_Promo)>
-        <http://schema.org/isPartOf>  <http://www.bulbapedia.org/page/'s_Tepig_(BW-P_Promo)> ;
-        <http://www.bulbapedia.org/resource/caption>
-                "Illus. [[5ban Graphics]]" ;
-        <http://www.bulbapedia.org/resource/cardname>
-                "_____'s Tepig" ;
-        <http://www.bulbapedia.org/resource/evostage>
-                "Basic" ;
-        <http://www.bulbapedia.org/resource/hp>
-                "200" ;
-        <http://www.bulbapedia.org/resource/image>
-                "BlankTepigTerrificTepigPromo.jpg" ;
-        <http://www.bulbapedia.org/resource/japaneseName>
-                "_____のポカブ" ;
-        <http://www.bulbapedia.org/resource/jtrans>
-                "_____'s Pokabu" ;
-        <http://www.bulbapedia.org/resource/retreatcost>
-                "1" ;
-        <http://www.bulbapedia.org/resource/species>
-                "Tepig" ;
-        <http://www.bulbapedia.org/resource/trainer>
-                "Blank Owner\n}}" ;
-        <http://www.bulbapedia.org/resource/type>
-                "Fire" ;
-        <http://www.bulbapedia.org/resource/weakness>
-                "Water" .
-
-<http://www.bulbapedia.org/resource/'s_Pikachu_(Wizards_Promo_24)>
-        <http://schema.org/isPartOf>  <http://www.bulbapedia.org/page/'s_Pikachu_(Wizards_Promo_24)> ;
-        <http://www.bulbapedia.org/resource/cardname>
-                "_____'s Pikachu" ;
-        <http://www.bulbapedia.org/resource/japaneseName>
-                "{{tt" ;
-        <http://www.bulbapedia.org/resource/level>
-                "17" .
-
-<http://www.bulbapedia.org/page/"DPt-P"_Promotional_cards_(TCG)>
-        <http://schema.org/about>  <http://www.bulbapedia.org/resource/"DPt-P"_Promotional_cards_(TCG)> .
-
-<http://www.bulbapedia.org/resource/$_Pゥ._4(>
-        <http://schema.org/isPartOf>  <http://www.bulbapedia.org/page/$_Pゥ._4(> ;
-        <http://www.bulbapedia.org/resource/name>
-                "{{pdollar}}" .
-
-<http://www.bulbapedia.org/page/)_(Pokémon)>
-        <http://schema.org/about>  <http://www.bulbapedia.org/resource/)_(Pokémon)> .
-
-<http://www.bulbapedia.org/page/'s_Kyogre_(PLAY_Promo_19)>
-        <http://schema.org/about>  <http://www.bulbapedia.org/resource/'s_Kyogre_(PLAY_Promo_19)> .
-
-<http://www.bulbapedia.org/resource/(Hey_You)_Free_Up_Your_Mind>
-        <http://schema.org/isPartOf>  <http://www.bulbapedia.org/page/(Hey_You)_Free_Up_Your_Mind> ;
-        <http://www.bulbapedia.org/resource/artistname>
-                "Baby Spice" ;
-        <http://www.bulbapedia.org/resource/colorscheme>
-                "Kanto\n}}" ;
-        <http://www.bulbapedia.org/resource/composername>
-                "Rhett Lawrence" ;
-        <http://www.bulbapedia.org/resource/language>
-                "en" ;
-        <http://www.bulbapedia.org/resource/lyricistname>
-                "Rhett Lawrence, Manie Chisolm, Emma Bunton" ;
-        <http://www.bulbapedia.org/resource/screen>
-                "hd" ;
-        <http://www.bulbapedia.org/resource/screenshot>
-                "M01_EDE_02.png" ;
-        <http://www.bulbapedia.org/resource/title>
-                "(Hey You) Free Up Your Mind" ;
-        <http://www.bulbapedia.org/resource/type>
-                "Dub M01 ED 02" .
-
-<http://www.bulbapedia.org/resource/'s_Tepig_(Terrific_Tepig_Promo)>
-        <http://schema.org/isPartOf>  <http://www.bulbapedia.org/page/'s_Tepig_(Terrific_Tepig_Promo)> ;
-        <http://www.bulbapedia.org/resource/caption>
-                "Illus. [[5ban Graphics]]" ;
-        <http://www.bulbapedia.org/resource/cardname>
-                "_____'s Tepig" ;
-        <http://www.bulbapedia.org/resource/evostage>
-                "Basic" ;
-        <http://www.bulbapedia.org/resource/hp>
-                "200" ;
-        <http://www.bulbapedia.org/resource/image>
-                "BlankTepigTerrificTepigPromo.jpg" ;
-        <http://www.bulbapedia.org/resource/japaneseName>
-                "_____のポカブ" ;
-        <http://www.bulbapedia.org/resource/jtrans>
-                "_____'s Pokabu" ;
-        <http://www.bulbapedia.org/resource/retreatcost>
-                "1" ;
-        <http://www.bulbapedia.org/resource/species>
-                "Tepig" ;
-        <http://www.bulbapedia.org/resource/trainer>
-                "Blank Owner\n}}" ;
-        <http://www.bulbapedia.org/resource/type>
-                "Fire" ;
-        <http://www.bulbapedia.org/resource/weakness>
-                "Water" .
-
-<http://www.bulbapedia.org/resource/)_(Pokémon)>
-        <http://schema.org/isPartOf>  <http://www.bulbapedia.org/page/)_(Pokémon)> ;
-        <http://www.bulbapedia.org/resource/caption>
-                "]'s sprite" ;
-        <http://www.bulbapedia.org/resource/games>
-                "{{game" ;
-        <http://www.bulbapedia.org/resource/image>
-                "YGlitch021.png" ;
-        <http://www.bulbapedia.org/resource/name>
-                "<nowiki>]</nowiki>" ;
-        <http://www.bulbapedia.org/resource/nationalDex>
-                "021" ;
-        <http://www.bulbapedia.org/resource/size>
-                "80px" ;
-        <http://www.bulbapedia.org/resource/species>
-                "♀p' 4 ゥQ No" ;
-        <http://www.bulbapedia.org/resource/type>
-                "Flying" , "Normal" ;
-        <http://www.bulbapedia.org/resource/typen>
-                "2" .
-
-<http://www.bulbapedia.org/resource/'Ng_ゥ$>
-        <http://schema.org/isPartOf>  <http://www.bulbapedia.org/page/'Ng_ゥ$> ;
-        <http://www.bulbapedia.org/resource/dispname>
-                "'Ng ゥ{{PDollar}}" ;
-        <http://www.bulbapedia.org/resource/name>
-                "'Ng ゥ$" .
-
-<http://www.bulbapedia.org/page/(Hey_You)_Free_Up_Your_Mind>
-        <http://schema.org/about>  <http://www.bulbapedia.org/resource/(Hey_You)_Free_Up_Your_Mind> .
-
-<http://www.bulbapedia.org/page/'Ulu>
-        <http://schema.org/about>  <http://www.bulbapedia.org/resource/'Ulu> .
-
-<http://www.bulbapedia.org/resource/$$268:L0CG_(move)>
-        <http://schema.org/isPartOf>  <http://www.bulbapedia.org/page/$$268:L0CG_(move)> ;
-        <http://www.bulbapedia.org/resource/acc>
-                "&mdash;" ;
-        <http://www.bulbapedia.org/resource/appear>
-                "&mdash;" ;
-        <http://www.bulbapedia.org/resource/dec>
-                "000" ;
-        <http://www.bulbapedia.org/resource/effect>
-                "[[TMTRAINER effect]] and other [[Super Glitch#Effect" ;
-        <http://www.bulbapedia.org/resource/gen2>
-                "It has the appearance of {{m" ;
-        <http://www.bulbapedia.org/resource/hex>
-                "00" ;
-        <http://www.bulbapedia.org/resource/pp>
-                "0/13" ;
-        <http://www.bulbapedia.org/resource/pwr>
-                "&mdash;" ;
-        <http://www.bulbapedia.org/resource/type>
-                "CoolTrainer♀" .
-
-<http://www.bulbapedia.org/page/(block)_(Pokémon)>
-        <http://schema.org/about>  <http://www.bulbapedia.org/resource/(block)_(Pokémon)> .
-
-<http://www.bulbapedia.org/page/"PCG-P"_Promotional_Cards>
-        <http://schema.org/about>  <http://www.bulbapedia.org/resource/"PCG-P"_Promotional_Cards> .
-
-<http://www.bulbapedia.org/resource/$_4Mn>
-        <http://schema.org/isPartOf>  <http://www.bulbapedia.org/page/$_4Mn> ;
-        <http://www.bulbapedia.org/resource/dispname>
-                "ゥ{{pdollar}}" ;
-        <http://www.bulbapedia.org/resource/name>
-                "ゥ$ 4MN ゥ" .
-
-<http://www.bulbapedia.org/resource/'M_'N_g_(Pokémon)>
-        <http://schema.org/isPartOf>  <http://www.bulbapedia.org/page/'M_'N_g_(Pokémon)> ;
-        <http://www.bulbapedia.org/resource/caption>
-                "'M 'N g's front sprite." ;
-        <http://www.bulbapedia.org/resource/games>
-                "{{game" ;
-        <http://www.bulbapedia.org/resource/height>
-                "7.01" ;
-        <http://www.bulbapedia.org/resource/height-ftin>
-                "23'0\"" ;
-        <http://www.bulbapedia.org/resource/image>
-                "RBGlitch095.png" ;
-        <http://www.bulbapedia.org/resource/imgsize>
-                "56px" ;
-        <http://www.bulbapedia.org/resource/japaneseName>
-                "ゾ　Ａビケ" ;
-        <http://www.bulbapedia.org/resource/name>
-                "'M 'N g" ;
-        <http://www.bulbapedia.org/resource/nationalDex>
-                "095" ;
-        <http://www.bulbapedia.org/resource/species>
-                "Q u" ;
-        <http://www.bulbapedia.org/resource/tmname>
-                "Zo Ē Bike" ;
-        <http://www.bulbapedia.org/resource/type>
-                "Ground" , "Rock" ;
-        <http://www.bulbapedia.org/resource/typen>
-                "2" ;
-        <http://www.bulbapedia.org/resource/weight>
-                "399.43" ;
-        <http://www.bulbapedia.org/resource/weight-lbs>
-                "880.6" .
-
-<http://www.bulbapedia.org/resource/'r_'r_4>
-        <http://schema.org/isPartOf>  <http://www.bulbapedia.org/page/'r_'r_4> ;
-        <http://www.bulbapedia.org/resource/caption>
-                "'r 'r 4's sprite" ;
-        <http://www.bulbapedia.org/resource/catchrate>
-                "0" ;
-        <http://www.bulbapedia.org/resource/games>
-                "[[Pokémon Yellow Version]]" ;
-        <http://www.bulbapedia.org/resource/gen1equiv>
-                "RB" ;
-        <http://www.bulbapedia.org/resource/gen1equivexists>
-                "yes" ;
-        <http://www.bulbapedia.org/resource/gen1equivname>
-                "'v" ;
-        <http://www.bulbapedia.org/resource/generation>
-                "1" ;
-        <http://www.bulbapedia.org/resource/height>
-                "7.06" ;
-        <http://www.bulbapedia.org/resource/height-ftin>
-                "23' 2\"" ;
-        <http://www.bulbapedia.org/resource/hex>
-                "E1" ;
-        <http://www.bulbapedia.org/resource/image>
-                "YGlitch234.png" ;
-        <http://www.bulbapedia.org/resource/johtoguard>
-                "{{p" ;
-        <http://www.bulbapedia.org/resource/name>
-                "'r 'r 4" ;
-        <http://www.bulbapedia.org/resource/nationalDex>
-                "234" ;
-        <http://www.bulbapedia.org/resource/size>
-                "24px" ;
-        <http://www.bulbapedia.org/resource/species>
-                "" ;
-        <http://www.bulbapedia.org/resource/type>
-                "Water" ;
-        <http://www.bulbapedia.org/resource/typen>
-                "1" ;
-        <http://www.bulbapedia.org/resource/weight>
-                "467.9" ;
-        <http://www.bulbapedia.org/resource/weight-lbs>
-                "1031.6" .
-
-<http://www.bulbapedia.org/page/'_B'_ゥ>
-        <http://schema.org/about>  <http://www.bulbapedia.org/resource/'_B'_ゥ> .
-
-<http://www.bulbapedia.org/page/'s_Oshawott_(Outstanding_Oshawott_Promo)>
-        <http://schema.org/about>  <http://www.bulbapedia.org/resource/'s_Oshawott_(Outstanding_Oshawott_Promo)> .
-
-<http://www.bulbapedia.org/resource/'r_ゥ>
-        <http://schema.org/isPartOf>  <http://www.bulbapedia.org/page/'r_ゥ> ;
-        <http://www.bulbapedia.org/resource/caption>
-                "'r ゥ's sprite" ;
-        <http://www.bulbapedia.org/resource/games>
-                "{{game" ;
-        <http://www.bulbapedia.org/resource/height>
-                "3.98" ;
-        <http://www.bulbapedia.org/resource/height-ftin>
-                "13'01\"" ;
-        <http://www.bulbapedia.org/resource/image>
-                "YGlitch143.png" ;
-        <http://www.bulbapedia.org/resource/name>
-                "'r ゥ" ;
-        <http://www.bulbapedia.org/resource/nationalDex>
-                "143" ;
-        <http://www.bulbapedia.org/resource/size>
-                "56px" ;
-        <http://www.bulbapedia.org/resource/species>
-                "Ragon" ;
-        <http://www.bulbapedia.org/resource/type>
-                "Normal" ;
-        <http://www.bulbapedia.org/resource/typen>
-                "1" ;
-        <http://www.bulbapedia.org/resource/weight>
-                "16.33" ;
-        <http://www.bulbapedia.org/resource/weight-lbs>
-                "36.0" .
-
-<http://www.bulbapedia.org/resource/'M_(Pokémon)>
-        <http://schema.org/isPartOf>  <http://www.bulbapedia.org/page/'M_(Pokémon)> ;
-        <http://www.bulbapedia.org/resource/caption>
-                "[[File:RBGlitchName00.png" ;
-        <http://www.bulbapedia.org/resource/disptype1>
-                "unknown" ;
-        <http://www.bulbapedia.org/resource/games>
-                "{{game" ;
-        <http://www.bulbapedia.org/resource/height>
-                "7.0" ;
-        <http://www.bulbapedia.org/resource/height-ftin>
-                "23'0\"" ;
-        <http://www.bulbapedia.org/resource/image>
-                "Missingno RB.png" ;
-        <http://www.bulbapedia.org/resource/japaneseName>
-                "ィ゙ゃゾ┛" ;
-        <http://www.bulbapedia.org/resource/link>
-                "]]'s sprite" ;
-        <http://www.bulbapedia.org/resource/name>
-                "'M" ;
-        <http://www.bulbapedia.org/resource/nationalDex>
-                "000" ;
-        <http://www.bulbapedia.org/resource/size>
-                "56px" ;
-        <http://www.bulbapedia.org/resource/species>
-                "ゥ R p ゥ R h" ;
-        <http://www.bulbapedia.org/resource/tmname>
-                "Iyazo" ;
-        <http://www.bulbapedia.org/resource/type>
-                "Bird" , "Normal" ;
-        <http://www.bulbapedia.org/resource/typen>
-                "2" ;
-        <http://www.bulbapedia.org/resource/weight>
-                "399.4" ;
-        <http://www.bulbapedia.org/resource/weight-lbs>
-                "880.6" .
-
-<http://www.bulbapedia.org/resource/'N_g_♦'_Mp>
-        <http://schema.org/isPartOf>  <http://www.bulbapedia.org/page/'N_g_♦'_Mp> ;
-        <http://www.bulbapedia.org/resource/caption>
-                "[[File:RBGlitchNameF7.png" ;
-        <http://www.bulbapedia.org/resource/games>
-                "{{game" ;
-        <http://www.bulbapedia.org/resource/image>
-                "RBGlitch018.png" ;
-        <http://www.bulbapedia.org/resource/japaneseName>
-                "パたダィ゙た" ;
-        <http://www.bulbapedia.org/resource/link>
-                "]]'s sprite" ;
-        <http://www.bulbapedia.org/resource/name>
-                "'Ng'Mp" ;
-        <http://www.bulbapedia.org/resource/nationalDex>
-                "018" ;
-        <http://www.bulbapedia.org/resource/size>
-                "50px" ;
-        <http://www.bulbapedia.org/resource/tmname>
-                "Patadaita" ;
-        <http://www.bulbapedia.org/resource/type>
-                "Normal" , "Flying" ;
-        <http://www.bulbapedia.org/resource/typen>
-                "2" .
-
-<http://www.bulbapedia.org/resource/"DPt-P"_Promotional_cards_(TCG)>
-        <http://schema.org/isPartOf>  <http://www.bulbapedia.org/page/"DPt-P"_Promotional_cards_(TCG)> ;
-        <http://www.bulbapedia.org/resource/cards>
-                "51" ;
+<http://www.bulbapedia.org/resource/"ADV-P"_Promotional_cards_(TCG)>
+        <http://schema.org/isPartOf>  <http://www.bulbapedia.org/page/"ADV-P"_Promotional_cards_(TCG)> ;
+        <http://www.bulbapedia.org/resource/cardsInSet>
+                "63" ;
         <http://www.bulbapedia.org/resource/image>
                 "SetSymbolPromo.png" ;
-        <http://www.bulbapedia.org/resource/period>
-                "October 2008 - August 2009\n}}" ;
-        <http://www.bulbapedia.org/resource/setname>
-                "DPt-P Promotional cards" ;
+        <http://www.bulbapedia.org/resource/releasePeriod>
+                "January 2003 - February 2004" ;
+        <http://www.bulbapedia.org/resource/setName>
+                "ADV-P Promotional cards" ;
         <http://www.bulbapedia.org/resource/symbol>
                 "yes" .
 
-<http://www.bulbapedia.org/page/'s_Pikachu_(Promo_Card_Pack_25th_Anniversary_Edition_7)>
-        <http://schema.org/about>  <http://www.bulbapedia.org/resource/'s_Pikachu_(Promo_Card_Pack_25th_Anniversary_Edition_7)> .
-
-<http://www.bulbapedia.org/resource/'s_Pikachu_(All_Card_Calendar_promo)>
-        <http://schema.org/isPartOf>  <http://www.bulbapedia.org/page/'s_Pikachu_(All_Card_Calendar_promo)> ;
-        <http://www.bulbapedia.org/resource/cardname>
-                "_____'s Pikachu" ;
-        <http://www.bulbapedia.org/resource/japaneseName>
-                "{{tt" ;
-        <http://www.bulbapedia.org/resource/level>
-                "17" .
-
-<http://www.bulbapedia.org/resource/"P"_Promotional_cards_(TCG)>
-        <http://schema.org/isPartOf>  <http://www.bulbapedia.org/page/"P"_Promotional_cards_(TCG)> ;
-        <http://www.bulbapedia.org/resource/cards>
-                "47" ;
-        <http://www.bulbapedia.org/resource/image>
-                "SetSymbolPromo.png" ;
-        <http://www.bulbapedia.org/resource/period>
-                "July 2001 - July 2002" ;
-        <http://www.bulbapedia.org/resource/setname>
-                "P Promotional cards" ;
-        <http://www.bulbapedia.org/resource/symbol>
-                "yes" .
-
-<http://www.bulbapedia.org/page/'ゥ._(Pokémon)>
-        <http://schema.org/about>  <http://www.bulbapedia.org/resource/'ゥ._(Pokémon)> .
-
-<http://www.bulbapedia.org/page/(_I>
-        <http://schema.org/about>  <http://www.bulbapedia.org/resource/(_I> .
-
-<http://www.bulbapedia.org/page/'s_Pikachu_(Pokémon_Center_promo)>
-        <http://schema.org/about>  <http://www.bulbapedia.org/resource/'s_Pikachu_(Pokémon_Center_promo)> .
-
-<http://www.bulbapedia.org/resource/"P"_Promotional_Cards_(TCG)>
-        <http://schema.org/isPartOf>  <http://www.bulbapedia.org/page/"P"_Promotional_Cards_(TCG)> ;
-        <http://www.bulbapedia.org/resource/cards>
-                "47" ;
-        <http://www.bulbapedia.org/resource/image>
-                "SetSymbolPromo.png" ;
-        <http://www.bulbapedia.org/resource/period>
-                "July 2001 - July 2002" ;
-        <http://www.bulbapedia.org/resource/setname>
-                "P Promotional cards" ;
-        <http://www.bulbapedia.org/resource/symbol>
-                "yes" .
-
-<http://www.bulbapedia.org/resource/'M_(FF)>
-        <http://schema.org/isPartOf>  <http://www.bulbapedia.org/page/'M_(FF)> ;
-        <http://www.bulbapedia.org/resource/caption>
-                "[[File:RBGlitchNameFF.png" ;
-        <http://www.bulbapedia.org/resource/image>
-                "Spr 1b 006.png" ;
-        <http://www.bulbapedia.org/resource/link>
-                "]]'s sprite" ;
-        <http://www.bulbapedia.org/resource/name>
-                "'M" ;
-        <http://www.bulbapedia.org/resource/size>
-                "56px" ;
-        <http://www.bulbapedia.org/resource/species>
-                "{{PDollar}}" .
-
-<http://www.bulbapedia.org/resource/'s_Snivy_(BW-P_Promo)>
-        <http://schema.org/isPartOf>  <http://www.bulbapedia.org/page/'s_Snivy_(BW-P_Promo)> ;
-        <http://www.bulbapedia.org/resource/caption>
-                "Illus. [[5ban Graphics]]" ;
-        <http://www.bulbapedia.org/resource/cardname>
-                "_____'s Snivy" ;
-        <http://www.bulbapedia.org/resource/evostage>
-                "Basic" ;
-        <http://www.bulbapedia.org/resource/hp>
-                "200" ;
-        <http://www.bulbapedia.org/resource/image>
-                "BlankSnivySuperSnivyPromo.jpg" ;
-        <http://www.bulbapedia.org/resource/japaneseName>
-                "_____のツタージャ" ;
-        <http://www.bulbapedia.org/resource/jtrans>
-                "_____'s Tsutarja" ;
-        <http://www.bulbapedia.org/resource/retreatcost>
-                "1" ;
-        <http://www.bulbapedia.org/resource/species>
-                "Snivy" ;
-        <http://www.bulbapedia.org/resource/trainer>
-                "Blank Owner\n}}" ;
-        <http://www.bulbapedia.org/resource/type>
-                "Grass" ;
-        <http://www.bulbapedia.org/resource/weakness>
-                "Fire" .
-
-<http://www.bulbapedia.org/page/$$268:L0CG_(move)>
-        <http://schema.org/about>  <http://www.bulbapedia.org/resource/$$268:L0CG_(move)> .
-
-<http://www.bulbapedia.org/page/'_B'_ゥ_(Pokémon)>
-        <http://schema.org/about>  <http://www.bulbapedia.org/resource/'_B'_ゥ_(Pokémon)> .
-
-<http://www.bulbapedia.org/page/'N_g_♦'_Mp>
-        <http://schema.org/about>  <http://www.bulbapedia.org/resource/'N_g_♦'_Mp> .
-
-<http://www.bulbapedia.org/page/'M_'N_g_(Pokémon)>
-        <http://schema.org/about>  <http://www.bulbapedia.org/resource/'M_'N_g_(Pokémon)> .
-
-<http://www.bulbapedia.org/page/"W"_Promotional_cards_(TCG)>
-        <http://schema.org/about>  <http://www.bulbapedia.org/resource/"W"_Promotional_cards_(TCG)> .
-
-<http://www.bulbapedia.org/page/$_(glitch_Pokémon)>
-        <http://schema.org/about>  <http://www.bulbapedia.org/resource/$_(glitch_Pokémon)> .
-
-<http://www.bulbapedia.org/resource/(_I>
-        <http://schema.org/isPartOf>  <http://www.bulbapedia.org/page/(_I> ;
-        <http://www.bulbapedia.org/resource/caption>
-                ".  ゥ ( .I' .'s sprite" ;
-        <http://www.bulbapedia.org/resource/games>
-                "{{game" ;
-        <http://www.bulbapedia.org/resource/height>
-                "24.46" ;
-        <http://www.bulbapedia.org/resource/height-ftin>
-                "80'3\"" ;
-        <http://www.bulbapedia.org/resource/image>
-                "Spr_1y_006.png" ;
-        <http://www.bulbapedia.org/resource/name>
-                ".  ゥ ( .I' ." ;
-        <http://www.bulbapedia.org/resource/nationalDex>
-                "006" ;
-        <http://www.bulbapedia.org/resource/size>
-                "56px" ;
-        <http://www.bulbapedia.org/resource/type>
-                "Fire" , "Flying" ;
-        <http://www.bulbapedia.org/resource/typen>
-                "2" ;
-        <http://www.bulbapedia.org/resource/weight>
-                "2766.45" ;
-        <http://www.bulbapedia.org/resource/weight-lbs>
-                "6099.0" .
-
-<http://www.bulbapedia.org/page/(block)>
-        <http://schema.org/about>  <http://www.bulbapedia.org/resource/(block)> .
-
-<http://www.bulbapedia.org/page/$_4Mn>
-        <http://schema.org/about>  <http://www.bulbapedia.org/resource/$_4Mn> .
-
-<http://www.bulbapedia.org/page/'s_Mew_(PLAY_Promo_13)>
-        <http://schema.org/about>  <http://www.bulbapedia.org/resource/'s_Mew_(PLAY_Promo_13)> .
-
-<http://www.bulbapedia.org/page/(Player_name)_(move)>
-        <http://schema.org/about>  <http://www.bulbapedia.org/resource/(Player_name)_(move)> .
-
-<http://www.bulbapedia.org/resource/'v>
-        <http://schema.org/isPartOf>  <http://www.bulbapedia.org/page/'v> ;
-        <http://www.bulbapedia.org/resource/caption>
-                "[[File:RBGlitchNameE1.png" ;
-        <http://www.bulbapedia.org/resource/games>
-                "{{game" ;
-        <http://www.bulbapedia.org/resource/height>
-                "7.0" ;
-        <http://www.bulbapedia.org/resource/height-ftin>
-                "23' 0\"" ;
-        <http://www.bulbapedia.org/resource/image>
-                "RBGlitch236.png" ;
-        <http://www.bulbapedia.org/resource/japaneseName>
-                "Ａズケたジ" ;
-        <http://www.bulbapedia.org/resource/link>
-                "]]'s sprite." ;
-        <http://www.bulbapedia.org/resource/name>
-                "'v" ;
-        <http://www.bulbapedia.org/resource/nationalDex>
-                "211" ;
-        <http://www.bulbapedia.org/resource/size>
-                "80" ;
-        <http://www.bulbapedia.org/resource/species>
-                "" ;
-        <http://www.bulbapedia.org/resource/tmname>
-                "Ē Zuketaji" ;
-        <http://www.bulbapedia.org/resource/type>
-                "Glitch" ;
-        <http://www.bulbapedia.org/resource/typen>
-                "1" ;
-        <http://www.bulbapedia.org/resource/weight>
-                "400.3" ;
-        <http://www.bulbapedia.org/resource/weight-lbs>
-                "880.6" .
-
-<http://www.bulbapedia.org/page/'M_(FE)_(Pokémon)>
-        <http://schema.org/about>  <http://www.bulbapedia.org/resource/'M_(FE)_(Pokémon)> .
-
-<http://www.bulbapedia.org/resource/'s_Kyogre_(PLAY_Promo_19)>
-        <http://schema.org/isPartOf>  <http://www.bulbapedia.org/page/'s_Kyogre_(PLAY_Promo_19)> ;
-        <http://www.bulbapedia.org/resource/caption>
-                "Illus. [[Hajime Kusajima]]" ;
-        <http://www.bulbapedia.org/resource/cardname>
-                "_____'s Kyogre" ;
-        <http://www.bulbapedia.org/resource/evostage>
-                "Basic" ;
-        <http://www.bulbapedia.org/resource/hp>
-                "80" ;
-        <http://www.bulbapedia.org/resource/image>
-                "600 B019 382KYOGRE.jpg" ;
-        <http://www.bulbapedia.org/resource/japaneseName>
-                "_____のカイオーガ" ;
-        <http://www.bulbapedia.org/resource/jtrans>
-                "_____'s Kaiorga" ;
-        <http://www.bulbapedia.org/resource/retreatcost>
-                "2" ;
-        <http://www.bulbapedia.org/resource/species>
-                "Kyogre" ;
-        <http://www.bulbapedia.org/resource/trainer>
-                "Blank Owner\n}}" ;
-        <http://www.bulbapedia.org/resource/type>
-                "Water" ;
-        <http://www.bulbapedia.org/resource/weakness>
-                "Lightning" .
-
-<http://www.bulbapedia.org/resource/'M_(FF)_(Pokémon)>
-        <http://schema.org/isPartOf>  <http://www.bulbapedia.org/page/'M_(FF)_(Pokémon)> ;
-        <http://www.bulbapedia.org/resource/caption>
-                "[[File:RBGlitchNameFF.png" ;
-        <http://www.bulbapedia.org/resource/image>
-                "Spr 1b 006.png" ;
-        <http://www.bulbapedia.org/resource/link>
-                "]]'s sprite" ;
-        <http://www.bulbapedia.org/resource/name>
-                "'M" ;
-        <http://www.bulbapedia.org/resource/size>
-                "56px" ;
-        <http://www.bulbapedia.org/resource/species>
-                "{{PDollar}}" .
-
-<http://www.bulbapedia.org/resource/"PCG-P"_Promotional_Cards_(TCG)>
-        <http://schema.org/isPartOf>  <http://www.bulbapedia.org/page/"PCG-P"_Promotional_Cards_(TCG)> ;
-        <http://www.bulbapedia.org/resource/cards>
-                "154" ;
-        <http://www.bulbapedia.org/resource/image>
-                "SetSymbolPromo.png" ;
-        <http://www.bulbapedia.org/resource/period>
-                "February 2004 - July 2006\n}}" ;
-        <http://www.bulbapedia.org/resource/setname>
-                "PCG-P Promotional cards" ;
-        <http://www.bulbapedia.org/resource/symbol>
-                "yes" .
-
-<http://www.bulbapedia.org/page/"ADV-P"_Promotional_cards_(TCG)>
-        <http://schema.org/about>  <http://www.bulbapedia.org/resource/"ADV-P"_Promotional_cards_(TCG)> .
-
-<http://www.bulbapedia.org/resource/(Player_name)_(move)>
-        <http://schema.org/isPartOf>  <http://www.bulbapedia.org/page/(Player_name)_(move)> ;
-        <http://www.bulbapedia.org/resource/acc>
-                "&mdash;" ;
-        <http://www.bulbapedia.org/resource/appear>
-                "&mdash;" ;
-        <http://www.bulbapedia.org/resource/dec>
-                "000" ;
-        <http://www.bulbapedia.org/resource/effect>
-                "[[TMTRAINER effect]] and other [[Super Glitch#Effect" ;
-        <http://www.bulbapedia.org/resource/gen2>
-                "It has the appearance of {{m" ;
-        <http://www.bulbapedia.org/resource/hex>
-                "00" ;
-        <http://www.bulbapedia.org/resource/pp>
-                "0/13" ;
-        <http://www.bulbapedia.org/resource/pwr>
-                "&mdash;" ;
-        <http://www.bulbapedia.org/resource/type>
-                "CoolTrainer♀" .
-
-<http://www.bulbapedia.org/resource/'s_Oshawott_(BW-P_Promo)>
-        <http://schema.org/isPartOf>  <http://www.bulbapedia.org/page/'s_Oshawott_(BW-P_Promo)> ;
-        <http://www.bulbapedia.org/resource/caption>
-                "Illus. [[5ban Graphics]]" ;
-        <http://www.bulbapedia.org/resource/cardname>
-                "_____'s Oshawott" ;
-        <http://www.bulbapedia.org/resource/evostage>
-                "Basic" ;
-        <http://www.bulbapedia.org/resource/hp>
-                "200" ;
-        <http://www.bulbapedia.org/resource/image>
-                "BlankOshawottOutstandingOshawottPromo.jpg" ;
-        <http://www.bulbapedia.org/resource/japaneseName>
-                "_____のミジュマル" ;
-        <http://www.bulbapedia.org/resource/jtrans>
-                "_____'s Mijumaru" ;
-        <http://www.bulbapedia.org/resource/retreatcost>
-                "1" ;
-        <http://www.bulbapedia.org/resource/species>
-                "Oshawott" ;
-        <http://www.bulbapedia.org/resource/trainer>
-                "Blank Owner\n}}" ;
-        <http://www.bulbapedia.org/resource/type>
-                "Water" ;
-        <http://www.bulbapedia.org/resource/weakness>
-                "Grass" .
-
-<http://www.bulbapedia.org/page/'M_(Pokémon)>
-        <http://schema.org/about>  <http://www.bulbapedia.org/resource/'M_(Pokémon)> .
-
-<http://www.bulbapedia.org/resource/'_B'_ゥ_(Pokémon)>
-        <http://schema.org/isPartOf>  <http://www.bulbapedia.org/page/'_B'_ゥ_(Pokémon)> ;
-        <http://www.bulbapedia.org/resource/caption>
-                "' B' ゥ 's sprite" ;
-        <http://www.bulbapedia.org/resource/games>
-                "{{game" ;
-        <http://www.bulbapedia.org/resource/height>
-                "27.07" ;
-        <http://www.bulbapedia.org/resource/height-ftin>
-                "82'82\"" ;
-        <http://www.bulbapedia.org/resource/image>
-                "Spr 1y 033.png" ;
-        <http://www.bulbapedia.org/resource/name>
-                "' B' ゥ" ;
-        <http://www.bulbapedia.org/resource/nationalDex>
-                "033" ;
-        <http://www.bulbapedia.org/resource/size>
-                "50px" ;
-        <http://www.bulbapedia.org/resource/species>
-                "No No" ;
-        <http://www.bulbapedia.org/resource/type>
-                "Poison" ;
-        <http://www.bulbapedia.org/resource/typen>
-                "1" ;
-        <http://www.bulbapedia.org/resource/weight>
-                "131.36" ;
-        <http://www.bulbapedia.org/resource/weight-lbs>
-                "289.6" .
+<http://www.bulbapedia.org/page/"T"_Promotional_Cards_(TCG)>
+        <http://schema.org/about>  <http://www.bulbapedia.org/resource/"T"_Promotional_Cards_(TCG)> .
 
 <http://www.bulbapedia.org/page/"ADV-P"_Promotional_Cards_(TCG)>
         <http://schema.org/about>  <http://www.bulbapedia.org/resource/"ADV-P"_Promotional_Cards_(TCG)> .
 
-<http://www.bulbapedia.org/page/'v>
-        <http://schema.org/about>  <http://www.bulbapedia.org/resource/'v> .
-
-<http://www.bulbapedia.org/resource/)>
-        <http://schema.org/isPartOf>  <http://www.bulbapedia.org/page/)> ;
-        <http://www.bulbapedia.org/resource/caption>
-                "]'s sprite" ;
-        <http://www.bulbapedia.org/resource/games>
-                "{{game" ;
-        <http://www.bulbapedia.org/resource/image>
-                "YGlitch021.png" ;
-        <http://www.bulbapedia.org/resource/name>
-                "<nowiki>]</nowiki>" ;
-        <http://www.bulbapedia.org/resource/nationalDex>
-                "021" ;
-        <http://www.bulbapedia.org/resource/size>
-                "80px" ;
-        <http://www.bulbapedia.org/resource/species>
-                "♀p' 4 ゥQ No" ;
-        <http://www.bulbapedia.org/resource/type>
-                "Normal" , "Flying" ;
-        <http://www.bulbapedia.org/resource/typen>
-                "2" .
-
-<http://www.bulbapedia.org/page/''Black—Victini_and_Reshiram''_and_''White—Victini_and_Zekrom''>
-        <http://schema.org/about>  <http://www.bulbapedia.org/resource/''Black—Victini_and_Reshiram''_and_''White—Victini_and_Zekrom''> .
-
-<http://www.bulbapedia.org/page/'s_Tepig_(BW-P_Promo)>
-        <http://schema.org/about>  <http://www.bulbapedia.org/resource/'s_Tepig_(BW-P_Promo)> .
-
-<http://www.bulbapedia.org/page/'M_(00)>
-        <http://schema.org/about>  <http://www.bulbapedia.org/resource/'M_(00)> .
-
-<http://www.bulbapedia.org/resource/'M_(FE)>
-        <http://schema.org/isPartOf>  <http://www.bulbapedia.org/page/'M_(FE)> ;
-        <http://www.bulbapedia.org/resource/caption>
-                "'M (FE)'s sprite" ;
-        <http://www.bulbapedia.org/resource/games>
-                "{{v2" ;
-        <http://www.bulbapedia.org/resource/height>
-                "7.01" ;
-        <http://www.bulbapedia.org/resource/height-ftin>
-                "23'0\"" ;
-        <http://www.bulbapedia.org/resource/image>
-                "RBGlitch079.png" ;
-        <http://www.bulbapedia.org/resource/imgsize>
-                "40px" ;
-        <http://www.bulbapedia.org/resource/japaneseName>
-                "ム゙▼イ゙ マ゙ゃ" ;
-        <http://www.bulbapedia.org/resource/name>
-                "'M" ;
-        <http://www.bulbapedia.org/resource/nationalDex>
-                "079" ;
-        <http://www.bulbapedia.org/resource/tmname>
-                "Muimaya" ;
-        <http://www.bulbapedia.org/resource/type>
-                "Water" , "Psychic" ;
-        <http://www.bulbapedia.org/resource/typen>
-                "2" ;
-        <http://www.bulbapedia.org/resource/weight>
-                "399.43" ;
-        <http://www.bulbapedia.org/resource/weight-lbs>
-                "880.6" .
-
-<http://www.bulbapedia.org/page/'s_Tepig_(Terrific_Tepig_Promo)>
-        <http://schema.org/about>  <http://www.bulbapedia.org/resource/'s_Tepig_(Terrific_Tepig_Promo)> .
-
-<http://www.bulbapedia.org/page/(Have_Some)_Fun_with_the_Funk>
-        <http://schema.org/about>  <http://www.bulbapedia.org/resource/(Have_Some)_Fun_with_the_Funk> .
-
-<http://www.bulbapedia.org/page/'ゥ.>
-        <http://schema.org/about>  <http://www.bulbapedia.org/resource/'ゥ.> .
-
-<http://www.bulbapedia.org/page/'s_Pikachu_(BW-P_Promo)>
-        <http://schema.org/about>  <http://www.bulbapedia.org/resource/'s_Pikachu_(BW-P_Promo)> .
-
 <http://www.bulbapedia.org/resource/"J"_Promotional_cards_(TCG)>
         <http://schema.org/isPartOf>  <http://www.bulbapedia.org/page/"J"_Promotional_cards_(TCG)> ;
-        <http://www.bulbapedia.org/resource/cards>
+        <http://www.bulbapedia.org/resource/cardsInSet>
                 "2" ;
         <http://www.bulbapedia.org/resource/image>
                 "SetSymbolPromo.png" ;
-        <http://www.bulbapedia.org/resource/period>
+        <http://www.bulbapedia.org/resource/releasePeriod>
                 "August 2001 - July 2002\n}}" ;
-        <http://www.bulbapedia.org/resource/setname>
+        <http://www.bulbapedia.org/resource/setName>
                 "J Promotional cards" ;
-        <http://www.bulbapedia.org/resource/symbol>
-                "yes" .
-
-<http://www.bulbapedia.org/resource/'s_Groudon_(PLAY_Promo_20)>
-        <http://schema.org/isPartOf>  <http://www.bulbapedia.org/page/'s_Groudon_(PLAY_Promo_20)> ;
-        <http://www.bulbapedia.org/resource/caption>
-                "Illus. [[Masakazu Fukuda]]" ;
-        <http://www.bulbapedia.org/resource/cardname>
-                "_____'s Groudon" ;
-        <http://www.bulbapedia.org/resource/evostage>
-                "Basic" ;
-        <http://www.bulbapedia.org/resource/hp>
-                "80" ;
-        <http://www.bulbapedia.org/resource/image>
-                "BlankGroudonPLAYPromo20.jpg" ;
-        <http://www.bulbapedia.org/resource/japaneseName>
-                "_____のグラードン" ;
-        <http://www.bulbapedia.org/resource/jtrans>
-                "_____'s Groudon" ;
-        <http://www.bulbapedia.org/resource/retreatcost>
-                "2" ;
-        <http://www.bulbapedia.org/resource/species>
-                "Groudon" ;
-        <http://www.bulbapedia.org/resource/trainer>
-                "Blank Owner\n}}" ;
-        <http://www.bulbapedia.org/resource/type>
-                "Fighting" ;
-        <http://www.bulbapedia.org/resource/weakness>
-                "Water" .
-
-<http://www.bulbapedia.org/resource/'_B'_ゥ>
-        <http://schema.org/isPartOf>  <http://www.bulbapedia.org/page/'_B'_ゥ> ;
-        <http://www.bulbapedia.org/resource/caption>
-                "' B' ゥ 's sprite" ;
-        <http://www.bulbapedia.org/resource/games>
-                "{{game" ;
-        <http://www.bulbapedia.org/resource/height>
-                "27.07" ;
-        <http://www.bulbapedia.org/resource/height-ftin>
-                "82'82\"" ;
-        <http://www.bulbapedia.org/resource/image>
-                "Spr 1y 033.png" ;
-        <http://www.bulbapedia.org/resource/name>
-                "' B' ゥ" ;
-        <http://www.bulbapedia.org/resource/nationalDex>
-                "033" ;
-        <http://www.bulbapedia.org/resource/size>
-                "50px" ;
-        <http://www.bulbapedia.org/resource/species>
-                "No No" ;
-        <http://www.bulbapedia.org/resource/type>
-                "Poison" ;
-        <http://www.bulbapedia.org/resource/typen>
-                "1" ;
-        <http://www.bulbapedia.org/resource/weight>
-                "131.36" ;
-        <http://www.bulbapedia.org/resource/weight-lbs>
-                "289.6" .
-
-<http://www.bulbapedia.org/resource/'s_Jirachi_(PLAY_Promo_14)>
-        <http://schema.org/isPartOf>  <http://www.bulbapedia.org/page/'s_Jirachi_(PLAY_Promo_14)> ;
-        <http://www.bulbapedia.org/resource/caption>
-                "Illus. [[Kagemaru Himeno]]" ;
-        <http://www.bulbapedia.org/resource/cardname>
-                "_____'s Jirachi" ;
-        <http://www.bulbapedia.org/resource/evostage>
-                "Basic" ;
-        <http://www.bulbapedia.org/resource/hp>
-                "50" ;
-        <http://www.bulbapedia.org/resource/image>
-                "500 B014 201ZILARCH.jpg" ;
-        <http://www.bulbapedia.org/resource/japaneseName>
-                "_____のジラーチ" ;
-        <http://www.bulbapedia.org/resource/jtrans>
-                "_____'s Jirachi" ;
-        <http://www.bulbapedia.org/resource/resistance>
-                "Grass" ;
-        <http://www.bulbapedia.org/resource/retreatcost>
-                "1" ;
-        <http://www.bulbapedia.org/resource/species>
-                "Jirachi" ;
-        <http://www.bulbapedia.org/resource/trainer>
-                "Blank Owner\n}}" ;
-        <http://www.bulbapedia.org/resource/type>
-                "Metal" ;
-        <http://www.bulbapedia.org/resource/weakness>
-                "Fire" .
-
-<http://www.bulbapedia.org/resource/"ADV-P"_Promotional_cards_(TCG)>
-        <http://schema.org/isPartOf>  <http://www.bulbapedia.org/page/"ADV-P"_Promotional_cards_(TCG)> ;
-        <http://www.bulbapedia.org/resource/cards>
-                "63" ;
-        <http://www.bulbapedia.org/resource/image>
-                "SetSymbolPromo.png" ;
-        <http://www.bulbapedia.org/resource/period>
-                "January 2003 - February 2004" ;
-        <http://www.bulbapedia.org/resource/setname>
-                "ADV-P Promotional cards" ;
-        <http://www.bulbapedia.org/resource/symbol>
-                "yes" .
-
-<http://www.bulbapedia.org/resource/'s_Chansey_(Gym_2)>
-        <http://schema.org/isPartOf>  <http://www.bulbapedia.org/page/'s_Chansey_(Gym_2)> ;
-        <http://www.bulbapedia.org/resource/cardname>
-                "_____'s Chansey" ;
-        <http://www.bulbapedia.org/resource/japaneseName>
-                "{{tt" .
-
-<http://www.bulbapedia.org/page/'s_Groudon_(PLAY_Promo_20)>
-        <http://schema.org/about>  <http://www.bulbapedia.org/resource/'s_Groudon_(PLAY_Promo_20)> .
-
-<http://www.bulbapedia.org/page/'M_(FF)_(Pokémon)>
-        <http://schema.org/about>  <http://www.bulbapedia.org/resource/'M_(FF)_(Pokémon)> .
-
-<http://www.bulbapedia.org/resource/(_I'>
-        <http://schema.org/isPartOf>  <http://www.bulbapedia.org/page/(_I'> ;
-        <http://www.bulbapedia.org/resource/caption>
-                ".  ゥ ( .I' .'s sprite" ;
-        <http://www.bulbapedia.org/resource/games>
-                "{{game" ;
-        <http://www.bulbapedia.org/resource/height>
-                "24.46" ;
-        <http://www.bulbapedia.org/resource/height-ftin>
-                "80'3\"" ;
-        <http://www.bulbapedia.org/resource/image>
-                "Spr_1y_006.png" ;
-        <http://www.bulbapedia.org/resource/name>
-                ".  ゥ ( .I' ." ;
-        <http://www.bulbapedia.org/resource/nationalDex>
-                "006" ;
-        <http://www.bulbapedia.org/resource/size>
-                "56px" ;
-        <http://www.bulbapedia.org/resource/type>
-                "Fire" , "Flying" ;
-        <http://www.bulbapedia.org/resource/typen>
-                "2" ;
-        <http://www.bulbapedia.org/resource/weight>
-                "2766.45" ;
-        <http://www.bulbapedia.org/resource/weight-lbs>
-                "6099.0" .
-
-<http://www.bulbapedia.org/resource/"J"_Promotional_Cards_(TCG)>
-        <http://schema.org/isPartOf>  <http://www.bulbapedia.org/page/"J"_Promotional_Cards_(TCG)> ;
-        <http://www.bulbapedia.org/resource/cards>
-                "2" ;
-        <http://www.bulbapedia.org/resource/image>
-                "SetSymbolPromo.png" ;
-        <http://www.bulbapedia.org/resource/period>
-                "August 2001 - July 2002\n}}" ;
-        <http://www.bulbapedia.org/resource/setname>
-                "J Promotional cards" ;
-        <http://www.bulbapedia.org/resource/symbol>
-                "yes" .
-
-<http://www.bulbapedia.org/page/'Olu'olu>
-        <http://schema.org/about>  <http://www.bulbapedia.org/resource/'Olu'olu> .
-
-<http://www.bulbapedia.org/page/'s_Chansey_(Gym_2)>
-        <http://schema.org/about>  <http://www.bulbapedia.org/resource/'s_Chansey_(Gym_2)> .
-
-<http://www.bulbapedia.org/resource/"ADV-P"_Promotional_Cards_(TCG)>
-        <http://schema.org/isPartOf>  <http://www.bulbapedia.org/page/"ADV-P"_Promotional_Cards_(TCG)> ;
-        <http://www.bulbapedia.org/resource/cards>
-                "63" ;
-        <http://www.bulbapedia.org/resource/image>
-                "SetSymbolPromo.png" ;
-        <http://www.bulbapedia.org/resource/period>
-                "January 2003 - February 2004" ;
-        <http://www.bulbapedia.org/resource/setname>
-                "ADV-P Promotional cards" ;
         <http://www.bulbapedia.org/resource/symbol>
                 "yes" .
 
 <http://www.bulbapedia.org/page/"J"_Promotional_Cards_(TCG)>
         <http://schema.org/about>  <http://www.bulbapedia.org/resource/"J"_Promotional_Cards_(TCG)> .
-
-<http://www.bulbapedia.org/page/'B_'>
-        <http://schema.org/about>  <http://www.bulbapedia.org/resource/'B_'> .
-
-<http://www.bulbapedia.org/page/'s_Pikachu_(How_I_Became_a_Pokémon_Card_promo)>
-        <http://schema.org/about>  <http://www.bulbapedia.org/resource/'s_Pikachu_(How_I_Became_a_Pokémon_Card_promo)> .
-
-<http://www.bulbapedia.org/resource/'s_Pikachu_(BW-P_Promo)>
-        <http://schema.org/isPartOf>  <http://www.bulbapedia.org/page/'s_Pikachu_(BW-P_Promo)> ;
-        <http://www.bulbapedia.org/resource/caption>
-                "2010 print<br>Illus. [[Kanako Eo]]" ;
-        <http://www.bulbapedia.org/resource/cardname>
-                "_____'s Pikachu" ;
-        <http://www.bulbapedia.org/resource/evostage>
-                "Basic" ;
-        <http://www.bulbapedia.org/resource/hp>
-                "70" ;
-        <http://www.bulbapedia.org/resource/image>
-                "BlankPikachuBWPromo2010.jpg" ;
-        <http://www.bulbapedia.org/resource/japaneseName>
-                "_____のピカチュウ" ;
-        <http://www.bulbapedia.org/resource/jtrans>
-                "_____'s Pikachu" ;
-        <http://www.bulbapedia.org/resource/recaption1>
-                "2012 print<br>Illus. [[Naoki Saito]]" ;
-        <http://www.bulbapedia.org/resource/reprint1>
-                "BlankPikachuBWPromo2012.jpg" ;
-        <http://www.bulbapedia.org/resource/reprints>
-                "2" ;
-        <http://www.bulbapedia.org/resource/retreatcost>
-                "1" ;
-        <http://www.bulbapedia.org/resource/species>
-                "Pikachu" ;
-        <http://www.bulbapedia.org/resource/trainer>
-                "Blank Owner\n}}" ;
-        <http://www.bulbapedia.org/resource/type>
-                "Lightning" ;
-        <http://www.bulbapedia.org/resource/weakness>
-                "Fighting" .
-
-<http://www.bulbapedia.org/page/'Ng'Mp>
-        <http://schema.org/about>  <http://www.bulbapedia.org/resource/'Ng'Mp> .
-
-<http://www.bulbapedia.org/resource/'s_Pikachu_(Pokémon_Center_promo)>
-        <http://schema.org/isPartOf>  <http://www.bulbapedia.org/page/'s_Pikachu_(Pokémon_Center_promo)> ;
-        <http://www.bulbapedia.org/resource/caption>
-                "Illus. [[Atsuko Nishida]]" ;
-        <http://www.bulbapedia.org/resource/cardname>
-                "_____'s Pikachu" ;
-        <http://www.bulbapedia.org/resource/evostage>
-                "Basic" ;
-        <http://www.bulbapedia.org/resource/hp>
-                "70" ;
-        <http://www.bulbapedia.org/resource/image>
-                "PikachuPokémonCenterpromo.jpg" ;
-        <http://www.bulbapedia.org/resource/japaneseName>
-                "_____のピカチュウ" ;
-        <http://www.bulbapedia.org/resource/jtrans>
-                "_____'s Pikachu" ;
-        <http://www.bulbapedia.org/resource/resistance>
-                "Metal" ;
-        <http://www.bulbapedia.org/resource/retreatcost>
-                "1" ;
-        <http://www.bulbapedia.org/resource/rmultiplier>
-                "-20" ;
-        <http://www.bulbapedia.org/resource/species>
-                "Pikachu" ;
-        <http://www.bulbapedia.org/resource/trainer>
-                "Blank Owner\n}}" ;
-        <http://www.bulbapedia.org/resource/type>
-                "Lightning" ;
-        <http://www.bulbapedia.org/resource/weakness>
-                "Fighting" ;
-        <http://www.bulbapedia.org/resource/wmultiplier>
-                "+10" .
-
-<http://www.bulbapedia.org/page/"A_Ripple_in_Time"_by_Pokémon_×_Daniel_Arsham>
-        <http://schema.org/about>  <http://www.bulbapedia.org/resource/"A_Ripple_in_Time"_by_Pokémon_×_Daniel_Arsham> .
-
-<http://www.bulbapedia.org/resource/'s_Pikachu_(Promo_Card_Pack_25th_Anniversary_Edition_7)>
-        <http://schema.org/isPartOf>  <http://www.bulbapedia.org/page/'s_Pikachu_(Promo_Card_Pack_25th_Anniversary_Edition_7)> ;
-        <http://www.bulbapedia.org/resource/cardname>
-                "_____'s Pikachu" ;
-        <http://www.bulbapedia.org/resource/japaneseName>
-                "{{tt" ;
-        <http://www.bulbapedia.org/resource/level>
-                "17" .
-
-<http://www.bulbapedia.org/resource/'M_'N_g>
-        <http://schema.org/isPartOf>  <http://www.bulbapedia.org/page/'M_'N_g> ;
-        <http://www.bulbapedia.org/resource/caption>
-                "'M 'N g's front sprite." ;
-        <http://www.bulbapedia.org/resource/games>
-                "{{game" ;
-        <http://www.bulbapedia.org/resource/height>
-                "7.01" ;
-        <http://www.bulbapedia.org/resource/height-ftin>
-                "23'0\"" ;
-        <http://www.bulbapedia.org/resource/image>
-                "RBGlitch095.png" ;
-        <http://www.bulbapedia.org/resource/imgsize>
-                "56px" ;
-        <http://www.bulbapedia.org/resource/japaneseName>
-                "ゾ　Ａビケ" ;
-        <http://www.bulbapedia.org/resource/name>
-                "'M 'N g" ;
-        <http://www.bulbapedia.org/resource/nationalDex>
-                "095" ;
-        <http://www.bulbapedia.org/resource/species>
-                "Q u" ;
-        <http://www.bulbapedia.org/resource/tmname>
-                "Zo Ē Bike" ;
-        <http://www.bulbapedia.org/resource/type>
-                "Rock" , "Ground" ;
-        <http://www.bulbapedia.org/resource/typen>
-                "2" ;
-        <http://www.bulbapedia.org/resource/weight>
-                "399.43" ;
-        <http://www.bulbapedia.org/resource/weight-lbs>
-                "880.6" .
-
-<http://www.bulbapedia.org/page/"T"_Promotional_Cards>
-        <http://schema.org/about>  <http://www.bulbapedia.org/resource/"T"_Promotional_Cards> .
-
-<http://www.bulbapedia.org/page/'r_'r_4>
-        <http://schema.org/about>  <http://www.bulbapedia.org/resource/'r_'r_4> .
-
-<http://www.bulbapedia.org/resource/'Olu'olu>
-        <http://schema.org/isPartOf>  <http://www.bulbapedia.org/page/'Olu'olu> ;
-        <http://www.bulbapedia.org/resource/color>
-                "{{normal color}}" .
-
-<http://www.bulbapedia.org/resource/'Ulu>
-        <http://schema.org/isPartOf>  <http://www.bulbapedia.org/page/'Ulu> ;
-        <http://www.bulbapedia.org/resource/color>
-                "{{grass color}}" .
-
-<http://www.bulbapedia.org/page/"P"_Promotional_Card_(TCG)>
-        <http://schema.org/about>  <http://www.bulbapedia.org/resource/"P"_Promotional_Card_(TCG)> .
-
-<http://www.bulbapedia.org/page/(_I'_(Pokémon)>
-        <http://schema.org/about>  <http://www.bulbapedia.org/resource/(_I'_(Pokémon)> .
-
-<http://www.bulbapedia.org/page/"J"_Promotional_Cards>
-        <http://schema.org/about>  <http://www.bulbapedia.org/resource/"J"_Promotional_Cards> .
-
-<http://www.bulbapedia.org/page/"ADV-P"_Promotional_Cards>
-        <http://schema.org/about>  <http://www.bulbapedia.org/resource/"ADV-P"_Promotional_Cards> .
-
-<http://www.bulbapedia.org/page/'s_Celebi_(PLAY_Promo_12)>
-        <http://schema.org/about>  <http://www.bulbapedia.org/resource/'s_Celebi_(PLAY_Promo_12)> .
-
-<http://www.bulbapedia.org/page/"PCG-P"_Promotional_cards_(TCG)>
-        <http://schema.org/about>  <http://www.bulbapedia.org/resource/"PCG-P"_Promotional_cards_(TCG)> .
-
-<http://www.bulbapedia.org/page/'M_(FF)>
-        <http://schema.org/about>  <http://www.bulbapedia.org/resource/'M_(FF)> .
-
-<http://www.bulbapedia.org/resource/'M_(FE)_(Pokémon)>
-        <http://schema.org/isPartOf>  <http://www.bulbapedia.org/page/'M_(FE)_(Pokémon)> ;
-        <http://www.bulbapedia.org/resource/caption>
-                "'M (FE)'s sprite" ;
-        <http://www.bulbapedia.org/resource/games>
-                "{{v2" ;
-        <http://www.bulbapedia.org/resource/height>
-                "7.01" ;
-        <http://www.bulbapedia.org/resource/height-ftin>
-                "23'0\"" ;
-        <http://www.bulbapedia.org/resource/image>
-                "RBGlitch079.png" ;
-        <http://www.bulbapedia.org/resource/imgsize>
-                "40px" ;
-        <http://www.bulbapedia.org/resource/japaneseName>
-                "ム゙▼イ゙ マ゙ゃ" ;
-        <http://www.bulbapedia.org/resource/name>
-                "'M" ;
-        <http://www.bulbapedia.org/resource/nationalDex>
-                "079" ;
-        <http://www.bulbapedia.org/resource/tmname>
-                "Muimaya" ;
-        <http://www.bulbapedia.org/resource/type>
-                "Water" , "Psychic" ;
-        <http://www.bulbapedia.org/resource/typen>
-                "2" ;
-        <http://www.bulbapedia.org/resource/weight>
-                "399.43" ;
-        <http://www.bulbapedia.org/resource/weight-lbs>
-                "880.6" .
-
-<http://www.bulbapedia.org/resource/"T"_Promotional_cards_(TCG)>
-        <http://schema.org/isPartOf>  <http://www.bulbapedia.org/page/"T"_Promotional_cards_(TCG)> ;
-        <http://www.bulbapedia.org/resource/cards>
-                "24" ;
-        <http://www.bulbapedia.org/resource/image>
-                "SetSymbolTrainer Magazine.png" ;
-        <http://www.bulbapedia.org/resource/period>
-                "January 2002 - March 2003\n}}" ;
-        <http://www.bulbapedia.org/resource/setname>
-                "T Promotional cards" ;
-        <http://www.bulbapedia.org/resource/symbol>
-                "yes" .
-
-<http://www.bulbapedia.org/resource/(Rival_name)_(move)>
-        <http://schema.org/isPartOf>  <http://www.bulbapedia.org/page/(Rival_name)_(move)> ;
-        <http://www.bulbapedia.org/resource/acc>
-                "&mdash;" ;
-        <http://www.bulbapedia.org/resource/appear>
-                "&mdash;" ;
-        <http://www.bulbapedia.org/resource/dec>
-                "000" ;
-        <http://www.bulbapedia.org/resource/effect>
-                "[[TMTRAINER effect]] and other [[Super Glitch#Effect" ;
-        <http://www.bulbapedia.org/resource/gen2>
-                "It has the appearance of {{m" ;
-        <http://www.bulbapedia.org/resource/hex>
-                "00" ;
-        <http://www.bulbapedia.org/resource/pp>
-                "0/13" ;
-        <http://www.bulbapedia.org/resource/pwr>
-                "&mdash;" ;
-        <http://www.bulbapedia.org/resource/type>
-                "CoolTrainer♀" .
-
-<http://www.bulbapedia.org/page/"P"_Promotional_cards_(TCG)>
-        <http://schema.org/about>  <http://www.bulbapedia.org/resource/"P"_Promotional_cards_(TCG)> .
-
-<http://www.bulbapedia.org/page/'s_Pikachu_(Classic_Collection)>
-        <http://schema.org/about>  <http://www.bulbapedia.org/resource/'s_Pikachu_(Classic_Collection)> .
-
-<http://www.bulbapedia.org/page/"PCG-P"_Promotional_Cards_(TCG)>
-        <http://schema.org/about>  <http://www.bulbapedia.org/resource/"PCG-P"_Promotional_Cards_(TCG)> .
-
-<http://www.bulbapedia.org/page/$_(Pokémon)>
-        <http://schema.org/about>  <http://www.bulbapedia.org/resource/$_(Pokémon)> .
-
-<http://www.bulbapedia.org/page/"T"_Promotional_cards_(TCG)>
-        <http://schema.org/about>  <http://www.bulbapedia.org/resource/"T"_Promotional_cards_(TCG)> .
-
-<http://www.bulbapedia.org/resource/"A_Ripple_in_Time"_by_Pokémon_×_Daniel_Arsham>
-        <http://schema.org/isPartOf>  <http://www.bulbapedia.org/page/"A_Ripple_in_Time"_by_Pokémon_×_Daniel_Arsham> ;
-        <http://www.bulbapedia.org/resource/art>
-                "一石小百合" ;
-        <http://www.bulbapedia.org/resource/broadcast_jp>
-                "February 12, 2022" ;
-        <http://www.bulbapedia.org/resource/broadcast_us>
-                "<!--Do not assume an air date. If you have an air date you should also provide a title and a source.-->" ;
-        <http://www.bulbapedia.org/resource/colorscheme>
-                "Hoso" ;
-        <http://www.bulbapedia.org/resource/director>
-                "大和田淳" ;
-        <http://www.bulbapedia.org/resource/en_op>
-                "" ;
-        <http://www.bulbapedia.org/resource/footnotes>
-                "* {{BMGf" ;
-        <http://www.bulbapedia.org/resource/ja_ed>
-                "None" ;
-        <http://www.bulbapedia.org/resource/ja_op>
-                "None" ;
-        <http://www.bulbapedia.org/resource/olmteam>
-                "Team Kato" ;
-        <http://www.bulbapedia.org/resource/scenario>
-                "湯山邦彦" ;
-        <http://www.bulbapedia.org/resource/screen>
-                "hd" ;
-        <http://www.bulbapedia.org/resource/screenshot>
-                "A Ripple in Time.png" ;
-        <http://www.bulbapedia.org/resource/storyboard>
-                "湯山邦彦" ;
-        <http://www.bulbapedia.org/resource/title_en>
-                "" ;
-        <http://www.bulbapedia.org/resource/title_ja>
-                "\"A Ripple in Time\" by<br>Pokémon × Daniel Arsham" ;
-        <http://www.bulbapedia.org/resource/title_ja_trans>
-                "\"A Ripple in Time\" by Pokémon × Daniel Arsham" .
-
-<http://www.bulbapedia.org/page/'s_Snivy_(Super_Snivy_Promo)>
-        <http://schema.org/about>  <http://www.bulbapedia.org/resource/'s_Snivy_(Super_Snivy_Promo)> .
-
-<http://www.bulbapedia.org/resource/"T"_Promotional_Cards_(TCG)>
-        <http://schema.org/isPartOf>  <http://www.bulbapedia.org/page/"T"_Promotional_Cards_(TCG)> ;
-        <http://www.bulbapedia.org/resource/cards>
-                "24" ;
-        <http://www.bulbapedia.org/resource/image>
-                "SetSymbolTrainer Magazine.png" ;
-        <http://www.bulbapedia.org/resource/period>
-                "January 2002 - March 2003\n}}" ;
-        <http://www.bulbapedia.org/resource/setname>
-                "T Promotional cards" ;
-        <http://www.bulbapedia.org/resource/symbol>
-                "yes" .
-
-<http://www.bulbapedia.org/resource/(Have_Some)_Fun_with_the_Funk>
-        <http://schema.org/isPartOf>  <http://www.bulbapedia.org/page/(Have_Some)_Fun_with_the_Funk> ;
-        <http://www.bulbapedia.org/resource/caption>
-                "CD cover art featuring {{p" ;
-        <http://www.bulbapedia.org/resource/image>
-                "Pokémon the First Movie soundtrack CD.jpg" ;
-        <http://www.bulbapedia.org/resource/image_size>
-                "200px" ;
-        <http://www.bulbapedia.org/resource/name>
-                "''Pokémon the First Movie''" ;
-        <http://www.bulbapedia.org/resource/subtitled>
-                "Music from and inspired by the motion picture" .
-
-<http://www.bulbapedia.org/page/(Rival_name)_(move)>
-        <http://schema.org/about>  <http://www.bulbapedia.org/resource/(Rival_name)_(move)> .
-
-<http://www.bulbapedia.org/resource/$_(Pokémon)>
-        <http://schema.org/isPartOf>  <http://www.bulbapedia.org/page/$_(Pokémon)> ;
-        <http://www.bulbapedia.org/resource/caption>
-                "[[File:YGlitchNameF9.png" ;
-        <http://www.bulbapedia.org/resource/games>
-                "{{v2" ;
-        <http://www.bulbapedia.org/resource/height>
-                "7.1" ;
-        <http://www.bulbapedia.org/resource/height-ftin>
-                "23' 2\"" ;
-        <http://www.bulbapedia.org/resource/image>
-                "Missingno Y.png" ;
-        <http://www.bulbapedia.org/resource/link>
-                "]]'s sprite" ;
-        <http://www.bulbapedia.org/resource/name>
-                "$" ;
-        <http://www.bulbapedia.org/resource/nationalDex>
-                "000" ;
-        <http://www.bulbapedia.org/resource/size>
-                "56px" ;
-        <http://www.bulbapedia.org/resource/type>
-                "Glitch" ;
-        <http://www.bulbapedia.org/resource/typen>
-                "1" ;
-        <http://www.bulbapedia.org/resource/weight>
-                "467.9" ;
-        <http://www.bulbapedia.org/resource/weight-lbs>
-                "1031.6" .
-
-<http://www.bulbapedia.org/resource/'s_Snivy_(Super_Snivy_Promo)>
-        <http://schema.org/isPartOf>  <http://www.bulbapedia.org/page/'s_Snivy_(Super_Snivy_Promo)> ;
-        <http://www.bulbapedia.org/resource/caption>
-                "Illus. [[5ban Graphics]]" ;
-        <http://www.bulbapedia.org/resource/cardname>
-                "_____'s Snivy" ;
-        <http://www.bulbapedia.org/resource/evostage>
-                "Basic" ;
-        <http://www.bulbapedia.org/resource/hp>
-                "200" ;
-        <http://www.bulbapedia.org/resource/image>
-                "BlankSnivySuperSnivyPromo.jpg" ;
-        <http://www.bulbapedia.org/resource/japaneseName>
-                "_____のツタージャ" ;
-        <http://www.bulbapedia.org/resource/jtrans>
-                "_____'s Tsutarja" ;
-        <http://www.bulbapedia.org/resource/retreatcost>
-                "1" ;
-        <http://www.bulbapedia.org/resource/species>
-                "Snivy" ;
-        <http://www.bulbapedia.org/resource/trainer>
-                "Blank Owner\n}}" ;
-        <http://www.bulbapedia.org/resource/type>
-                "Grass" ;
-        <http://www.bulbapedia.org/resource/weakness>
-                "Fire" .
-
-<http://www.bulbapedia.org/page/"P"_Promotional_Cards_(TCG)>
-        <http://schema.org/about>  <http://www.bulbapedia.org/resource/"P"_Promotional_Cards_(TCG)> .
-
-<http://www.bulbapedia.org/resource/''Black—Victini_and_Reshiram''_and_''White—Victini_and_Zekrom''>
-        <http://schema.org/isPartOf>  <http://www.bulbapedia.org/page/''Black—Victini_and_Reshiram''_and_''White—Victini_and_Zekrom''> ;
-        <http://www.bulbapedia.org/resource/colorscheme>
-                "BW" ;
-        <http://www.bulbapedia.org/resource/entitle>
-                "White—Victini and Zekrom" ;
-        <http://www.bulbapedia.org/resource/entitle2>
-                "Black—Victini and Reshiram" ;
-        <http://www.bulbapedia.org/resource/jatitle>
-                "ビクティニと黒き英雄　ゼクロム" ;
-        <http://www.bulbapedia.org/resource/jatitle2>
-                "ビクティニと白き英雄　レシラム" ;
-        <http://www.bulbapedia.org/resource/jpprem>
-                "July 16, 2011" ;
-        <http://www.bulbapedia.org/resource/plain_title>
-                "White—Victini and Zekrom and Black—Victini and Reshiram" ;
-        <http://www.bulbapedia.org/resource/poster>
-                "M14 eng poster.png" ;
-        <http://www.bulbapedia.org/resource/rotitle>
-                "Victini and the Black Hero: Zekrom" ;
-        <http://www.bulbapedia.org/resource/rotitle2>
-                "Victini and the White Hero: Reshiram" ;
-        <http://www.bulbapedia.org/resource/usprem>
-                "December 3, 2011{{tt" .
-
-<http://www.bulbapedia.org/page/'r_ゥ>
-        <http://schema.org/about>  <http://www.bulbapedia.org/resource/'r_ゥ> .
-
-<http://www.bulbapedia.org/page/"T"_Promotional_Cards_(TCG)>
-        <http://schema.org/about>  <http://www.bulbapedia.org/resource/"T"_Promotional_Cards_(TCG)> .
-
-<http://www.bulbapedia.org/page/"DP-P"_Promotional_Cards_(TCG)>
-        <http://schema.org/about>  <http://www.bulbapedia.org/resource/"DP-P"_Promotional_Cards_(TCG)> .
-
-<http://www.bulbapedia.org/resource/'ゥ._(Pokémon)>
-        <http://schema.org/isPartOf>  <http://www.bulbapedia.org/page/'ゥ._(Pokémon)> ;
-        <http://www.bulbapedia.org/resource/caption>
-                "[[File:YGlitchNameD5.png" ;
-        <http://www.bulbapedia.org/resource/games>
-                "[[Pokémon Yellow Version]]" ;
-        <http://www.bulbapedia.org/resource/hex>
-                "D5" ;
-        <http://www.bulbapedia.org/resource/image>
-                "Spr 1y 001.png" ;
-        <http://www.bulbapedia.org/resource/johtoguard>
-                "{{p" ;
-        <http://www.bulbapedia.org/resource/link>
-                "]]'s sprite" ;
-        <http://www.bulbapedia.org/resource/lv100exp>
-                "1059860" ;
-        <http://www.bulbapedia.org/resource/name>
-                "'ゥ." ;
-        <http://www.bulbapedia.org/resource/nationalDex>
-                "001" ;
-        <http://www.bulbapedia.org/resource/size>
-                "56px" ;
-        <http://www.bulbapedia.org/resource/species>
-                "9" ;
-        <http://www.bulbapedia.org/resource/type>
-                "Poison" , "Grass" ;
-        <http://www.bulbapedia.org/resource/typen>
-                "2" .
-
-<http://www.bulbapedia.org/page/(h4to89>
-        <http://schema.org/about>  <http://www.bulbapedia.org/resource/(h4to89> .
-
-<http://www.bulbapedia.org/page/'s_Oshawott_(BW-P_Promo)>
-        <http://schema.org/about>  <http://www.bulbapedia.org/resource/'s_Oshawott_(BW-P_Promo)> .
-
-<http://www.bulbapedia.org/resource/"T"_Promotional_Cards>
-        <http://schema.org/isPartOf>  <http://www.bulbapedia.org/page/"T"_Promotional_Cards> ;
-        <http://www.bulbapedia.org/resource/cards>
-                "24" ;
-        <http://www.bulbapedia.org/resource/image>
-                "SetSymbolTrainer Magazine.png" ;
-        <http://www.bulbapedia.org/resource/period>
-                "January 2002 - March 2003\n}}" ;
-        <http://www.bulbapedia.org/resource/setname>
-                "T Promotional cards" ;
-        <http://www.bulbapedia.org/resource/symbol>
-                "yes" .
-
-<http://www.bulbapedia.org/page/'s_Chansey_(Challenge_from_the_Darkness)>
-        <http://schema.org/about>  <http://www.bulbapedia.org/resource/'s_Chansey_(Challenge_from_the_Darkness)> .
-
-<http://www.bulbapedia.org/resource/"PCG-P"_Promotional_cards_(TCG)>
-        <http://schema.org/isPartOf>  <http://www.bulbapedia.org/page/"PCG-P"_Promotional_cards_(TCG)> ;
-        <http://www.bulbapedia.org/resource/cards>
-                "154" ;
-        <http://www.bulbapedia.org/resource/image>
-                "SetSymbolPromo.png" ;
-        <http://www.bulbapedia.org/resource/period>
-                "February 2004 - July 2006\n}}" ;
-        <http://www.bulbapedia.org/resource/setname>
-                "PCG-P Promotional cards" ;
-        <http://www.bulbapedia.org/resource/symbol>
-                "yes" .
-
-<http://www.bulbapedia.org/resource/'s_Pikachu_(Classic_Collection)>
-        <http://schema.org/isPartOf>  <http://www.bulbapedia.org/page/'s_Pikachu_(Classic_Collection)> ;
-        <http://www.bulbapedia.org/resource/cardname>
-                "_____'s Pikachu" ;
-        <http://www.bulbapedia.org/resource/japaneseName>
-                "{{tt" ;
-        <http://www.bulbapedia.org/resource/level>
-                "17" .
-
-<http://www.bulbapedia.org/resource/(h4to89>
-        <http://schema.org/isPartOf>  <http://www.bulbapedia.org/page/(h4to89> ;
-        <http://www.bulbapedia.org/resource/caption>
-                "(h4to89's sprite. (with removed purple screen)" ;
-        <http://www.bulbapedia.org/resource/height-ftin>
-                "23'2\"" ;
-        <http://www.bulbapedia.org/resource/image>
-                "YGlitch202.png" ;
-        <http://www.bulbapedia.org/resource/johtoguard>
-                "{{p" ;
-        <http://www.bulbapedia.org/resource/lv100exp>
-                "16136684" ;
-        <http://www.bulbapedia.org/resource/name>
-                "(h4to89" ;
-        <http://www.bulbapedia.org/resource/nationalDex>
-                "202" ;
-        <http://www.bulbapedia.org/resource/size>
-                "56px" ;
-        <http://www.bulbapedia.org/resource/type>
-                "Glitch" , "Normal" ;
-        <http://www.bulbapedia.org/resource/typen>
-                "2" ;
-        <http://www.bulbapedia.org/resource/weight-lbs>
-                "1031.6" .
-
-<http://www.bulbapedia.org/resource/(h4to89_(Pokémon)>
-        <http://schema.org/isPartOf>  <http://www.bulbapedia.org/page/(h4to89_(Pokémon)> ;
-        <http://www.bulbapedia.org/resource/caption>
-                "(h4to89's sprite. (with removed purple screen)" ;
-        <http://www.bulbapedia.org/resource/height-ftin>
-                "23'2\"" ;
-        <http://www.bulbapedia.org/resource/image>
-                "YGlitch202.png" ;
-        <http://www.bulbapedia.org/resource/johtoguard>
-                "{{p" ;
-        <http://www.bulbapedia.org/resource/lv100exp>
-                "16136684" ;
-        <http://www.bulbapedia.org/resource/name>
-                "(h4to89" ;
-        <http://www.bulbapedia.org/resource/nationalDex>
-                "202" ;
-        <http://www.bulbapedia.org/resource/size>
-                "56px" ;
-        <http://www.bulbapedia.org/resource/type>
-                "Glitch" , "Normal" ;
-        <http://www.bulbapedia.org/resource/typen>
-                "2" ;
-        <http://www.bulbapedia.org/resource/weight-lbs>
-                "1031.6" .
-
-<http://www.bulbapedia.org/resource/$_(glitch_Pokémon)>
-        <http://schema.org/isPartOf>  <http://www.bulbapedia.org/page/$_(glitch_Pokémon)> ;
-        <http://www.bulbapedia.org/resource/caption>
-                "[[File:YGlitchNameF9.png" ;
-        <http://www.bulbapedia.org/resource/games>
-                "{{v2" ;
-        <http://www.bulbapedia.org/resource/height>
-                "7.1" ;
-        <http://www.bulbapedia.org/resource/height-ftin>
-                "23' 2\"" ;
-        <http://www.bulbapedia.org/resource/image>
-                "Missingno Y.png" ;
-        <http://www.bulbapedia.org/resource/link>
-                "]]'s sprite" ;
-        <http://www.bulbapedia.org/resource/name>
-                "$" ;
-        <http://www.bulbapedia.org/resource/nationalDex>
-                "000" ;
-        <http://www.bulbapedia.org/resource/size>
-                "56px" ;
-        <http://www.bulbapedia.org/resource/type>
-                "Glitch" ;
-        <http://www.bulbapedia.org/resource/typen>
-                "1" ;
-        <http://www.bulbapedia.org/resource/weight>
-                "467.9" ;
-        <http://www.bulbapedia.org/resource/weight-lbs>
-                "1031.6" .
-
-<http://www.bulbapedia.org/resource/'r>
-        <http://schema.org/isPartOf>  <http://www.bulbapedia.org/page/'r> ;
-        <http://www.bulbapedia.org/resource/caption>
-                "'r ゥ's sprite" ;
-        <http://www.bulbapedia.org/resource/games>
-                "{{game" ;
-        <http://www.bulbapedia.org/resource/height>
-                "3.98" ;
-        <http://www.bulbapedia.org/resource/height-ftin>
-                "13'01\"" ;
-        <http://www.bulbapedia.org/resource/image>
-                "YGlitch143.png" ;
-        <http://www.bulbapedia.org/resource/name>
-                "'r ゥ" ;
-        <http://www.bulbapedia.org/resource/nationalDex>
-                "143" ;
-        <http://www.bulbapedia.org/resource/size>
-                "56px" ;
-        <http://www.bulbapedia.org/resource/species>
-                "Ragon" ;
-        <http://www.bulbapedia.org/resource/type>
-                "Normal" ;
-        <http://www.bulbapedia.org/resource/typen>
-                "1" ;
-        <http://www.bulbapedia.org/resource/weight>
-                "16.33" ;
-        <http://www.bulbapedia.org/resource/weight-lbs>
-                "36.0" .
-
-<http://www.bulbapedia.org/resource/"DP-P"_Promotional_Cards_(TCG)>
-        <http://schema.org/isPartOf>  <http://www.bulbapedia.org/page/"DP-P"_Promotional_Cards_(TCG)> ;
-        <http://www.bulbapedia.org/resource/cards>
-                "127" ;
-        <http://www.bulbapedia.org/resource/image>
-                "SetSymbolPromo.png" ;
-        <http://www.bulbapedia.org/resource/period>
-                "December 2006 - January 2009\n}}" ;
-        <http://www.bulbapedia.org/resource/setname>
-                "DP-P Promotional cards" ;
-        <http://www.bulbapedia.org/resource/symbol>
-                "yes" .
-
-<http://www.bulbapedia.org/resource/"W"_Promotional_cards_(TCG)>
-        <http://schema.org/isPartOf>  <http://www.bulbapedia.org/page/"W"_Promotional_cards_(TCG)> ;
-        <http://www.bulbapedia.org/resource/cards>
-                "7" ;
-        <http://www.bulbapedia.org/resource/period>
-                "September 1999 - March 2001" ;
-        <http://www.bulbapedia.org/resource/setname>
-                "W Promotional cards" ;
-        <http://www.bulbapedia.org/resource/symbol>
-                "no" .
-
-<http://www.bulbapedia.org/page/'s_Pikachu_(Wizards_Promo_24)>
-        <http://schema.org/about>  <http://www.bulbapedia.org/resource/'s_Pikachu_(Wizards_Promo_24)> .
-
-<http://www.bulbapedia.org/page/)>
-        <http://schema.org/about>  <http://www.bulbapedia.org/resource/)> .
