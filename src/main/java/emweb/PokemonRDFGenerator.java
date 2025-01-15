@@ -13,8 +13,8 @@ public class PokemonRDFGenerator {
     public static void main(String[] args) {
         try {              
             List<String> allPages = PokemonPagesFetcher.listAllPages();
-            List<String> first1000Pages = allPages.subList(0, Math.min(1, allPages.size()));
-            List<String> validPokemonNames = PokemonNames.getTest();
+            List<String> first1000Pages = allPages.subList(0, Math.min(100, allPages.size()));
+            List<String> validPokemonNames = PokemonNames.getValidPokemonNames();
             List<String> pokemonWithSuffix = validPokemonNames.stream().map(name -> name + " (Pokémon)").collect(Collectors.toList());
             List<String> pokemonPages = PokemonPagesFetcher.listPokemonPagesWithKeyword("(Pokémon)");
             List<String> selectPokemonPages = pokemonPages.stream().filter(pokemonWithSuffix::contains).collect(Collectors.toList());
@@ -33,27 +33,37 @@ public class PokemonRDFGenerator {
                     
             for (String pageTitle : combinedPages) {            
                 String wikiContent = PokemonPagesFetcher.getWikiContent(pageTitle);
-            
+                
                 if (wikiContent != null && !wikiContent.isEmpty()) {
                     String pokemonId = UtilsFunctions.findPokemonId(multilingualNamesMap, pageTitle);
-                    if (pokemonId != null) {
-                        List<String[]> multilingualNames = multilingualNamesMap.get(pokemonId);
-                        System.out.println("multilingualNames : " + multilingualNames);
-                        String infoboxContent = PokemonInfoboxRDFGenerator.extractInfobox(wikiContent, selectedInfoboxTypes);
-
-                        if (infoboxContent != null) {
-                            Model model = PokemonInfoboxRDFGenerator.generateRDFForInfoboxType(infoboxContent, pageTitle, multilingualNames, pokemonId);
-                            combinedModel.add(model); 
-                        } else {
-                            System.out.println("L'infobox de la page est vide : " + pageTitle);
+                    List<String[]> multilingualNames = pokemonId != null ? multilingualNamesMap.get(pokemonId) : null;
+            
+                    String infoboxContent = PokemonInfoboxRDFGenerator.extractInfobox(wikiContent, selectedInfoboxTypes);
+            
+                    if (infoboxContent != null) {
+                        if (infoboxContent.contains("TCGPromoInfobox")) {
+                            Model model = PokemonInfoboxRDFGenerator.generateRDFForTCGPromoInfobox(infoboxContent, pageTitle);
+                            combinedModel.add(model);
+                        } 
+                        else if (infoboxContent.contains("Pokémon Infobox")) {
+                            if (pokemonId != null && multilingualNames != null) {
+                                Model model = PokemonInfoboxRDFGenerator.generateRDFForPokemonInfobox(infoboxContent, pageTitle, multilingualNames, pokemonId);
+                                combinedModel.add(model);
+                            } else {
+                                System.out.println("ID Pokémon introuvable ou noms multilingues manquants pour la page : " + pageTitle);
+                            }
+                        } 
+                        else {
+                            System.out.println("Type d'infobox non reconnu pour la page : " + pageTitle);
                         }
                     } else {
-                            System.out.println("ID Pokémon introuvable pour la page : " + pageTitle);
+                        System.out.println("L'infobox de la page est vide : " + pageTitle);
                     }
                 } else {
                     System.out.println("Le contenu de la page est vide : " + pageTitle);
                 }
             }
+            
 
             try (FileWriter out = new FileWriter("pokemon_output.ttl")) {
                 combinedModel.write(out, "TURTLE");
