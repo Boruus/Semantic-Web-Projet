@@ -96,40 +96,41 @@ This project creates a semantic web representation of Pokémon data using RDF. I
 ## Installation and Setup (Front)
 
 1. If needed, clone the GitHub repository:
-  ```sh
+  ```
   git clone https://github.com/Boruus/Semantic-Web-Projet.git
    cd Semantic-Web-Projet/semweb-front
+  ```
 
-2. Installez les dépendances Node.js :
-
+2. Install Node.js dependencies:
+  ```
     npm install
+  ```
+## Starting the Project
 
-## Démarrage du Projet
-
-1. Démarrez le serveur Express :
-
+1. Start the Vue.js application:
+  ```
     npm run serve
-
-2. Ouvrez votre navigateur et accédez à 
-
+  ```
+2. Open your browser and go to:
+  ```
     http://localhost:8080
-
+  ```
 
 ### Navigation
 
-- **Home** : Page d'accueil avec une description du projet.
-- **Pokémon** : Affiche une liste de pages Pokémon. Cliquez sur une page pour voir les détails.
-- **Pokémon Cards** : Affiche une liste de cartes Pokémon. Cliquez sur une page pour voir les détails.
-- **Tuples** : Affiche une liste de tuples RDF (prédicat-objet) pour les Pokémon.
-- **Attacks** : Affiche une liste des attaques Pokémon (en cours de développement).
-- **Regions** : Affiche une liste des régions Pokémon (en cours de développement).
-- **Credit** : Affiche les crédits du projet.
+- **Home** : Homepage with a description of the project.
+- **Pokémon** : Displays a list of Pokémon pages. Click on a page to see the details.
+- **Pokémon Cards** : Displays a list of Pokémon cards. Click on a page to see the details.
+- **Tuples** : Displays a list of RDF tuples (predicate-object) for Pokémon.
+- **Attacks** : Displays a list of Pokémon attacks (under development).
+- **Regions** : Displays a list of Pokémon regions (under development).
+- **Credit** : Displays the project credits.
 
-### Génération de RDF (en cours de développement)
+### RDF Generation (under development)
 
-Pour exécuter le générateur RDF, cliquez sur le bouton "Run Pokemon RDF Generator" sur la page principale. Cela enverra une requête au serveur Express pour exécuter le programme Java `PokemonRDFGenerator`.
+To run the RDF generator, click on the "Run Pokemon RDF Generator" button on the main page. This will send a request to the Express server to run the Java `PokemonRDFGenerator`program.
 
-## Développeurs
+## Developers
 
 - **Boris Trombert**
 - **Mathias CHANE-WAYE**
@@ -139,7 +140,7 @@ Pour exécuter le générateur RDF, cliquez sur le bouton "Run Pokemon RDF Gener
 - **Antoine Zimmermann**
 - **Maxime Lefrançois**
 
-## Ressources
+## Resources
 
 - **Bulbapedia**
 - **Infobox Templates**
