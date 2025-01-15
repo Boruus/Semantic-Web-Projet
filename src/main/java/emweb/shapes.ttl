@@ -1,0 +1,173 @@
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix schema: <http://schema.org/> .
+@prefix bulbapedia: <http://example.org/bulbapedia#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .  
+@prefix rdfs: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> . 
+
+<#PokemonShape>
+    a sh:NodeShape ;
+    sh:targetClass schema:Thing ; 
+    sh:property [
+        sh:path schema:name ;
+        sh:datatype xsd:string ;
+        sh:minCount 1 ;
+        sh:maxCount 1 ;
+    ] ;
+    sh:property [
+        sh:path bulbapedia:catchrate ;
+        sh:datatype xsd:integer ;
+        sh:minInclusive 1 ;
+        sh:maxInclusive 255 ;
+    ] ;
+    sh:property [
+        sh:path bulbapedia:egggroup1 ;
+        sh:datatype xsd:string ;
+        sh:minCount 1 ;
+    ] ;
+    sh:property [
+        sh:path bulbapedia:egggroup2 ;
+        sh:datatype xsd:string ;
+        sh:maxCount 1 ;
+    ] ;
+    sh:property [
+        sh:path schema:height ;
+        sh:datatype xsd:decimal ;
+        sh:minInclusive 0.1 ;
+    ] ;
+    sh:property [
+        sh:path schema:weight ;
+        sh:datatype xsd:decimal ;
+        sh:minInclusive 0.1 ;
+    ] ;
+    sh:property [
+        sh:path schema:additionalType ;
+        sh:datatype xsd:string ;
+        sh:minCount 1 ;
+    ] ;
+    sh:property [
+        sh:path rdfs:label ; 
+        sh:datatype xsd:string ;
+        sh:minCount 0 ;
+    ] ;
+    sh:property [
+        sh:path bulbapedia:abilityn ;  
+        sh:datatype xsd:string ;
+        sh:minCount 0 ;
+    ] ;
+   sh:property [
+        sh:path bulbapedia:evsp;  
+        sh:datatype xsd:string ;
+        sh:minCount 0 ;
+    ] ;
+    sh:property [
+        sh:path bulbapedia:evtotal;  
+        sh:datatype xsd:string ;
+        sh:minCount 0 ;
+    ] ;
+    sh:property [
+        sh:path bulbapedia:friendship;  
+        sh:datatype xsd:string ;
+        sh:minCount 0 ;
+    ] ;
+    sh:property [
+        sh:path bulbapedia:gendercode;  
+        sh:datatype xsd:string ;
+        sh:minCount 0 ;
+    ] ;
+    sh:property [
+        sh:path bulbapedia:height-ftin;  
+        sh:datatype xsd:string ;
+        sh:minCount 0 ;
+    ] ;
+    sh:property [
+        sh:path bulbapedia:lv100exp;  
+        sh:datatype xsd:string ;
+        sh:minCount 0 ;
+    ] ;
+    sh:property [
+        sh:path bulbapedia:tmname;  
+        sh:datatype xsd:string ;
+        sh:minCount 0 ;
+    ] ;
+    sh:property [
+        sh:path bulbapedia:typebox; 
+        sh:datatype xsd:string ;
+        sh:minCount 0 ;
+    ] ;
+    sh:property [
+        sh:path bulbapedia:weight-lbs;  
+        sh:datatype xsd:string ;
+        sh:minCount 0 ;
+    ] ;
+    sh:property [
+        sh:path schema:alternateName;  
+        sh:datatype xsd:string ;
+        sh:minCount 0 ;
+    ] ;
+    sh:property [
+        sh:path bulbapedia:jtranslit; 
+        sh:datatype xsd:string ;
+        sh:minCount 0 ;
+    ] ;
+    sh:property [
+        sh:path bulbapedia:generation;  
+        sh:datatype xsd:string ;
+        sh:minCount 0 ;
+    ] ;
+    sh:property [
+        sh:path bulbapedia:expyield;  
+        sh:datatype xsd:string ;
+        sh:minCount 0 ;
+    ] ;
+    sh:property [
+        sh:path bulbapedia:evsa;  
+        sh:datatype xsd:string ;
+        sh:minCount 0 ;
+    ] ;
+    sh:property [
+        sh:path bulbapedia:body ;  
+        sh:datatype xsd:string ;
+        sh:minCount 0 ;
+    ] ;
+    sh:property [
+        sh:path bulbapedia:category ; 
+        sh:minCount 0 ;
+    ] ;
+    sh:property [
+        sh:path bulbapedia:color ;  
+        sh:datatype xsd:string ;
+        sh:minCount 0 ;
+    ] ;
+    sh:property [
+        sh:path bulbapedia:eggcycles ;  
+        sh:datatype xsd:integer ;
+        sh:minCount 0 ;
+    ] ;
+    sh:property [
+        sh:path bulbapedia:egggroupn ;  
+        sh:datatype xsd:integer ;
+        sh:minCount 0 ;
+    ] ;
+    sh:property [
+        sh:path bulbapedia:oldexp;  
+        sh:minCount 0 ;
+    ] ;
+    sh:property [
+        sh:path bulbapedia:pokefordex;  
+        sh:minCount 0 ;
+    ] ;
+    sh:property [
+        sh:path schema:hasProperty;  
+        sh:minCount 0 ;
+    ] ;
+    sh:property [
+        sh:path rdfs:label;  
+    
+    ] ;
+    sh:property [
+        sh:path schema:identifier;  
+    
+    ] ;
+    sh:closed true ; 
+    sh:ignoredProperties ( rdf:type ) .
