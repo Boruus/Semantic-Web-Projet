@@ -65,11 +65,15 @@ export default {
           const property = result.property.value
           const value = result.value.value
           if (!acc[property]) {
-            acc[property] = []
+            acc[property] = new Set()
           }
-          acc[property].push(value)
+          acc[property].add(value)
           return acc
         }, {})
+        // Convertir les Sets en tableaux pour l'affichage
+        for (const key in details) {
+          details[key] = Array.from(details[key])
+        }
         this.details = details
       } catch (error) {
         console.error('Error fetching data from Fuseki:', error)
