@@ -28,7 +28,7 @@ public class PokemonRDFGenerator {
 
             Model combinedModel = ModelFactory.createDefaultModel();
 
-            String tsvFilePath = "src/main/resources/pokedex-i18n.tsv";
+            String tsvFilePath = "src/main/resources/external_data/pokedex-i18n.tsv";
             Map<String, List<String[]>> multilingualNamesMap = TsvReader.readMultilingualNamesFromTSV(tsvFilePath);
                     
             for (String pageTitle : combinedPages) {            
