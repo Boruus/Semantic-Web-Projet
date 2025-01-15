@@ -29,7 +29,7 @@ import axios from 'axios'
 
 export default {
   name: 'PokemonDetailPage',
-  props: ['pageName'],
+  props: ['pageName', 'origin'],
   data() {
     return {
       details: null,
@@ -41,10 +41,9 @@ export default {
   },
   methods: {
     async fetchDetails() {
-      //const pageResource = `/resource/${this.pageName}`
       const page = `/resource/${this.pageName}`
       this.page = page
-      console.log('page:', page)
+      //console.log('page:', page)
 
       const query = `
         PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
@@ -77,7 +76,11 @@ export default {
       }
     },
     back() {
-      this.$router.push({ name: 'PokeListPage' })
+      if (this.pageName.includes('cards') || this.pageName.includes('Cards')) {
+        this.$router.push({ name: 'PokeListCardsPage' })
+      } else {
+        this.$router.push({ name: 'PokeListPage' })
+      }
     }
   }
 }

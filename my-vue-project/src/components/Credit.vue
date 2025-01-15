@@ -1,9 +1,14 @@
 <template>
   <div class="pokestyle">
-    <h1>Developpeur</h1>
+    <h1>Developpeurs</h1>
     <ul>
       <li>Boris Trombert</li>
       <li>Mathias CHANE-WAYE</li>
+    </ul>
+    <h1>Supervision</h1>
+    <ul>
+      <li>Antoine Zimmermann</li>
+      <li>Maxime Lefrançois</li>
     </ul>
   </div>
 </template>

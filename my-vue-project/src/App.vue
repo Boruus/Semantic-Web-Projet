@@ -3,12 +3,13 @@
     <img alt="logo" src="./assets/logo.png" id="logo">
     <nav>
       <ul>
-        <li><router-link to="/">Home</router-link></li>
-        <li><router-link to="/page">Pokémon</router-link></li>
-        <li><router-link to="/pokeListTuples">Tuples</router-link></li>
-        <li><router-link to="/attacks">Attacks</router-link></li>
-        <li><router-link to="/regions">Regions</router-link></li>
-        <li><router-link to="/credit">Credit</router-link></li>
+        <li><router-link to="/">[Home]</router-link></li>
+        <li><router-link to="/listPokemon">[Pokémon]</router-link></li>
+        <li><router-link to="/listCards">[Pokémon Cards]</router-link></li>
+        <li><router-link to="/pokeListTuples">[Tuples]</router-link></li>
+        <li><router-link to="/attacks">[Attacks]</router-link></li>
+        <li><router-link to="/regions">[Regions]</router-link></li>
+        <li><router-link to="/credit">[Credit]</router-link></li>
       </ul>
     </nav>
     <router-view></router-view>
@@ -59,6 +60,12 @@ nav ul li a {
 
 nav ul li a:hover {
   color: #ff0000;
+}
+
+nav ul li .router-link-active {
+  color: #ff0000;
+  font-weight: bold;
+  text-decoration: underline;
 }
 
 .pokemon-button {

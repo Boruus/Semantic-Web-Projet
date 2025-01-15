@@ -1,6 +1,6 @@
 <template>
   <div class="pokestyle">
-    <h1>Pokémon List</h1>
+    <h1>Pokémon Cards List</h1>
     <table>
       <thead>
         <tr>
@@ -20,7 +20,7 @@
 import axios from 'axios'
 
 export default {
-  name: 'PokeListPage',
+  name: 'PokeListCardsPage',
   data() {
     return {
       results: []
@@ -28,7 +28,7 @@ export default {
   },
   computed: {
     filteredResults() {
-      return this.results.filter(pokemon => !pokemon.page.includes('/resource/') && pokemon.page.includes('Pok_mon'))
+      return this.results.filter(pokemon => !pokemon.page.includes('/resource/') && pokemon.page.includes('cards') || pokemon.page.includes('Cards'))
     }
   },
   created() {
@@ -72,7 +72,7 @@ export default {
     },
     selectPokemon(page) {
       const pageName = page.split('/').pop()
-      this.$router.push({ name: 'PokemonDetailPage', params: { pageName, origin: 'PokeListPage' } })
+      this.$router.push({ name: 'PokemonDetailPage', params: { pageName, origin: 'PokeListCardsPage' } })
     }
   }
 }
