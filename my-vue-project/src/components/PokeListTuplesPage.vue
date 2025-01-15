@@ -42,7 +42,8 @@ export default {
           ?sub ?pred ?obj .
         }
       `
-      const endpoint = 'http://localhost:3030/pokeDB/sparql'
+      const endpoint = 'http://localhost:3030/semwebPokeDB/sparql'
+      //const endpoint = 'http://localhost:3030/pokeDB/sparql'
       const url = `${endpoint}?query=${encodeURIComponent(query)}&format=json`
 
       try {

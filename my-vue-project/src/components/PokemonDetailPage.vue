@@ -1,4 +1,3 @@
-DetailPage.vue
 <template>
   <div class="pokestyle" v-if="details">
     <h1>Pokémon Detail</h1>
@@ -21,17 +20,64 @@ DetailPage.vue
         </tr>
       </tbody>
     </table>
-    <button class="pokemon-button" @click="$emit('back')">Back to List</button>
+    <button class="pokemon-button" @click="back">Back to List</button>
   </div>
 </template>
 
 <script>
+import axios from 'axios'
+
 export default {
   name: 'PokemonDetailPage',
-  props: ['page', 'details'],
+  props: ['pageName'],
+  data() {
+    return {
+      details: null,
+      page: ''
+    }
+  },
+  created() {
+    this.fetchDetails()
+  },
   methods: {
+    async fetchDetails() {
+      //const pageResource = `/resource/${this.pageName}`
+      const page = `/resource/${this.pageName}`
+      this.page = page
+      console.log('page:', page)
+
+      const query = `
+        PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+        PREFIX owl: <http://www.w3.org/2002/07/owl#>
+        PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+        PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+        SELECT ?property ?value WHERE {
+          <${this.pageName}> ?property ?value .
+        }
+      `
+      
+      const endpoint = 'http://localhost:3030/semwebPokeDB/sparql'
+      const url = `${endpoint}?query=${encodeURIComponent(query)}&format=json`
+
+      try {
+        const response = await axios.get(url)
+        const results = response.data.results.bindings
+        const details = results.reduce((acc, result) => {
+          const property = result.property.value
+          const value = result.value.value
+          if (!acc[property]) {
+            acc[property] = []
+          }
+          acc[property].push(value)
+          return acc
+        }, {})
+        this.details = details
+      } catch (error) {
+        console.error('Error fetching data from Fuseki:', error)
+      }
+    },
     back() {
-      this.$emit('back')
+      this.$router.push({ name: 'PokeListPage' })
     }
   }
 }

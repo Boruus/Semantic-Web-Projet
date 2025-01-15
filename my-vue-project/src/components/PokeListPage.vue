@@ -21,12 +21,6 @@ import axios from 'axios'
 
 export default {
   name: 'PokeListPage',
-  props: {
-    onSelectPokemon: {
-      type: Function,
-      required: true
-    }
-  },
   data() {
     return {
       results: []
@@ -51,7 +45,8 @@ export default {
           ?page ?property ?value .
         }
       `
-      const endpoint = 'http://localhost:3030/pokeDB/sparql'
+      
+      const endpoint = 'http://localhost:3030/semwebPokeDB/sparql'
       const url = `${endpoint}?query=${encodeURIComponent(query)}&format=json`
 
       try {
@@ -76,8 +71,8 @@ export default {
       }
     },
     selectPokemon(page) {
-      const resourcePage = page.replace('/page/', '/resource/')
-      this.onSelectPokemon(resourcePage)
+      const pageName = page.split('/').pop()
+      this.$router.push({ name: 'PokemonDetailPage', params: { pageName } })
     }
   }
 }

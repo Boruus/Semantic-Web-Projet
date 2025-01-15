@@ -3,91 +3,21 @@
     <img alt="logo" src="./assets/logo.png" id="logo">
     <nav>
       <ul>
-        <li><a href="#" @click.prevent="currentPage = 'home'">Home</a></li>
-        <li><a href="#" @click.prevent="currentPage = 'pokemon'">Pokémon</a></li>
-        <li><a href="#" @click.prevent="currentPage = 'pokeListTuples'">Tuples</a></li>
-        <li><a href="#" @click.prevent="currentPage = 'attacks'">Attacks</a></li>
-        <li><a href="#" @click.prevent="currentPage = 'regions'">Regions</a></li>
-        <li><a href="#" @click.prevent="currentPage = 'credit'">Credit</a></li>
+        <li><router-link to="/">Home</router-link></li>
+        <li><router-link to="/page">Pokémon</router-link></li>
+        <li><router-link to="/pokeListTuples">Tuples</router-link></li>
+        <li><router-link to="/attacks">Attacks</router-link></li>
+        <li><router-link to="/regions">Regions</router-link></li>
+        <li><router-link to="/credit">Credit</router-link></li>
       </ul>
     </nav>
-    <button class="pokemon-button" @click="runPokemonRDFGenerator">Run Pokemon RDF Generator</button>
-    <component ref="pokeList" :is="currentPageComponent" :page="selectedPage" :details="selectedDetails" @back="selectedPage = null" @selectPokemon="selectPokemon"></component>
+    <router-view></router-view>
   </div>
 </template>
 
 <script>
-import axios from 'axios'
-import HomePage from './components/HomePage.vue'
-import PokeListPage from './components/PokeListPage.vue'
-import PokeListTuplesPage from './components/PokeListTuplesPage.vue'
-import AttacksPage from './components/AttacksPage.vue'
-import RegionsPage from './components/RegionsPage.vue'
-import Credit from './components/Credit.vue'
-import PokemonDetailPage from './components/PokemonDetailPage.vue'
-
 export default {
-  name: 'App',
-  components: {
-    HomePage,
-    PokeListTuplesPage,
-    PokeListPage,
-    AttacksPage,
-    RegionsPage,
-    Credit,
-    PokemonDetailPage
-  },
-  data() {
-    return {
-      currentPage: 'home',
-      selectedPage: null,
-      selectedDetails: null
-    }
-  },
-  computed: {
-    currentPageComponent() {
-      if (this.selectedPage) {
-        return 'PokemonDetailPage'
-      }
-      switch (this.currentPage) {
-        case 'home':
-          return 'HomePage'
-        case 'pokeListTuples':
-          return 'PokeListTuplesPage'
-        case 'pokemon':
-          return 'PokeListPage'
-        case 'attacks':
-          return 'AttacksPage'
-        case 'regions':
-          return 'RegionsPage'
-        case 'credit':
-          return 'Credit'
-        default:
-          return 'HomePage'
-      }
-    }
-  },
-  methods: {
-    async runPokemonRDFGenerator() {
-      try {
-        const response = await axios.get('http://localhost:3000/run-pokemonRDFGenerator');
-        console.log(response.data);
-        alert('Pokemon RDF Generator executed successfully');
-      } catch (error) {
-        console.error('Error executing Pokemon RDF Generator:', error);
-        alert('Error executing Pokemon RDF Generator');
-      }
-    },
-    selectPokemon(page) {
-      if (this.$refs.pokeList && this.$refs.pokeList.results) {
-        const selectedPokemon = this.$refs.pokeList.results.find(pokemon => pokemon.page === page)
-        this.selectedPage = page
-        this.selectedDetails = selectedPokemon ? selectedPokemon.properties : null
-      } else {
-        console.error('PokeList results are not available')
-      }
-    }
-  }
+  name: 'App'
 }
 </script>
 
