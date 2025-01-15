@@ -2,11 +2,8 @@ package emweb;
 
 import org.apache.jena.rdf.model.*;
 import org.apache.jena.vocabulary.RDF;
-import org.apache.jena.vocabulary.RDFS;
 
-import java.io.BufferedReader;
-import java.io.FileReader;
-import java.io.IOException;
+import java.util.Arrays;
 import java.util.List;
 
 public class PokemonInfoboxRDFGenerator {
@@ -38,15 +35,12 @@ public class PokemonInfoboxRDFGenerator {
     public static Model generateRDFForTCGPromoInfobox(String infoboxContent, String pageTitle) {
         Model model = ModelFactory.createDefaultModel();
     
-        // Définir les préfixes
         model.setNsPrefix("xsd", "http://www.w3.org/2001/XMLSchema#");
         model.setNsPrefix("schema", "http://schema.org/");
         model.setNsPrefix("pokemon", "http://pokemon.semanticweb.org/schema#");
     
-        // Nettoyer le titre de la page
         String validPageTitle = pageTitle.replaceAll("[^a-zA-Z0-9_]", "_");
     
-        // Créer les ressources
         Resource resource = model.createResource("pokemon:" + validPageTitle);
         resource.addProperty(RDF.type, model.createResource("schema:CreativeWork"));
     
@@ -79,25 +73,43 @@ public class PokemonInfoboxRDFGenerator {
                 }
             }
         }
+
+        
     
         return model;
     }
-    
-    public static Model generateRDFForPokemonInfobox(String infoboxContent, String pageTitle) {
+
+    public static Model generateRDFForPokemonInfobox(String infoboxContent, String pageTitle, List<String[]> multilingualNames, String pokemonId) {
         Model model = ModelFactory.createDefaultModel();
     
-        // Définir les préfixes
         model.setNsPrefix("xsd", "http://www.w3.org/2001/XMLSchema#");
         model.setNsPrefix("schema", "http://schema.org/");
-        model.setNsPrefix("pokemon", "http://pokemon.semanticweb.org/schema#");
+        model.setNsPrefix("pokemon", "http://pokemon.semanticweb.org/ressource#");
+        model.setNsPrefix("wiki", "http://pokemon.semanticweb.org/page#");
     
-        // Nettoyer le titre de la page
         String validPageTitle = pageTitle.replaceAll("[^a-zA-Z0-9_]", "_");
     
-        // Créer les ressources
         Resource pokemon = model.createResource("pokemon:" + validPageTitle);
         pokemon.addProperty(RDF.type, model.createResource("schema:Thing"));
-        pokemon.addProperty(RDFS.label, pageTitle);
+    
+        Resource wikiPage = model.createResource("wiki:" + validPageTitle);
+        pokemon.addProperty(model.createProperty("schema:about"), wikiPage);
+    
+        try {
+            List<String> externalLinks = PokemonPagesFetcher.getExternalLinks(pageTitle);
+    
+            for (String link : externalLinks) {
+                if (link.startsWith("http://dbpedia.org/resource/")) {
+                    pokemon.addProperty(model.createProperty("owl:sameAs"), model.createResource(link));
+                } else if (link.startsWith("http://yago-knowledge.org/resource/")) {
+                    pokemon.addProperty(model.createProperty("owl:sameAs"), model.createResource(link));
+                } else {
+                    pokemon.addProperty(model.createProperty("schema:url"), model.createResource(link));
+                }
+            }
+        } catch (Exception e) {
+            System.err.println("Erreur lors de la récupération des liens externes pour " + pageTitle + ": " + e.getMessage());
+        }
     
         String[] lines = infoboxContent.split("\\|");
         for (String line : lines) {
@@ -117,18 +129,6 @@ public class PokemonInfoboxRDFGenerator {
                     case "ndex":
                         pokemon.addProperty(model.createProperty("pokemon:identifier"), value);
                         break;
-                    case "jname":
-                        pokemon.addProperty(model.createProperty("pokemon:alternateName"), value);
-                        break;
-                    case "height-m":
-                        pokemon.addProperty(model.createProperty("pokemon:height"), value + "^^xsd:decimal");
-                        break;
-                    case "weight-kg":
-                        pokemon.addProperty(model.createProperty("pokemon:weight"), value + "^^xsd:decimal");
-                        break;
-                    case "catchrate":
-                        pokemon.addProperty(model.createProperty("pokemon:catchRate"), value + "^^xsd:integer");
-                        break;
                     default:
                         pokemon.addProperty(model.createProperty("pokemon:" + property), value);
                         break;
@@ -136,78 +136,37 @@ public class PokemonInfoboxRDFGenerator {
             }
         }
     
+        addMultilingualNames(pokemon, multilingualNames, pokemonId);
+    
         return model;
     }
     
-    
-    public static void addMultilingualLabelsToModel(String tsvFilePath, Model combinedModel) {
-        try (BufferedReader reader = new BufferedReader(new FileReader(tsvFilePath))) {
-            String namespace = "http://www.pokemonDB.org/resource/";
-            String line;
-    
-            while ((line = reader.readLine()) != null) {
-                String[] fields = line.split("\t");
-    
-                if (fields.length >= 4) {
-                    String type = fields[0].trim();
-                    if ("pokemon".equalsIgnoreCase(type)) {
-                        String id = fields[1].trim();
-                        String name = fields[2].trim();
-                        String language = fields[3].trim(); 
-    
-                        String langTag = null;
-                        switch (language.toLowerCase()) {
-                            case "french":
-                                langTag = "fr";
-                                break;
-                            case "german":
-                                langTag = "de";
-                                break;
-                            case "spanish":
-                                langTag = "es";
-                                break;
-                            case "italian":
-                                langTag = "it";
-                                break;
-                            case "english":
-                                langTag = "en";
-                                break;
-                            case "japanese":
-                                langTag = "ja";
-                                break;
-                            case "korean":
-                                langTag = "ko";
-                                break;
-                            case "chinese":
-                                langTag = "zh";
-                                break;
-                            default:
-                                langTag = null;
-                                break;
-                        }
-                        if (langTag != null) {
-                            String resourceURI = namespace + id + "_(Pokémon)";
-                            Resource pokemonResource = combinedModel.getResource(resourceURI);
-    
-                            if (pokemonResource != null) {
-                                pokemonResource.addProperty(RDFS.label, combinedModel.createLiteral(name, langTag));
-                            } else {
-                                System.out.println("La ressource " + resourceURI + " n'existe pas dans le modèle. Ignorée.");
-                            }
-                        }
-                    }
+    public static void addMultilingualNames(Resource pokemon, List<String[]> names, String pokemonId) {
+        for (String[] nameData : names) {
+            if (nameData.length >= 3) {
+                String id = nameData[0].trim();
+                String name = nameData[1].trim();
+                String language = nameData[2].trim();
+                String langCode = UtilsFunctions.getLanguageCode(language);
+                
+                System.out.println(pokemonId + " " + id + " " + name + " " + language + " " + langCode);
+                if (id.equals(pokemonId) && langCode != null) {
+                    pokemon.addProperty(
+                        pokemon.getModel().createProperty("schema:name"),
+                        pokemon.getModel().createLiteral(name, langCode)
+                    );
                 }
+            } else {
+                System.out.println("Format incorrect pour nameData : " + Arrays.toString(nameData));
             }
-        } catch (IOException e) {
-            e.printStackTrace();
         }
     }
     
-    public static Model generateRDFForInfoboxType(String infoboxContent, String pageTitle) {
+    public static Model generateRDFForInfoboxType(String infoboxContent, String pageTitle, List<String[]> multilingualNames, String pokemonId) {
         if (infoboxContent.contains("TCGPromoInfobox")) {
             return PokemonInfoboxRDFGenerator.generateRDFForTCGPromoInfobox(infoboxContent, pageTitle);
         } else if (infoboxContent.contains("Pokémon Infobox")) {
-            return PokemonInfoboxRDFGenerator.generateRDFForPokemonInfobox(infoboxContent, pageTitle);
+            return PokemonInfoboxRDFGenerator.generateRDFForPokemonInfobox(infoboxContent, pageTitle, multilingualNames, pokemonId);
         } else {
             System.out.println("Aucun générateur RDF trouvé pour l'infobox");
             return null;

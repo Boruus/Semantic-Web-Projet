@@ -1,0 +1,49 @@
+@prefix schema: <http://schema.org/> .
+@prefix pokemon: <http://pokemon.semanticweb.org/ressource#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+pokemon:Pokemon a rdfs:Class ;
+    rdfs:subClassOf schema:Thing ;
+    rdfs:label "Pokémon"@en ;
+    rdfs:comment "Represents a Pokémon entity in the Pokémon universe."@en .
+
+pokemon:Ability a rdfs:Class ;
+    rdfs:subClassOf schema:Thing ;
+    rdfs:label "Ability"@en ;
+    rdfs:comment "Represents a Pokémon's ability."@en .
+
+pokemon:identifier a rdf:Property ;
+    rdfs:domain pokemon:Pokemon ;
+    rdfs:range xsd:string ;
+    rdfs:label "Identifier"@en ;
+    rdfs:comment "Unique identifier for the Pokémon, typically the National Pokédex number."@en .
+
+pokemon:name a rdf:Property ;
+    rdfs:domain pokemon:Pokemon ;
+    rdfs:range schema:Text ;
+    rdfs:label "Name"@en ;
+    rdfs:comment "Name of the Pokémon in various languages."@en .
+
+pokemon:type a rdf:Property ;
+    rdfs:domain pokemon:Pokemon ;
+    rdfs:range schema:Text ;
+    rdfs:label "Type"@en ;
+    rdfs:comment "The type(s) of the Pokémon (e.g., Fire, Water)."@en .
+
+pokemon:ability a rdf:Property ;
+    rdfs:domain pokemon:Pokemon ;
+    rdfs:range pokemon:Ability ;
+    rdfs:label "Ability"@en ;
+    rdfs:comment "One or more abilities that a Pokémon can have."@en .
+
+pokemon:weight a rdf:Property ;
+    rdfs:domain pokemon:Pokemon ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Weight"@en ;
+    rdfs:comment "Weight of the Pokémon in kilograms."@en .
+
+pokemon:height a rdf:Property ;
+    rdfs:domain pokemon:Pokemon ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Height"@en ;
+    rdfs:comment "Height of the Pokémon in meters."@en .

@@ -1,11 +1,11 @@
 @prefix sh: <http://www.w3.org/ns/shacl#> .
 @prefix schema: <http://schema.org/> .
-@prefix bulbapedia: <http://example.org/bulbapedia#> .
+@prefix pokemon: <http://pokemon.semanticweb.org/resource#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .  
 @prefix rdfs: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> . 
 
-<#PokemonShape>
+<pokemon:PokemonShape>
     a sh:NodeShape ;
     sh:targetClass schema:Thing ; 
     sh:property [
