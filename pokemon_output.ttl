@@ -5,7 +5,7 @@
 
 <pokemon:Squirtle__Pok_mon_>
         a                     <schema:Thing> ;
-        <pokemon:category>    "tt" ;
+        <pokemon:category>    "{{tt" ;
         <pokemon:identifier>  "0007" ;
         <pokemon:jname>       "ゼニガメ" ;
         <pokemon:tmname>      "Zenigame" ;
