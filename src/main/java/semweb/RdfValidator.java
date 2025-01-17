@@ -11,7 +11,7 @@ import org.apache.jena.shacl.lib.ShLib;
 public class RdfValidator {
     public static void main(String[] args) {
         try {
-            String SHAPES = "src/main/java/emweb/shapes.ttl"; 
+            String SHAPES = "src/main/resources/shacl/shapes.ttl"; 
             String DATA = "pokemon_output.ttl"; 
             
             Graph shapesGraph = RDFDataMgr.loadGraph(SHAPES);
