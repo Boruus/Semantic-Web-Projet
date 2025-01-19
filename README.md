@@ -126,23 +126,99 @@ You can download and install Node.js from [here](https://nodejs.org/en/download)
 
 ### Main Components
 - **App.vue**: The main component that manages navigation between different pages.
+  - **Functions**:
+    - Sets up the main layout and navigation menu.
+    - Uses `router-view` to display the current route's component.
+  - **Choices**:
+    - Uses `Press Start 2P` font for a retro look.
+    - Navigation links are styled to highlight the active route.
+
 - **HomePage.vue**: The project's homepage with a description and objectives of the project.
+  - **Functions**:
+    - Displays the main objectives, requirements, pedagogical objectives, timeline, and resources for the project.
+  - **Choices**:
+    - Provides detailed information about the project to help users understand its scope and goals.
+
 - **PokeListPage.vue**: Displays a list of Pokémon pages. Clicking on a page redirects the user to the details of that page.
+  - **Functions**:
+    - Fetches data from the SPARQL endpoint.
+    - Filters and displays Pokémon pages.
+    - Redirects to the Pokémon detail page on click.
+  - **Choices**:
+    - Uses a table to display the list of Pokémon pages.
+    - Filters out irrelevant pages based on keywords.
+
 - **PokeListCardsPage.vue**: Displays a list of Pokémon cards. Clicking on a page redirects the user to the details of that page.
+  - **Functions**:
+    - Fetches data from the SPARQL endpoint.
+    - Filters and displays Pokémon card pages.
+    - Redirects to the Pokémon card detail page on click.
+  - **Choices**:
+    - Similar structure to `PokeListPage.vue` but filters for card-related pages.
+
 - **PokeListTuplesPage.vue**: Displays a list of RDF tuples (predicate-object) for Pokémon.
+  - **Functions**:
+    - Fetches RDF tuples from the SPARQL endpoint.
+    - Displays the tuples in a table format.
+  - **Choices**:
+    - Provides a detailed view of RDF data for advanced users.
+
+- **PokemonDetailPage.vue**: Displays the details of a selected Pokémon page.
+  - **Functions**:
+    - Fetches detailed data for a specific Pokémon from the SPARQL endpoint.
+    - Displays the data in a table format.
+    - Provides a back button to return to the previous list.
+  - **Choices**:
+    - Uses a table to organize detailed information.
+    - Converts sets to arrays for easier display.
+
+
 
 ### Additional Pages
 - **AttacksPage.vue**: Displays a list of Pokémon attacks (under development).
+  - **Functions**:
+    - Placeholder for future development.
+  - **Choices**:
+    - Provides a message indicating that the feature is under development.
+
 - **RegionsPage.vue**: Displays a list of Pokémon regions (under development).
+  - **Functions**:
+    - Placeholder for future development.
+  - **Choices**:
+    - Provides a message indicating that the feature is under development.
+
 - **Credit.vue**: Displays the project credits.
-- **PokemonDetailPage.vue**: Displays the details of a selected Pokémon page.
+  - **Functions**:
+    - Lists the developers and supervisors of the project.
+  - **Choices**:
+    - Simple list format to acknowledge contributors.
+
 
 ## JavaScript Files
 
 ### Core Files
 - **main.js**: Main entry point of the Vue.js application.
+  - **Functions**:
+    - Creates and mounts the Vue app.
+    - Sets up the router.
+  - **Choices**:
+    - Uses Vue 3's `createApp` function for a modern setup.
+
 - **router.js**: Defines the routes for navigation between different pages of the application.
-- **server.js**: An Express server that handles CORS requests and runs the Java RDF generator.
+  - **Functions**:
+    - Sets up routes for all the main and additional pages.
+    - Uses `createRouter` and `createWebHistory` for modern routing.
+  - **Choices**:
+    - Provides named routes for easier navigation and readability.
+
+- **server.js**: (Working on ...) An Express server that handles CORS requests and runs the Java RDF generator.
+  - **Functions**:
+    - Sets up an Express server with CORS support.
+    - Defines an endpoint to run the Java RDF generator.
+  - **Choices**:
+    - Uses `exec` to run the Java program and handle its output.
+    - Configures CORS to allow requests from the front-end.
+
 
 ## Navigation
 - **Home**: Homepage with a description of the project.
