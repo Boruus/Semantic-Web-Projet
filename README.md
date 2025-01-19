@@ -64,13 +64,16 @@ cd Semantic-Web-Projet
    http://localhost:8080
    ```
 
-## File Descriptions
+---
+
+# File Descriptions
+
+## Triplestore Files
 
 ### 1. `FusekiConnection.java`
 - Handles the connection to an Apache Jena Fuseki triplestore.
 - **Functions**:
   - Inserts RDF data into a Fuseki server.
-  - Queries data using SPARQL.
 - **Configuration**:
   - Set server URLs and dataset details within this file.
 
@@ -113,46 +116,50 @@ cd Semantic-Web-Projet
 
 ---
 
-# Front - Vue.js Interface
+# Front-End Components
 
-### Vue.js Components
+## Vue.js Components
 
+### Main Components
 - **App.vue**: The main component that manages navigation between different pages.
 - **HomePage.vue**: The project's homepage with a description and objectives of the project.
 - **PokeListPage.vue**: Displays a list of Pokémon pages. Clicking on a page redirects the user to the details of that page.
 - **PokeListCardsPage.vue**: Displays a list of Pokémon cards. Clicking on a page redirects the user to the details of that page.
 - **PokeListTuplesPage.vue**: Displays a list of RDF tuples (predicate-object) for Pokémon.
+
+### Additional Pages
 - **AttacksPage.vue**: Displays a list of Pokémon attacks (under development).
 - **RegionsPage.vue**: Displays a list of Pokémon regions (under development).
 - **Credit.vue**: Displays the project credits.
 - **PokemonDetailPage.vue**: Displays the details of a selected Pokémon page.
 
-### JavaScript Files
+## JavaScript Files
 
+### Core Files
 - **main.js**: Main entry point of the Vue.js application.
 - **router.js**: Defines the routes for navigation between different pages of the application.
 - **server.js**: An Express server that handles CORS requests and runs the Java RDF generator.
 
-### Navigation
+## Navigation
+- **Home**: Homepage with a description of the project.
+- **Pokémon**: Displays a list of Pokémon pages. Click on a page to see the details.
+- **Pokémon Cards**: Displays a list of Pokémon cards. Click on a page to see the details.
+- **Tuples**: Displays a list of RDF tuples (predicate-object) for Pokémon.
+- **Attacks**: Displays a list of Pokémon attacks (under development).
+- **Regions**: Displays a list of Pokémon regions (under development).
+- **Credit**: Displays the project credits.
 
-- **Home** : Homepage with a description of the project.
-- **Pokémon** : Displays a list of Pokémon pages. Click on a page to see the details.
-- **Pokémon Cards** : Displays a list of Pokémon cards. Click on a page to see the details.
-- **Tuples** : Displays a list of RDF tuples (predicate-object) for Pokémon.
-- **Attacks** : Displays a list of Pokémon attacks (under development).
-- **Regions** : Displays a list of Pokémon regions (under development).
-- **Credit** : Displays the project credits.
+## RDF Generation (Under Development)
+To run the RDF generator, click on the "Run Pokemon RDF Generator" button on the main page. This will send a request to the Express server to run the Java `PokemonRDFGenerator` program.
 
-### RDF Generation (under development)
+---
 
-To run the RDF generator, click on the "Run Pokemon RDF Generator" button on the main page. This will send a request to the Express server to run the Java `PokemonRDFGenerator`program.
-
-## Developers
+# Developers
 
 - **Boris Trombert**
 - **Mathias CHANE-WAYE**
 
-### Supervision
+## Supervision
 
 - **Antoine Zimmermann**
 
