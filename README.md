@@ -44,6 +44,9 @@ cd Semantic-Web-Projet
 ### 1. **Requirements**
 - Node.js and npm (Node Package Manager).
 
+You can download and install Node.js from [here](https://nodejs.org/en/download). Note that npm is included with Node.js. If your PC does not recognize npm after installing Node.js, you may need to restart your computer.
+
+
 ### 2. **How to Run**
 1. Navigate to the front-end directory:
    ```sh
