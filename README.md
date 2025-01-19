@@ -118,6 +118,26 @@ You can download and install Node.js from [here](https://nodejs.org/en/download)
   - Mapping Pokémon names to their unique IDs.
   - Converting languages into ISO codes.
 
+### 9. `vocabulary.ttl`
+- **Functions**:
+  - Defines the RDF vocabulary used in the project.
+  - Specifies classes and properties for representing Pokémon data.
+- **Choices**:
+  - Uses `rdfs:Class` to define classes such as `Pokemon` and `Ability`.
+  - Uses `rdf:Property` to define properties such as `identifier`, `name`, `type`, `ability`, `weight`, and `height`.
+  - Aligns with Schema.org vocabulary by subclassing `schema:Thing`.
+  - Annotates classes and properties with `rdfs:label` and `rdfs:comment` for human-readable descriptions.
+  
+### 10. `shapes.ttl`
+- **Functions**:
+  - Defines SHACL shapes for validating RDF data.
+  - Specifies constraints on properties of RDF nodes.
+- **Choices**:
+  - Uses `sh:NodeShape` to define shapes for classes such as `pokemon:PokemonShape`.
+  - Uses `sh:property` to specify constraints on properties, including `sh:path`, `sh:datatype`, `sh:minCount`, `sh:maxCount`, `sh:minInclusive`, and `sh:maxInclusive`.
+  - Defines shapes as closed (`sh:closed true`), allowing only specified properties.
+  - Uses `sh:ignoredProperties` to ignore certain properties like `rdf:type`.
+
 ---
 
 # Front-End Components
@@ -249,3 +269,4 @@ To run the RDF generator, click on the "Run Pokemon RDF Generator" button on the
 - **Infobox Templates**
   - [TCGPromoInfobox](https://bulbapedia.bulbagarden.net/wiki/Template:TCGPromoInfobox)
   - [Pokémon Infobox](https://bulbapedia.bulbagarden.net/wiki/Template:Pok%C3%A9mon_Infobox)
+- **Pokedex-i18n.tsv**  an extraction of labels and prose in several languages from the Pokédex.
