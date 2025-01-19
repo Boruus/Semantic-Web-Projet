@@ -247,3 +247,5 @@ To run the RDF generator, click on the "Run Pokemon RDF Generator" button on the
 
 - **Bulbapedia**
 - **Infobox Templates**
+  - [TCGPromoInfobox](https://bulbapedia.bulbagarden.net/wiki/Template:TCGPromoInfobox)
+  - [Pokémon Infobox](https://bulbapedia.bulbagarden.net/wiki/Template:Pok%C3%A9mon_Infobox)
