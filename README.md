@@ -4,8 +4,8 @@
 This project creates a semantic web representation of Pokémon data using RDF. It fetches Pokemon information, processes infoboxes, generates RDF triples, validates them using SHACL, and integrates with an RDF triplestore such as Apache Jena Fuseki.
 
 - All the generated RDF triples can be found in the file `pokemon_output.ttl`.
-- The SHACL shapes used for validation can be found in the file `resources/shacl/shapes.ttl`.
-- The vocabulary used in the project is defined in `resources/vocabulary/vocabulary.ttl`.
+- The SHACL shapes used for validation can be found in the file `src/main/resources/shacl/shapes.ttl`.
+- The vocabulary used in the project is defined in `src/main/resources/vocabulary/vocabulary.ttl`.
 
 ---
 
