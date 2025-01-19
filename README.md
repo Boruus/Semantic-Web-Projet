@@ -33,6 +33,7 @@ cd Semantic-Web-Projet
 2. Open your browser and navigate to `http://localhost:3030`.
 3. Create a dataset with this name: **semwebPokeDB**.
    ![alt text](triplestore.png)
+   ![alt text](image.png)
 4. Navigate to `src/main/java/semweb/PokemonRDFGenerator` and execute the file `PokemonRDFGenerator.java` to generate RDF triples. The loading process may take between 5 and 15 minutes depending on your internet connection. They will be saved in the file `pokemon_output.ttl`. 
 5. Run `RdfValidator.java` to validate the RDF against SHACL shapes.
 
