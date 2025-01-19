@@ -14,14 +14,45 @@ This project creates a semantic web representation of Pokémon data using RDF. I
 ### 1. **Requirements**
 - Java 8 or later.
 - Apache Jena and Fuseki server.
+- Node.js and npm (Node Package Manager).
+
 
 ### 2. **How to run**
 - Start Apache Jena Fuseki.
+- Open your browser and go to `http://localhost:3030`.
 - Create a dataset with this name : semwebPokeDB.
+![alt text](image.png)
 - Execute the file `PokemonRDFGenerator.java` to generate RDF triples, you can find them in pokemon_output.ttl.
 - Run `RdfValidator.java` to validate RDF against SHACL shapes.
 
 ---
+
+## Installation and Setup (Front)
+
+### Requirements (Front)
+- Node.js and npm (Node Package Manager).
+
+1. If needed, clone the GitHub repository:
+  ```sh
+  git clone https://github.com/Boruus/Semantic-Web-Projet.git
+  cd Semantic-Web-Projet/semweb-front
+  ```
+
+2. Install Node.js dependencies:
+  ```sh
+  npm install
+  ```
+
+## Starting the Project
+
+1. Start the Vue.js application:
+  ```sh
+  npm run serve
+  ```
+2. Open your browser and go to:
+  ```sh
+  http://localhost:8080
+  ```
 
 ## File Descriptions
 
@@ -72,7 +103,6 @@ This project creates a semantic web representation of Pokémon data using RDF. I
 
 ---
 
-
 # Front - Vue.js Interface
 
 ### Vue.js Components
@@ -92,29 +122,6 @@ This project creates a semantic web representation of Pokémon data using RDF. I
 - **main.js**: Main entry point of the Vue.js application.
 - **router.js**: Defines the routes for navigation between different pages of the application.
 - **server.js**: An Express server that handles CORS requests and runs the Java RDF generator.
-
-## Installation and Setup (Front)
-
-1. If needed, clone the GitHub repository:
-  ```
-  git clone https://github.com/Boruus/Semantic-Web-Projet.git
-   cd Semantic-Web-Projet/semweb-front
-  ```
-
-2. Install Node.js dependencies:
-  ```
-    npm install
-  ```
-## Starting the Project
-
-1. Start the Vue.js application:
-  ```
-    npm run serve
-  ```
-2. Open your browser and go to:
-  ```
-    http://localhost:8080
-  ```
 
 ### Navigation
 
@@ -138,7 +145,6 @@ To run the RDF generator, click on the "Run Pokemon RDF Generator" button on the
 ### Supervision
 
 - **Antoine Zimmermann**
-- **Maxime Lefrançois**
 
 ## Resources
 
