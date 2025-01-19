@@ -1,6 +1,7 @@
 package semweb;
 
 import java.io.BufferedReader;
+import java.io.IOException;
 import java.io.InputStreamReader;
 import java.net.HttpURLConnection;
 import java.net.URL;
@@ -8,6 +9,7 @@ import java.net.URLEncoder;
 import java.util.ArrayList;
 import java.util.List;
 import org.json.JSONArray;
+import org.json.JSONException;
 import org.json.JSONObject;
 
 public class PokemonPagesFetcher {
@@ -19,10 +21,19 @@ public class PokemonPagesFetcher {
         String apContinue = null;
 
         do {
-            String url = API_URL + (apContinue != null ? "&apcontinue=" + apContinue : "");
+            // Encode apContinue if it exists
+            String url = API_URL + (apContinue != null ? "&apcontinue=" + URLEncoder.encode(apContinue, "UTF-8") : "");
+            System.out.println("Requesting URL: " + url);
+
             HttpURLConnection connection = (HttpURLConnection) new URL(url).openConnection();
             connection.setRequestMethod("GET");
             connection.setRequestProperty("User-Agent", "SemanticWebProjectBot/1.0");
+
+            // Check for valid HTTP response
+            int responseCode = connection.getResponseCode();
+            if (responseCode != 200) {
+                throw new IOException("HTTP error code: " + responseCode + " for URL: " + url);
+            }
 
             BufferedReader in = new BufferedReader(new InputStreamReader(connection.getInputStream()));
             StringBuilder response = new StringBuilder();
@@ -33,10 +44,17 @@ public class PokemonPagesFetcher {
             }
             in.close();
 
-            JSONObject jsonResponse = new JSONObject(response.toString());
+            JSONObject jsonResponse;
+            try {
+                jsonResponse = new JSONObject(response.toString());
+            } catch (JSONException e) {
+                throw new IOException("Invalid JSON response: " + response, e);
+            }
+
             JSONObject query = jsonResponse.getJSONObject("query");
             JSONArray allpages = query.getJSONArray("allpages");
 
+            // Filter pages containing the keyword
             for (int i = 0; i < allpages.length(); i++) {
                 String title = allpages.getJSONObject(i).getString("title");
                 if (title.contains(keyword)) {
@@ -44,54 +62,73 @@ public class PokemonPagesFetcher {
                 }
             }
 
+            // Handle continuation of the query
             if (jsonResponse.has("continue")) {
                 apContinue = jsonResponse.getJSONObject("continue").getString("apcontinue");
             } else {
                 apContinue = null;
             }
+
+            // Add a delay to avoid rate-limiting issues
+            Thread.sleep(1000);
 
         } while (apContinue != null);
 
         return filteredPages;
     }
+                                        
 
 
     public static List<String> listAllPages() throws Exception {
         List<String> allPages = new ArrayList<>();
         String apContinue = null;
-    
-        do {
-            String url = API_URL + (apContinue != null ? "&apcontinue=" + apContinue : "");
-            HttpURLConnection connection = (HttpURLConnection) new URL(url).openConnection();
-            connection.setRequestMethod("GET");
-            connection.setRequestProperty("User-Agent", "SemanticWebProjectBot/1.0");
-    
-            BufferedReader in = new BufferedReader(new InputStreamReader(connection.getInputStream()));
-            StringBuilder response = new StringBuilder();
-            String inputLine;
-    
-            while ((inputLine = in.readLine()) != null) {
-                response.append(inputLine);
-            }
-            in.close();
-    
-            JSONObject jsonResponse = new JSONObject(response.toString());
-            JSONObject query = jsonResponse.getJSONObject("query");
-            JSONArray allpages = query.getJSONArray("allpages");
-    
-            for (int i = 0; i < allpages.length(); i++) {
-                String title = allpages.getJSONObject(i).getString("title");
-                allPages.add(title);
-            }
-    
-            if (jsonResponse.has("continue")) {
-                apContinue = jsonResponse.getJSONObject("continue").getString("apcontinue");
-            } else {
-                apContinue = null;
-            }
-    
-        } while (apContinue != null);
-    
+
+            do {
+                String url = API_URL + (apContinue != null ? "&apcontinue=" + URLEncoder.encode(apContinue, "UTF-8") : "");
+
+                HttpURLConnection connection = (HttpURLConnection) new URL(url).openConnection();
+                connection.setRequestMethod("GET");
+                connection.setRequestProperty("User-Agent", "SemanticWebProjectBot/1.0");
+
+                int responseCode = connection.getResponseCode();
+                if (responseCode != 200) {
+                    throw new IOException("HTTP error code: " + responseCode + " for URL: " + url);
+                }
+
+                BufferedReader in = new BufferedReader(new InputStreamReader(connection.getInputStream()));
+                StringBuilder response = new StringBuilder();
+                String inputLine;
+
+                while ((inputLine = in.readLine()) != null) {
+                    response.append(inputLine);
+                }
+                in.close();
+
+                JSONObject jsonResponse;
+                try {
+                    jsonResponse = new JSONObject(response.toString());
+                } catch (JSONException e) {
+                    throw new IOException("Invalid JSON response: " + response, e);
+                }
+
+                JSONObject query = jsonResponse.getJSONObject("query");
+                JSONArray allpages = query.getJSONArray("allpages");
+
+                for (int i = 0; i < allpages.length(); i++) {
+                    String title = allpages.getJSONObject(i).getString("title");
+                    allPages.add(title);
+                }
+
+                if (jsonResponse.has("continue")) {
+                    apContinue = jsonResponse.getJSONObject("continue").getString("apcontinue");
+                } else {
+                    apContinue = null;
+                }
+
+                Thread.sleep(1000);
+
+            } while (apContinue != null);
+
         return allPages;
     }
 

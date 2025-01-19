@@ -9,50 +9,60 @@ This project creates a semantic web representation of Pokémon data using RDF. I
 
 ---
 
-## Installation and Setup
+# Installation and Setup
 
-### 1. **Requirements**
-- Java 8 or later.
-- Apache Jena and Fuseki server.
-- Node.js and npm (Node Package Manager).
+## 1. **Clone the Repository**
+Before starting, clone the GitHub repository containing the project. This includes both the triplestore and front-end parts:
 
-
-### 2. **How to run**
-- Start Apache Jena Fuseki.
-- Open your browser and go to `http://localhost:3030`.
-- Create a dataset with this name : semwebPokeDB.
-![alt text](image.png)
-- Execute the file `PokemonRDFGenerator.java` to generate RDF triples, you can find them in pokemon_output.ttl.
-- Run `RdfValidator.java` to validate RDF against SHACL shapes.
+```sh
+git clone https://github.com/Boruus/Semantic-Web-Projet.git
+cd Semantic-Web-Projet
+```
 
 ---
 
-## Installation and Setup (Front)
+## Triplestore Setup
 
-### Requirements (Front)
+### 1. **Requirements**
+- Java 8 or later.
+- Apache Jena and the Fuseki server.
 - Node.js and npm (Node Package Manager).
 
-1. If needed, clone the GitHub repository:
-  ```sh
-  git clone https://github.com/Boruus/Semantic-Web-Projet.git
-  cd Semantic-Web-Projet/semweb-front
-  ```
+### 2. **How to Run**
+1. Start Apache Jena Fuseki.
+2. Open your browser and navigate to `http://localhost:3030`.
+3. Create a dataset with this name: **semwebPokeDB**.
+   ![alt text](triplestore.png)
+4. Navigate to `src/main/java/semweb/PokemonRDFGenerator` and execute the file `PokemonRDFGenerator.java` to generate RDF triples. The loading process may take between 5 and 15 minutes depending on your internet connection. They will be saved in the file `pokemon_output.ttl`. 
+5. Run `RdfValidator.java` to validate the RDF against SHACL shapes.
+
+---
+
+## Front-End Setup
+
+### 1. **Requirements**
+- Node.js and npm (Node Package Manager).
+
+### 2. **How to Run**
+1. Navigate to the front-end directory:
+   ```sh
+   cd semweb-front
+   ```
 
 2. Install Node.js dependencies:
-  ```sh
-  npm install
-  ```
+   ```sh
+   npm install
+   ```
 
-## Starting the Project
+3. Start the Vue.js application:
+   ```sh
+   npm run serve
+   ```
 
-1. Start the Vue.js application:
-  ```sh
-  npm run serve
-  ```
-2. Open your browser and go to:
-  ```sh
-  http://localhost:8080
-  ```
+4. Open your browser and go to:
+   ```sh
+   http://localhost:8080
+   ```
 
 ## File Descriptions
 
